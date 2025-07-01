@@ -1,0 +1,1 @@
+select  *  from   t_objectives to2 where status = 0 order by  objectives_priority  asc 

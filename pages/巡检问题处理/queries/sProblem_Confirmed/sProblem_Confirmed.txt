@@ -1,0 +1,1 @@
+select *  from  inspection_record ir where confirm  = 1

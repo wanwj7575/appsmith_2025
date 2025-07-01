@@ -1,0 +1,57 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 42,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "40zw5a1dti",
+  "leftColumn": 41,
+  "minWidth": 120,
+  "onClick": "{{iProblem_order.run().then(() => {\n uInspection_record_yes.run()| uProblem_image.run().then(() => {\n  closeModal('Modal2') | sProblem.run();\n}).catch(() => {});\n});}}",
+  "parentId": "tdrm906hv8",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 57,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "text": "确认",
+  "topRow": 38,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "v6p8zzpf39",
+  "widgetName": "Button5"
+}

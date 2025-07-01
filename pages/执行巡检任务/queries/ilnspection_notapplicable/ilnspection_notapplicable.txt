@@ -1,0 +1,4 @@
+INSERT INTO inspection_record ( create_time, inspec_status, inspectioncase_id, create_by, inspection_report_id)
+  VALUES ({{moment().format("YYYY-MM-DD HH:mm:ss ")}},1, {{Table1.triggeredRow.inspectioncase_id}}, {{appsmith.user.name}}, {{sTaskbusiness.data[0].inspectionsubtask_id}})
+  ON DUPLICATE KEY UPDATE 
+  inspec_status= 2

@@ -1,0 +1,1 @@
+select  COALESCE(zb.status  ,'all') as status ,COUNT(1) as number  from  zt_bug zb WHERE product = 86  and YEAR( zb.openedDate) = YEAR( NOW())  and zb.deleted = 1 and (zb.resolution != "willnotfix" or zb.resolution != 'duplicate') GROUP by zb.status WITH rollup

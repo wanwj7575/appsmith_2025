@@ -1,0 +1,269 @@
+{
+  "appIsExample": false,
+  "appLayout": {
+    "type": "FLUID"
+  },
+  "applicationDetail": {
+    "themeSetting": {
+      "appMaxWidth": "LARGE",
+      "density": 1.0,
+      "sizing": 1.0
+    }
+  },
+  "applicationVersion": 2,
+  "color": "#F3F1C7",
+  "evaluationVersion": 2,
+  "icon": "cat",
+  "pages": [
+    {
+      "id": "Page1",
+      "isDefault": false
+    },
+    {
+      "id": "项目看板",
+      "isDefault": false
+    },
+    {
+      "id": "值班",
+      "isDefault": false
+    },
+    {
+      "id": "Page4-4",
+      "isDefault": false
+    },
+    {
+      "id": "巡检用例统计",
+      "isDefault": false
+    },
+    {
+      "id": "线上问题统计分析",
+      "isDefault": false
+    },
+    {
+      "id": "创建OKR",
+      "isDefault": false
+    },
+    {
+      "id": "渠道任务详情",
+      "isDefault": false
+    },
+    {
+      "id": "部门建设",
+      "isDefault": false
+    },
+    {
+      "id": "项目看板 （旧）",
+      "isDefault": false
+    },
+    {
+      "id": "项目详情",
+      "isDefault": false
+    },
+    {
+      "id": "用户管理",
+      "isDefault": false
+    },
+    {
+      "id": "产品线",
+      "isDefault": false
+    },
+    {
+      "id": "添加巡检用例",
+      "isDefault": false
+    },
+    {
+      "id": "任务大厅",
+      "isDefault": false
+    },
+    {
+      "id": "字典详情",
+      "isDefault": false
+    },
+    {
+      "id": "巡检记录",
+      "isDefault": false
+    },
+    {
+      "id": "新建巡检子任务",
+      "isDefault": false
+    },
+    {
+      "id": "任务排期",
+      "isDefault": false
+    },
+    {
+      "id": "Page3-4",
+      "isDefault": false
+    },
+    {
+      "id": "生成巡检报告",
+      "isDefault": false
+    },
+    {
+      "id": "渠道任务",
+      "isDefault": false
+    },
+    {
+      "id": "字典管理",
+      "isDefault": false
+    },
+    {
+      "id": "巡检任务",
+      "isDefault": false
+    },
+    {
+      "id": "1",
+      "isDefault": false
+    },
+    {
+      "id": "生活缴费",
+      "isDefault": false
+    },
+    {
+      "id": "执行巡检任务",
+      "isDefault": false
+    },
+    {
+      "id": "项目测试详情",
+      "isDefault": false
+    },
+    {
+      "id": "巡检用例",
+      "isDefault": false
+    },
+    {
+      "id": "巡检任务详情",
+      "isDefault": false
+    },
+    {
+      "id": "新建测试项目",
+      "isDefault": false
+    },
+    {
+      "id": "提交日志",
+      "isDefault": false
+    },
+    {
+      "id": "日报详情页",
+      "isDefault": false
+    },
+    {
+      "id": "个人主页",
+      "isDefault": false
+    },
+    {
+      "id": "新建台账问题",
+      "isDefault": false
+    },
+    {
+      "id": "台账问题修改",
+      "isDefault": false
+    },
+    {
+      "id": "评价OKR ",
+      "isDefault": false
+    },
+    {
+      "id": "个人OKR详情 ",
+      "isDefault": false
+    },
+    {
+      "id": "巡检问题处理-已确认",
+      "isDefault": false
+    },
+    {
+      "id": "台账问题详情",
+      "isDefault": false
+    },
+    {
+      "id": "巡检问题详情",
+      "isDefault": false
+    },
+    {
+      "id": "禅道问题",
+      "isDefault": false
+    },
+    {
+      "id": "质量周报",
+      "isDefault": false
+    },
+    {
+      "id": "巡检统计分析",
+      "isDefault": false
+    },
+    {
+      "id": "问题台账-总台账",
+      "isDefault": false
+    },
+    {
+      "id": "问题台账",
+      "isDefault": false
+    },
+    {
+      "id": "问题台账 -待解决",
+      "isDefault": false
+    },
+    {
+      "id": "问题台账-延期解决",
+      "isDefault": false
+    },
+    {
+      "id": "台账问题详情页",
+      "isDefault": false
+    },
+    {
+      "id": "Page2",
+      "isDefault": false
+    },
+    {
+      "id": "巡检问题处理",
+      "isDefault": false
+    },
+    {
+      "id": "问题台账-总台账（全）",
+      "isDefault": false
+    },
+    {
+      "id": "线上问题总台账（事业群）",
+      "isDefault": false
+    },
+    {
+      "id": "项目统计分析",
+      "isDefault": false
+    },
+    {
+      "id": "台账问题处理使用手册",
+      "isDefault": false
+    },
+    {
+      "id": "规范抽查",
+      "isDefault": false
+    },
+    {
+      "id": "项目监控通知",
+      "isDefault": false
+    },
+    {
+      "id": "团队主页",
+      "isDefault": true
+    },
+    {
+      "id": "线上bug专区质量分析",
+      "isDefault": false
+    },
+    {
+      "id": "巡检使用手册",
+      "isDefault": false
+    }
+  ],
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "unpublishedApplicationDetail": {
+    "themeSetting": {
+      "appMaxWidth": "LARGE",
+      "density": 1.0,
+      "sizing": 1.0
+    }
+  }
+}

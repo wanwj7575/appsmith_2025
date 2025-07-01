@@ -1,0 +1,10 @@
+UPDATE problem_order SET
+    done_time = {{moment().format("YYYY-MM-DD HH:mm:ss")}},
+    solution = {{Select1.selectedOptionValue}},
+    problem_origin = {{Select2.selectedOptionValue}},
+    problem_origin_content = {{Input1.text}},
+		 status = {{Select1.selectedOptionValue == '延期处理'? 0:1}}
+  WHERE  problem_id = {{Table1.triggeredRow.problem_id}};  
+insert   into   problem_record (problem_id,follow_record,create_by,create_time, type) 
+value({{Table1.triggeredRow.problem_id}},"关闭",{{appsmith.user.name}},{{moment().format("YYYY-MM-DD HH:mm:ss")}},6
+)

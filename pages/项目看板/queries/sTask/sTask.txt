@@ -1,0 +1,4 @@
+SELECT  zt.id ,zt.name ,zt.status ,zt.estStarted , zt.deadline  ,zt.estimate ,zp.name as project_name, zu.realname  FROM  zt_task zt 
+left join  zt_project zp on zt.project = zp.id  
+left join  zt_user zu on zt.openedBy = zu.account 
+WHERE  zt.type = 'test_task'   and  zt.project  in ({{appsmith.store.select_project}})

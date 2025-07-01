@@ -1,0 +1,7 @@
+UPDATE t_monitor
+  SET monitor_channel = {{ RadioGroup1Copy.selectedOptionValue}},
+	 project_name = {{ Input1Copy.inputText}}, 
+  webhook = {{Input2Copy.inputText }}, 
+	 status = {{Checkbox1Copy.isChecked ? 1:0}},
+	 distribute = {{Input3Copy.inputText}}
+  WHERE id = {{Table1.triggeredRow.id}};

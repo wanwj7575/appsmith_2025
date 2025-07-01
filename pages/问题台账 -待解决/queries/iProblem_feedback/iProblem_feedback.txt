@@ -1,0 +1,5 @@
+insert   into   problem_record (problem_id,follow_record,create_by,create_time,type) 
+value({{Table1.triggeredRow.problem_id}},{{Input1Copy.inputText}},{{appsmith.user.name}},{{moment().format("YYYY-MM-DD HH:mm:ss")}},4);
+UPDATE problem_order
+  SET status = 7
+  WHERE problem_id = {{ Table1.triggeredRow.problem_id }};

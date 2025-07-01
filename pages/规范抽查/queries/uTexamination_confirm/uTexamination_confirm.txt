@@ -1,0 +1,3 @@
+UPDATE t_examination
+  SET confirm = 1
+  WHERE examination_id = {{Table1.triggeredRow.examination_id}};

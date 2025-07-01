@@ -1,0 +1,52 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": false,
+  "borderRadius": "0.375rem",
+  "bottomRow": 13,
+  "defaultCheckedState": false,
+  "displayName": "Checkbox",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onCheckChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.aaab032b43383e4fa53ffc0ef40c90ef.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "qepnb39ipq",
+  "label": "只看与我相关的",
+  "labelPosition": "Left",
+  "labelStyle": "",
+  "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
+  "leftColumn": 15,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onCheckChange": "{{sProblem_order_immediately.run()}}",
+  "parentColumnSpace": 14.0625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 20,
+  "searchTags": [
+    "boolean"
+  ],
+  "topRow": 9,
+  "type": "CHECKBOX_WIDGET",
+  "version": 1,
+  "widgetId": "9taem56q7a",
+  "widgetName": "Checkbox1"
+}

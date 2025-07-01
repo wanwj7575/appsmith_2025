@@ -1,0 +1,4 @@
+SELECT * FROM inspection_report  where task_main_id= {{appsmith.store.inspection_task_id}} 
+AND (create_by = {{Checkbox1.isChecked == 1? appsmith.user.name:0}} OR {{Checkbox1.isChecked == 1?0:1}})
+AND status = 1
+order by create_time desc;

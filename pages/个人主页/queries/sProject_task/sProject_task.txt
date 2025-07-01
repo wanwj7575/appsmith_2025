@@ -1,0 +1,1 @@
+select  *  from t_project tp  left join t_project_task tpt on tp.id = tpt.project_id  where tpt.create_by = {{appsmith.user.name}}  and tp.status != 5 and tp.existence = 1 and tpt.existence =1

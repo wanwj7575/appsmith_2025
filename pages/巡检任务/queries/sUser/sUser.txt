@@ -1,0 +1,1 @@
+select  tcu .name ,td.name as dept_name from t_company_user tcu left join t_dept td on tcu .dingTalkDepartmentId = td.id where td.`path`  like  '%606318203%'

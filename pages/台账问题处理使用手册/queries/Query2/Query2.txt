@@ -1,0 +1,6 @@
+INSERT INTO t_images
+  (images)
+VALUES
+  (
+    {{FilePicker1.files[0].data}}
+  );

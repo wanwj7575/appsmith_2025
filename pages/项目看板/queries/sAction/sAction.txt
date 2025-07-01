@@ -1,0 +1,5 @@
+SELECT za.id, zp.name , zu.realname ,za.`date` ,za.comment, za.extra,zt.estimate ,zt.name as task_name, za.`action`  FROM  zt_action za  
+left join zt_project zp  on za.project = zp.id 
+left join zt_user zu on za.actor = zu.account 
+left join zt_task zt on za.objectID = zt.id 
+WHERE  zu.dept = 95767163 and  za.objectType = 'task' and  TO_DAYS(za.`date`) = TO_DAYS({{DatePicker2.formattedDate}}) and za.comment  != ''

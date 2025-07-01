@@ -1,0 +1,10 @@
+INSERT INTO t_monitor
+  (monitor_channel, project_name, webhook, status,distribute )
+VALUES
+  (
+    {{ RadioGroup1.selectedOptionValue}},
+    {{ Input1.inputText}},
+    {{ Input2.inputText }},
+		 {{Checkbox1.isChecked ? 1:0}},
+		{{Input3.inputText}}
+  );

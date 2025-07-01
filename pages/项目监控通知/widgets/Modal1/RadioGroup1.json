@@ -1,0 +1,62 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignment": "left",
+  "animateLoading": true,
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "defaultOptionValue": "Y",
+  "displayName": "Radio Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.ba2b2ee006e51a5c681d7964d7777481.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isInline": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "xmx8ljaw3t",
+  "label": "监控渠道：",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "10",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 24,
+  "mobileLeftColumn": 9,
+  "mobileRightColumn": 29,
+  "mobileTopRow": 18,
+  "options": [
+    {
+      "label": "实时",
+      "value": "realtime"
+    },
+    {
+      "label": "项目",
+      "value": "project"
+    }
+  ],
+  "originalBottomRow": 11,
+  "originalTopRow": 4,
+  "parentColumnSpace": 11.5,
+  "parentId": "f5kv19ezvc",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 31,
+  "searchTags": [
+    "choice"
+  ],
+  "topRow": 4,
+  "type": "RADIO_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "3xix5vqt7o",
+  "widgetName": "RadioGroup1"
+}

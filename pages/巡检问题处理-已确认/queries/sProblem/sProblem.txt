@@ -1,0 +1,2 @@
+select  ir.inspection_record_id ,ir.problem_name ,ic.business,ir.business as new_business  ,ir.remarks ,ir.problem_type ,ir.create_time ,ir.create_by,ir.confirm,ir.error_description from  inspection_record ir 
+left join inspection_case ic ON  ir.inspectioncase_id = ic.inspectioncase_id   where ir.inspec_status = 0  and ir.confirm = {{Select1.selectedOptionValue}} order by create_time desc

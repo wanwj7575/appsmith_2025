@@ -1,0 +1,7 @@
+SELECT COUNT(1) as crror_number
+FROM inspection_case t1 LEFT JOIN 
+(SELECT * FROM (SELECT * FROM inspection_record ORDER BY inspection_record_id DESC LIMIT 1000) t GROUP BY t.inspectioncase_id ) t2
+ON t1.inspectioncase_id= t2.inspectioncase_id
+WHERE JSON_SEARCH( ( SELECT inspection_business FROM `inspection_report` WHERE   inspectionsubtask_id = {{List1.selectedItem.inspectionsubtask_id}}), 'one', t1.business ) IS NOT NULL
+AND (t2.inspection_report_id = {{List1.selectedItem.inspectionsubtask_id}})
+AND  (t2.inspec_status = 0)

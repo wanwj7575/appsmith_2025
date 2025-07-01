@@ -1,0 +1,8 @@
+UPDATE t_project_task SET
+    task_name = {{Select7Copy.selectedOptionValue}},
+    task_starttime = {{DatePicker2Copy.formattedDate}},
+		 task_endtime={{DatePicker2CopyCopy.formattedDate}},
+    acceptor = {{Select8Copy.selectedOptionValue}},
+    remarks = {{Input5Copy.text}},
+    existence = {{Switch2.isSwitchedOn? 0:1}}
+  WHERE id = {{List1.selectedItem.id}}; -- Specify a valid condition here. Removing the condition may update every row in the table!

@@ -1,0 +1,3 @@
+UPDATE t_objectives
+  SET status = {{Table1.updatedRow.status == '进行中'? 0:1}}
+  WHERE id = {{ Table1.triggeredRow.id }};

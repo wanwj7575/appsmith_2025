@@ -1,0 +1,15 @@
+INSERT INTO problem_order (name, channel,business,business_group, category,priority,receiver,content ,create_by, create_time, status, fixed_channel,deadline_time, accepted_by)
+  VALUES ({{Input1.text}}, 
+					{{Select6.selectedOptionValue}}, 
+					{{Select2.selectedOptionValue}}, 
+					{{Input3.text}},
+					{{Select3.selectedOptionValue}},
+					{{Select5.selectedOptionValue}},
+					{{Input5.inputText}},
+					{{Input4.inputText}},
+					{{appsmith.user.name}},
+					{{moment().format("YYYY-MM-DD HH:mm:ss")}},
+				 0,
+				 '台账问题',
+				 {{DatePicker1.formattedDate}},
+				 {{Input6.inputText}});

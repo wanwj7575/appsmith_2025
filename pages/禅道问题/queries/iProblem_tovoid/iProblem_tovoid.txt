@@ -1,0 +1,6 @@
+INSERT INTO problem_order (name, status, done_time , tovoid_reason, fixed_channel)
+  VALUES ({{Text5.text}}, 
+					2, 
+					{{moment().format("YYYY-MM-DD HH:mm:ss")}},
+					{{Input10.text}},
+				 '禅道线上bug');

@@ -1,0 +1,4 @@
+SELECT tp.zentao_project_id FROM t_project tp
+left join (select * from  (select  *  from  t_project_reord tpr  order by  create_time desc limit 1000)as b group by  project_id ) tpr  on  tp.id = tpr.project_id 
+WHERE status= 2 
+AND (existence!=0)

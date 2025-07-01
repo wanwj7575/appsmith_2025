@@ -1,0 +1,1 @@
+SELECT * FROM inspection_report WHERE (create_by = {{appsmith.user.name}})  ORDER BY create_time DESC LIMIT 1

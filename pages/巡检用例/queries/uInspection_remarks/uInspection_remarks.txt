@@ -1,0 +1,3 @@
+UPDATE inspection_case SET
+    remarks ={{Table1.selectedRow.remarks}}
+  WHERE inspectioncase_id = {{Table1.triggeredRow.inspectioncase_id}}; 

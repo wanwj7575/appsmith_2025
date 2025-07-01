@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "64070962da9f8f0d8c8bebd6_64117c2362c3987d33300b80",
+  "id": "巡检问题处理-已确认_JSObject1",
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "巡检问题处理-已确认",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

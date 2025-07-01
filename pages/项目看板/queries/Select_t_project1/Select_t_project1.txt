@@ -1,0 +1,11 @@
+SELECT tp.*, tpr.remarks reocrd_remarks , if (tp.project_endtime >= curdate(), "1", "2") as time_st FROM t_project tp
+left join (select * from  (select  *  from  t_project_reord tpr  order by  create_time desc limit 1000)as b group by  project_id ) tpr  on  tp.id = tpr.project_id 
+WHERE (project_name  LIKE  '{{'%'+Input1.text+'%'}}' OR '{{Input1.text?0:1}}')
+AND (test_director = '{{Select4.selectedOptionValue}}' OR '{{Select4.selectedOptionValue? 0:1}}')
+AND (status = {{Select5.selectedOptionValue}} or {{Select5.selectedOptionValue? 0:1}} )
+AND (test_director = '{{Checkbox1.isChecked == 1? appsmith.user.name:0}}' OR '{{Checkbox1.isChecked == 1?0:1}}')
+AND (existence!=0)
+LIMIT
+  {{Table1.pageSize}}
+OFFSET
+  {{Table1.pageOffset}}

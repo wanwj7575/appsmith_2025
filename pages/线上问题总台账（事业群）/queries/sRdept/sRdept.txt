@@ -1,0 +1,1 @@
+select sdi.item_text ,sdi .item_value  from  sys_dict_item sdi left join sys_dict sd on sdi.dict_id =sd.id  where sd.dict_name = '台账组织架构'

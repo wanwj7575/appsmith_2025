@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "636b1198aaab6224b941b41b_636b11b1aaab6224b941b5c1",
+  "id": "提交日志_JSObject1",
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "提交日志",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

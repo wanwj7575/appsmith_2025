@@ -1,0 +1,1 @@
+select  '台账待关闭问题' as name, count(1) as number , null as project, '日志' as daily  from  problem_order po where  create_by ={{appsmith.user.name}} and (status = 4 or status = 5)

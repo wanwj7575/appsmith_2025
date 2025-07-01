@@ -1,0 +1,2 @@
+select *  from  problem_record pr where problem_id = {{appsmith.store.problem_id}} 
+

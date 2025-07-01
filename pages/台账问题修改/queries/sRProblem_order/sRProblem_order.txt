@@ -1,0 +1,1 @@
+select   po.*, co.channel_name  from  problem_order po left join  channel_order co on po.channel_id = co.id  WHERE problem_id = {{appsmith.store.problem_id}};

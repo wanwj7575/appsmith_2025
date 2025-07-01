@@ -1,0 +1,2 @@
+DELETE FROM t_objectives_personal
+  WHERE id = {{Table2.triggeredRow.id}}; -- Specify a valid condition here. Removing the condition may delete everything in the table!

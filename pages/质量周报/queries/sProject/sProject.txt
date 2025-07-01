@@ -1,0 +1,3 @@
+select group_concat(concat("'", tp.project_name, "'")) as name , tp.project_name  from  t_project tp 
+left join t_project_reord tpr on tp.id = tpr.project_id 
+where YEARWEEK(date_format(tpr.create_time ,'%Y-%m-%d')) = YEARWEEK(now())-1  and tpr.status_type = '已完成'

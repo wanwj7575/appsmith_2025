@@ -1,0 +1,3 @@
+INSERT INTO t_inspection_images (problem_id, images)
+  VALUES (  (select  ro.problem_id   from  problem_order ro   where ro.name = {{appsmith.store.problem_name}}   order by   ro.create_time  desc  limit 1)
+ , {{FilePicker1.files[0].data}});

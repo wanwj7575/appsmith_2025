@@ -1,0 +1,1 @@
+SELECT * FROM sys_product WHERE product_name = {{Table1.triggeredRow.business}} or product_name = {{Table1.triggeredRow.new_business}};

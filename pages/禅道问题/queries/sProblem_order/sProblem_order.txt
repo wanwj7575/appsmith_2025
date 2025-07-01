@@ -1,0 +1,7 @@
+SELECT po.* ,co.channel_name  ,tii.images   FROM problem_order po  
+left join channel_order co on po.channel_id = co.id 
+left join  (select *  from  t_inspection_images group by  problem_id) as   tii on po.problem_id = tii.problem_id 
+WHERE
+(status = {{Select10.selectedOptionValue? Select10.selectedOptionValue:0}} or {{Select10.selectedOptionValue? 0:1}})
+AND ((receiver = {{Checkbox1.isChecked == 1? appsmith.user.name:0}} OR {{Checkbox1.isChecked == 1?0:1}}) or (create_by = {{Checkbox1.isChecked == 1? appsmith.user.name:0}} OR {{Checkbox1.isChecked == 1?0:1}}))
+and (co.id= {{Select9.selectedOptionValue? Select9.selectedOptionValue:0}} or {{Select9.selectedOptionValue? 0:1}});

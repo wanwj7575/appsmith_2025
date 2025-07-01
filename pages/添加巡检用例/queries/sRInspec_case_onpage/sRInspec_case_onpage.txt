@@ -1,0 +1,1 @@
+select * from inspection_case  WHERE   inspection_case.business = {{Select1.selectedOptionValue}} ORDER BY  inspection_case.create_time  DESC limit {{ Table1.pageSize }} offset {{ (Table1.pageNo - 1) * Table1.pageSize }} ;

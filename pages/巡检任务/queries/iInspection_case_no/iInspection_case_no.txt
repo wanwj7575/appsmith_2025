@@ -1,0 +1,4 @@
+INSERT INTO inspection_record (create_time, inspec_status, remarks, create_by, problem_name, problem_type, confirm, business)
+  VALUES ({{moment().format("YYYY-MM-DD HH:mm:ss ")}},0, {{Input4.inputText}},{{TreeSelect1.selectedOptionValue}},{{Input31.text}}, {{Select3.selectedOptionValue}},0,{{Select4.selectedOptionValue}})
+
+   

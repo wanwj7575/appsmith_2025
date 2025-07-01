@@ -1,0 +1,1 @@
+select   tp.project_type , COUNT(*) as number   from  t_project tp WHERE YEAR( tp.project_starttime) = YEAR( NOW( ) ) and existence!=0  group by  tp.project_type   order by  tp.project_type desc 

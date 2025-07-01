@@ -1,0 +1,8 @@
+SELECT po.*     FROM problem_order po  
+WHERE 
+(create_by = {{Checkbox1.isChecked == 1? appsmith.user.name:0}} OR {{Checkbox1.isChecked == 1?0:1}})
+and
+(po.deadline_time <  {{moment().format("YYYY-MM-DD HH:mm:ss")}})
+and po.status != 1 and po.status !=2  order by po.create_time desc ;
+
+

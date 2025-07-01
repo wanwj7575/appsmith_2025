@@ -1,0 +1,14 @@
+UPDATE problem_order SET
+    name = {{Input1.text}},
+    category = {{Select3.selectedOptionValue}},
+    business_group = {{Input3.text}},
+    business = {{Select2.selectedOptionValue}},
+    receiver = {{Input5.inputText}},
+    priority = {{Select5.selectedOptionValue}},
+    content = {{Input6.inputText}},
+    solution = {{Select6.selectedOptionValue}},
+    problem_origin = {{Select7.selectedOptionValue}},
+    problem_origin_content ={{Input4.text}},
+		 accepted_by = {{Input7.inputText}},
+		 deadline_time = {{DatePicker1.formattedDate}}
+  WHERE problem_id = {{appsmith.store.problem_id}}; -- Specify a valid condition here. Removing the condition may update every row in the table!

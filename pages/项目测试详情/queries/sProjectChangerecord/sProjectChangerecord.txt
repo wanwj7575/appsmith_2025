@@ -1,0 +1,2 @@
+SELECT * FROM  project_changerecord WHERE  project_id = {{appsmith.store.project_id}}
+ORDER BY create_time DESC

@@ -1,0 +1,33 @@
+{
+  "animateLoading": true,
+  "bottomRow": 94,
+  "displayName": "Document Viewer",
+  "docUrl": "https://www.learningcontainer.com/wp-content/uploads/2019/09/sample-pdf-file.pdf",
+  "dynamicBindingPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.09fcd36be84f09ed7312b2ed6a307b27.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "6xnw6u3t5g",
+  "leftColumn": 0,
+  "mobileBottomRow": 57,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 42,
+  "mobileTopRow": 17,
+  "parentColumnSpace": 20.0625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "pdf"
+  ],
+  "topRow": 0,
+  "type": "DOCUMENT_VIEWER_WIDGET",
+  "version": 1,
+  "widgetId": "d3imap5gzn",
+  "widgetName": "DocumentViewer1"
+}

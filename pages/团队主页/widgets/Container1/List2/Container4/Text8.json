@@ -1,0 +1,92 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "displayName": "Text",
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "9p0zm3vsba",
+  "leftColumn": 24,
+  "logBlackList": {
+    "animateLoading": true,
+    "borderRadius": true,
+    "bottomRow": true,
+    "displayName": true,
+    "dynamicBindingPathList": true,
+    "fontFamily": true,
+    "fontSize": true,
+    "fontStyle": true,
+    "hideCard": true,
+    "iconSVG": true,
+    "isCanvas": true,
+    "isDeprecated": true,
+    "isLoading": true,
+    "isVisible": true,
+    "key": true,
+    "leftColumn": true,
+    "minHeight": true,
+    "overflow": true,
+    "parentColumnSpace": true,
+    "parentId": true,
+    "parentRowSpace": true,
+    "renderMode": true,
+    "replacement": true,
+    "rightColumn": true,
+    "searchTags": true,
+    "shouldTruncate": true,
+    "text": true,
+    "textAlign": true,
+    "textColor": true,
+    "topRow": true,
+    "truncateButtonColor": true,
+    "type": true,
+    "version": true,
+    "widgetId": true,
+    "widgetName": true
+  },
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "overflow": "NONE",
+  "parentColumnSpace": 13.3564453125,
+  "parentId": "2a2gqk8wkm",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 40,
+  "searchTags": [
+    "typography",
+    "paragraph",
+    "label"
+  ],
+  "shouldTruncate": false,
+  "text": "{{currentItem.project_endtime + '/'+ currentItem.test_director}}",
+  "textAlign": "CENTER",
+  "textColor": "#231F20",
+  "topRow": 0,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "gr94kg2y2y",
+  "widgetName": "Text8"
+}

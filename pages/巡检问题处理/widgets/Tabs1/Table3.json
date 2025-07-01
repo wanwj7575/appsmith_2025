@@ -1,0 +1,639 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 70,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "canFreezeColumn": false,
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "editActions": {
+      "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "inspection_record_id",
+    "problem_name",
+    "business",
+    "remarks",
+    "problem_type",
+    "create_time",
+    "create_by",
+    "customColumn1",
+    "confirm",
+    "error_description",
+    "new_business",
+    "recipient",
+    "repeat_id"
+  ],
+  "columnUpdatedAt": 1699241951788,
+  "columnWidthMap": {
+    "create_time": 192,
+    "error_description": 245,
+    "inspection_record_id": 63,
+    "problem_name": 376,
+    "remarks": 362,
+    "status": 75,
+    "step": 62,
+    "task": 245
+  },
+  "defaultPageSize": 0,
+  "defaultSelectedRowIndex": 0,
+  "defaultSelectedRowIndices": [
+    0
+  ],
+  "delimiter": ",",
+  "displayName": "Table",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.create_time.computedValue"
+    },
+    {
+      "key": "primaryColumns.remarks.computedValue"
+    },
+    {
+      "key": "primaryColumns.create_by.computedValue"
+    },
+    {
+      "key": "primaryColumns.problem_name.computedValue"
+    },
+    {
+      "key": "primaryColumns.problem_type.computedValue"
+    },
+    {
+      "key": "primaryColumns.business.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuButtonLabel"
+    },
+    {
+      "key": "primaryColumns.confirm.computedValue"
+    },
+    {
+      "key": "primaryColumns.error_description.computedValue"
+    },
+    {
+      "key": "primaryColumns.inspection_record_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.problem_type.selectOptions"
+    },
+    {
+      "key": "primaryColumns.new_business.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItemsqntth3qxu.isVisible"
+    },
+    {
+      "key": "primaryColumns.business.selectOptions"
+    },
+    {
+      "key": "primaryColumns.recipient.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.buttonColor"
+    },
+    {
+      "key": "primaryColumns.repeat_id.computedValue"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onRowSelected"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItemsqntth3qxu.isVisible"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItemsqntth3qxu.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItemibj37scevp.onClick"
+    },
+    {
+      "key": "primaryColumns.problem_type.onOptionChange"
+    },
+    {
+      "key": "primaryColumns.business.onOptionChange"
+    },
+    {
+      "key": "tableData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItemibj37scevp.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItemuuj7l75otq.onClick"
+    },
+    {
+      "key": "primaryColumns.problem_type.onOptionChange"
+    },
+    {
+      "key": "onRowSelected"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItemsqntth3qxu.onClick"
+    },
+    {
+      "key": "primaryColumns.business.onOptionChange"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    }
+  ],
+  "enableClientSideSearch": true,
+  "enableServerSideFiltering": false,
+  "hideCard": false,
+  "horizontalAlignment": "LEFT",
+  "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+  "inlineEditingSaveOption": "ROW_LEVEL",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": false,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "key": "mpqligg7nr",
+  "label": "Data",
+  "leftColumn": 0,
+  "onRowSelected": "{{storeValue('inspection_problem_id',Table3.selectedRow.inspection_record_id) | navigateTo('巡检问题详情', {},'NEW_WINDOW')}}",
+  "parentColumnSpace": 20.0625,
+  "parentId": "p6ixz9xao8",
+  "parentRowSpace": 10,
+  "primaryColumns": {
+    "business": {
+      "alias": "business",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "select",
+      "computedValue": "{{(() => { const tableData = Table3.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"business\"]? currentRow[\"business\"]: currentRow.new_business)) :  currentRow[\"business\"]? currentRow[\"business\"]: currentRow.new_business })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "business",
+      "index": 5,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "专区/平台",
+      "onOptionChange": "{{uInspection_type.run(() => sProblem.run(), () => {})}}",
+      "originalId": "business",
+      "selectOptions": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( sProduct.data.map((s)=>{\n\treturn{\n\t\tlabel:s.product_name,\n\t\tvalue:s.product_name\n\t}\n})))}}",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "confirm": {
+      "alias": "confirm",
+      "allowCellWrapping": false,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = Table3.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"confirm\"])) :  currentRow[\"confirm\"] })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "confirm",
+      "index": 6,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "confirm",
+      "originalId": "confirm",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "create_by": {
+      "alias": "create_by",
+      "allowCellWrapping": false,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table3.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"create_by\"])) :  currentRow[\"create_by\"] })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "create_by",
+      "index": 5,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "创建人",
+      "originalId": "create_by",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "create_time": {
+      "alias": "create_time",
+      "allowCellWrapping": false,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table3.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"create_time\"])) :  currentRow[\"create_time\"] })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "create_time",
+      "index": 1,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "创建时间",
+      "originalId": "create_time",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn1": {
+      "alias": "操作",
+      "allowCellWrapping": false,
+      "buttonColor": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+      "buttonLabel": "重新激活",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "buttonVariant": "TERTIARY",
+      "cellBackground": "",
+      "columnType": "button",
+      "computedValue": "",
+      "customAlias": "",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "customColumn1",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "操作",
+      "labelColor": "#FFFFFF",
+      "menuButtonLabel": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow.confirm == 0? \"待确认\":currentRow.confirm == 1? \"已确认\":\"不是bug\"))}}",
+      "menuItems": {
+        "menuItemibj37scevp": {
+          "id": "menuItemibj37scevp",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "确认缺陷",
+          "onClick": "{{uInspection_record_yes.run(() => sProblem.run(), () => {})}}",
+          "textColor": "#22c55e",
+          "widgetId": "22oasz2l84"
+        },
+        "menuItemsqntth3qxu": {
+          "backgroundColor": "",
+          "id": "menuItemsqntth3qxu",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (currentRow.problem_type == '运营配置' | currentRow.problem_type == '优化建议' ) == 0? false:true))}}",
+          "label": "确认并同步台账",
+          "onClick": "{{showModal('Modal2') | sRProduct.run()}}",
+          "textColor": "#22c55e",
+          "widgetId": "pab1ux40pb"
+        },
+        "menuItemuuj7l75otq": {
+          "id": "menuItemuuj7l75otq",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "不是缺陷",
+          "onClick": "{{showModal('Modal1')}}",
+          "textColor": "#dc2626",
+          "widgetId": "m3rr8i449a"
+        }
+      },
+      "menuItemsSource": "STATIC",
+      "menuVariant": "SECONDARY",
+      "onClick": "{{uInspection_activation_t3.run().then(() => {\n  sProblem_no_images.run();\n});}}",
+      "originalId": "customColumn1",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "error_description": {
+      "alias": "error_description",
+      "allowCellWrapping": false,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table3.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"error_description\"])) :  currentRow[\"error_description\"] })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "error_description",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "备注",
+      "originalId": "error_description",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "inspection_record_id": {
+      "alias": "inspection_record_id",
+      "allowCellWrapping": false,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = Table3.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"inspection_record_id\"])) :  currentRow[\"inspection_record_id\"] })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "inspection_record_id",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "id",
+      "originalId": "inspection_record_id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "new_business": {
+      "alias": "new_business",
+      "allowCellWrapping": false,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table3.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"new_business\"])) :  currentRow[\"new_business\"] })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "new_business",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "new_business",
+      "originalId": "new_business",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "problem_name": {
+      "alias": "problem_name",
+      "allowCellWrapping": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table3.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"problem_name\"])) :  currentRow[\"problem_name\"] })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "problem_name",
+      "index": 6,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "问题名称",
+      "originalId": "problem_name",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "problem_type": {
+      "alias": "problem_type",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "select",
+      "computedValue": "{{(() => { const tableData = Table3.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"problem_type\"])) :  currentRow[\"problem_type\"] })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "problem_type",
+      "index": 9,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "问题分类",
+      "onOptionChange": "{{uInspection_type.run(() => sProblem.run(), () => {})}}",
+      "originalId": "problem_type",
+      "selectOptions": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( sDict_origin.data.map((s)=> {\n\treturn {\n\t\tlabel: s.item_text, \n\t\tvalue: s.item_text\n}\n})))}}",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "recipient": {
+      "alias": "recipient",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table3.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"recipient\"])) :  currentRow[\"recipient\"] })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "recipient",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "接收人",
+      "originalId": "recipient",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "remarks": {
+      "alias": "remarks",
+      "allowCellWrapping": false,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table3.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"remarks\"])) :  currentRow[\"remarks\"] })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "remarks",
+      "index": 3,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "描述",
+      "originalId": "remarks",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "repeat_id": {
+      "alias": "repeat_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table3.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"repeat_id\"])) :  currentRow[\"repeat_id\"] })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "repeat_id",
+      "index": 11,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "重复问题id",
+      "originalId": "repeat_id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchKey": "",
+  "showInlineEditingOptionDropdown": true,
+  "tableData": "{{sProblem_no_images.data}}",
+  "textSize": "0.875rem",
+  "topRow": 0,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET_V2",
+  "version": 1,
+  "verticalAlignment": "CENTER",
+  "widgetId": "2x2nah56ul",
+  "widgetName": "Table3"
+}

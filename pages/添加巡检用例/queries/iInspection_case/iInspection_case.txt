@@ -1,0 +1,2 @@
+INSERT INTO inspection_case (inspection_term, business, inspection_cycle, inspection_mode, inspection_conent, create_by, create_time, status)
+  VALUES ({{Input1.text}}, {{Select1.selectedOptionValue}}, {{Select2.selectedOptionValue}}, {{Select3.selectedOptionValue}},{{Input2.text}}, {{appsmith.user.name}},{{moment().format("YYYY-MM-DD HH:mm:ss ")}},  1);

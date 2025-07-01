@@ -1,0 +1,3 @@
+UPDATE t_duty SET
+    responsible_people = {{Table1.triggeredRow.responsible_people}}
+  WHERE id = {{Table1.triggeredRow.id}}; -- Specify a valid condition here. Removing the condition may update every row in the table!

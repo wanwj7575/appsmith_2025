@@ -1,0 +1,1 @@
+SELECT * FROM  inspection_case WHERE  status = {{Select1.selectedOptionValue}} ORDER BY  inspection_case.create_time  DESC;

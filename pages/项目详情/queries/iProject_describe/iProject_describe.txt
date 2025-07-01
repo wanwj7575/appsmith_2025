@@ -1,0 +1,1 @@
+update  sys_product  set  sys_product.`describe`= {{RichTextEditor1.text}} where sys_product.product_name in (select tp.project_product  from t_project tp where tp.id = {{appsmith.store.project_id}})

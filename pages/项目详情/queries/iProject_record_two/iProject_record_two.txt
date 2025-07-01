@@ -1,0 +1,6 @@
+INSERT INTO t_project_reord (project_id, remarks, create_by,create_time, edit_type)
+  VALUES ({{appsmith.store.project_id}}, 
+					{{Input8.inputText}}, 
+				 {{appsmith.user.name}},
+				 {{moment().format("YYYY-MM-DD HH:mm:ss ")}},
+				 2)

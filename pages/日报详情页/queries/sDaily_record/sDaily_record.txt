@@ -1,0 +1,1 @@
+SELECT * FROM daily_record WHERE daily_id= {{List1.selectedItem.id}} order by type asc

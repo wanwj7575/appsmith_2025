@@ -1,0 +1,90 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 14,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "SECONDARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ve9h2crtk6",
+  "leftColumn": 37,
+  "logBlackList": {
+    "animateLoading": true,
+    "borderRadius": true,
+    "bottomRow": true,
+    "boxShadow": true,
+    "buttonColor": true,
+    "buttonVariant": true,
+    "disabledWhenInvalid": true,
+    "displayName": true,
+    "dynamicBindingPathList": true,
+    "hideCard": true,
+    "iconSVG": true,
+    "isCanvas": true,
+    "isDefaultClickDisabled": true,
+    "isDeprecated": true,
+    "isDisabled": true,
+    "isLoading": true,
+    "isVisible": true,
+    "key": true,
+    "leftColumn": true,
+    "minHeight": true,
+    "parentColumnSpace": true,
+    "parentId": true,
+    "parentRowSpace": true,
+    "placement": true,
+    "recaptchaType": true,
+    "renderMode": true,
+    "replacement": true,
+    "resetFormOnClick": true,
+    "rightColumn": true,
+    "searchTags": true,
+    "text": true,
+    "topRow": true,
+    "type": true,
+    "version": true,
+    "widgetId": true,
+    "widgetName": true
+  },
+  "onClick": "{{showModal('Modal2')}}",
+  "parentColumnSpace": 13.625,
+  "parentId": "flje5wm36z",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "rightColumn": 47,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "text": "更改状态",
+  "topRow": 10,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "wanqalrnfc",
+  "widgetName": "Button3Copy"
+}

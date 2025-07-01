@@ -1,0 +1,2 @@
+select  *  from  problem_order where fixed_channel = '项目延期处理'
+--select  *  from  problem_order where fixed_channel = '禅道线上bug'

@@ -1,0 +1,5 @@
+SELECT * FROM problem_order po  
+WHERE
+ po.status !=1 and po.status !=2
+ and(create_by = {{Checkbox1Copy.isChecked == 1? appsmith.user.name:0}} OR {{Checkbox1Copy.isChecked == 1?0:1}})
+and (business_group = {{Select1.selectedOptionValue? Select1.selectedOptionValue:0}} or {{Select1.selectedOptionValue? 0:1}})

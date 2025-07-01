@@ -1,0 +1,67 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 24,
+  "boxShadow": "none",
+  "closeOnSelection": true,
+  "dateFormat": "YYYY-MM-DD",
+  "datePickerType": "DATE_PICKER",
+  "defaultDate": "",
+  "displayName": "DatePicker",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "dateFormat"
+    },
+    {
+      "key": "minDate"
+    },
+    {
+      "key": "defaultDate"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "firstDayOfWeek": "0",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "azwvcsv9l1",
+  "label": "预计结束时间：",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "6",
+  "leftColumn": 30,
+  "maxDate": "2121-12-31T18:29:00.000Z",
+  "maxDynamicHeight": 9000,
+  "minDate": "",
+  "minDynamicHeight": 4,
+  "parentColumnSpace": 13.90625,
+  "parentId": "owll7fl0l0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 59,
+  "searchTags": [
+    "calendar"
+  ],
+  "shortcuts": false,
+  "timePrecision": "minute",
+  "topRow": 20,
+  "type": "DATE_PICKER_WIDGET2",
+  "version": 2,
+  "widgetId": "dcwd5xwvo7",
+  "widgetName": "DatePicker1Copy"
+}

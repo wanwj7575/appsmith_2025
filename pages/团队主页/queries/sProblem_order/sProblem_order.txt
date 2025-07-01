@@ -1,0 +1,1 @@
+select  COALESCE(PO.status  ,'all')  as status ,count(1) as number  from problem_order po   where po .status !=2 and PO.status != 5  and  YEAR( PO.create_time) = YEAR( NOW( ) ) group by PO.status  WITH rollup

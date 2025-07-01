@@ -1,0 +1,2 @@
+INSERT INTO problem_record (problem_id, follow_record, create_by, create_time)
+  VALUES ( {{Table1.triggeredRow.problem_id}}, {{Input12.inputText}}, {{appsmith.user.name}}, {{moment().format('YYYY-MM-DD HH:mm:ss')}});

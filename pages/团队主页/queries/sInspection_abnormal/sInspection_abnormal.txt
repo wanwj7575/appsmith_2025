@@ -1,0 +1,1 @@
+ select    count(1) as coun from  inspection_record ir where confirm = 0 and YEAR( ir.create_time) = YEAR( NOW()) and  ir.inspec_status = 0

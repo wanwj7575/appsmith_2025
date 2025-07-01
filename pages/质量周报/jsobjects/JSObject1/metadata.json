@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "63a8f753c9afa60b823cc900_63fc6fc0cd84705cb3c19980",
+  "id": "质量周报_JSObject1",
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "质量周报",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

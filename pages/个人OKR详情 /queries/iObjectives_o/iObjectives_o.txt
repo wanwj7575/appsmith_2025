@@ -1,0 +1,2 @@
+INSERT INTO t_objectives_personal (objectives_id, objectives_type, objectives_task, objectives_results, objectives_quarter, estimate_time,create_by)
+  VALUES ({{Table2.newRow.objectives_naem}},2, {{Table2.newRow.objectives_task}}, {{Table2.newRow.objectives_results}}, {{Select1.selectedOptionValue}}, {{Table2.newRow.estimate_time}},{{appsmith.user.name}});

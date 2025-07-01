@@ -1,0 +1,11 @@
+INSERT INTO t_project_reord (project_id, status_type,create_by,create_time, edit_type)
+  VALUES ({{appsmith.store.project_id}}, 
+				 '已完成',
+				 {{appsmith.user.name}},
+				 {{moment().format("YYYY-MM-DD HH:mm:ss ")}},
+				 1);
+UPDATE t_project SET
+			status = 5,
+			quality_report = {{Input11.inputText}},
+			effective_bug={{sRproject_bugnumber.data[0].number}}
+  WHERE id = {{appsmith.store.project_id}};

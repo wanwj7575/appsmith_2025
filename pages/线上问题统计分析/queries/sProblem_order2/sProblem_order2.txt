@@ -1,0 +1,3 @@
+ select  po.category , count(1) as number  from  problem_order po where fixed_channel = '台账问题' and  po.status !=2 
+ and (po.create_time >= {{DatePicker1.formattedDate? DatePicker1.formattedDate:0}} or {{DatePicker1.formattedDate? 0:1}} )
+and (po.create_time < {{DatePicker2.formattedDate? DatePicker2.formattedDate:0}} or {{DatePicker2.formattedDate? 0:1}})group by po.category  order by  number  desc 

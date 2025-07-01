@@ -1,0 +1,2 @@
+INSERT INTO daily (create_by, create_time,status)
+  VALUES ({{appsmith.user.name}}, {{moment().format("YYYY-MM-DD HH:mm:ss")}}, 0);

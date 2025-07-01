@@ -1,0 +1,3 @@
+select  tp.project_name ,tpt .task_name, tpt.id, tpt.remarks , concat(tpt.task_starttime ,'~', tpt.task_endtime) as Scheduling from  t_project_task tpt 
+left join t_project tp on  tpt .project_id = tp.id  
+where  tp.status != 4 and tp.status != 5 and tpt .acceptor = {{appsmith.user.name}} and tpt .status = 0 AND tpt.existence =1 AND tp.existence =1 and tpt .task_starttime < now()  

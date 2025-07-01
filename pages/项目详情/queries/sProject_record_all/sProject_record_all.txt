@@ -1,0 +1,1 @@
+select id, remarks ,status_type ,create_by ,create_time,edit_type  from t_project_reord tpr where tpr.project_id = {{appsmith.store.project_id}} union select  id,remarks ,type  ,create_by ,create_time,edit_type  from  t_task_record ttr where ttr.task_id in (select id from  t_project_task tpt where tpt.project_id = {{appsmith.store.project_id}})   order by  create_time  desc

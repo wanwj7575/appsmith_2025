@@ -1,0 +1,3 @@
+select *, count(*) as number  from (select  ir.inspection_report_id ,ir.inspection_record_id , ic.business  from  inspection_record ir  
+left  join  inspection_case ic ON  ic.inspectioncase_id = ir.inspectioncase_id 
+where QUARTER(ir.create_time)=QUARTER(now()) group by ir.inspection_report_id  , ic.business) as c group by c.business order by  number  desc  limit 20;

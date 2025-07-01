@@ -1,0 +1,13 @@
+INSERT INTO problem_order (name, channel,business,business_group, category,priority,receiver,content ,create_by, create_time, status, fixed_channel)
+  VALUES ({{Input2.inputText}}, 
+					'巡检巡查', 
+					{{Table1.triggeredRow.business?Table1.triggeredRow.business:Table1.triggeredRow.new_business}}, 
+					{{Input3.text}},
+					{{Table1.triggeredRow.problem_type}},
+					{{Select2.selectedOptionValue}},
+					{{Table1.triggeredRow.create_by}},
+					{{Table1.triggeredRow.remarks}},
+					{{appsmith.user.name}},
+					{{moment().format("YYYY-MM-DD HH:mm:ss")}},
+				 0,
+				 '台账问题');

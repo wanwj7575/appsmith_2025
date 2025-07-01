@@ -1,0 +1,4 @@
+UPDATE problem_order SET
+    deadline_time = {{DatePicker1.formattedDate}},
+		 status = 3
+  WHERE  problem_id = {{Table1.triggeredRow.problem_id}}; -- Specify a valid condition here. Removing the condition may update every row in the table!

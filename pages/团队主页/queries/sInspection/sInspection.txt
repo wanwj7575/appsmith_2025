@@ -1,0 +1,2 @@
+select    COALESCE( date_format(ir.create_time, '%Y-%m') ,'all') mont, count(*) coun  from  inspection_record ir where confirm != 2 and  YEAR( ir.create_time) = YEAR( NOW()) group by date_format(ir.create_time, '%Y-%m')   WITH rollup  
+

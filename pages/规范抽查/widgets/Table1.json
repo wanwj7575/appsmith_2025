@@ -1,0 +1,579 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowAddNewRow": true,
+  "animateLoading": false,
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 78,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "canFreezeColumn": true,
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "editActions": {
+      "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "examination_id",
+    "examination_project",
+    "examination_term",
+    "examination_people",
+    "examination_time",
+    "details",
+    "qualified",
+    "confirm",
+    "create_by",
+    "other",
+    "EditActions1"
+  ],
+  "columnUpdatedAt": 1687746036487,
+  "columnWidthMap": {
+    "details": 529,
+    "examination_project": 186,
+    "examination_time": 171,
+    "status": 85,
+    "step": 70,
+    "task": 245
+  },
+  "defaultPageSize": 0,
+  "defaultSelectedRowIndex": 0,
+  "defaultSelectedRowIndices": [
+    0
+  ],
+  "delimiter": ",",
+  "displayName": "Table",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.examination_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.examination_project.computedValue"
+    },
+    {
+      "key": "primaryColumns.examination_people.computedValue"
+    },
+    {
+      "key": "primaryColumns.examination_time.computedValue"
+    },
+    {
+      "key": "primaryColumns.details.computedValue"
+    },
+    {
+      "key": "primaryColumns.qualified.computedValue"
+    },
+    {
+      "key": "primaryColumns.create_by.computedValue"
+    },
+    {
+      "key": "primaryColumns.confirm.computedValue"
+    },
+    {
+      "key": "primaryColumns.other.computedValue"
+    },
+    {
+      "key": "primaryColumns.examination_term.computedValue"
+    },
+    {
+      "key": "primaryColumns.EditActions1.saveButtonColor"
+    },
+    {
+      "key": "primaryColumns.EditActions1.saveBorderRadius"
+    },
+    {
+      "key": "primaryColumns.EditActions1.discardBorderRadius"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isSaveDisabled"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isDiscardDisabled"
+    },
+    {
+      "key": "primaryColumns.examination_project.selectOptions"
+    },
+    {
+      "key": "primaryColumns.examination_people.selectOptions"
+    },
+    {
+      "key": "primaryColumns.qualified.textColor"
+    },
+    {
+      "key": "primaryColumns.confirm.iconName"
+    },
+    {
+      "key": "primaryColumns.confirm.buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "primaryColumns.EditActions1.isSaveDisabled"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isDiscardDisabled"
+    },
+    {
+      "key": "onAddNewRowSave"
+    },
+    {
+      "key": "primaryColumns.examination_project.onOptionChange"
+    },
+    {
+      "key": "primaryColumns.examination_term.onOptionChange"
+    },
+    {
+      "key": "primaryColumns.examination_people.onOptionChange"
+    },
+    {
+      "key": "primaryColumns.details.onSubmit"
+    },
+    {
+      "key": "primaryColumns.qualified.onOptionChange"
+    },
+    {
+      "key": "primaryColumns.qualified.cellBackground"
+    },
+    {
+      "key": "primaryColumns.qualified.textColor"
+    },
+    {
+      "key": "primaryColumns.confirm.iconName"
+    },
+    {
+      "key": "primaryColumns.confirm.onClick"
+    },
+    {
+      "key": "primaryColumns.confirm.buttonColor"
+    },
+    {
+      "key": "primaryColumns.other.onSubmit"
+    },
+    {
+      "key": "tableData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onAddNewRowSave"
+    },
+    {
+      "key": "primaryColumns.examination_project.onOptionChange"
+    },
+    {
+      "key": "primaryColumns.examination_term.onOptionChange"
+    },
+    {
+      "key": "primaryColumns.examination_people.onOptionChange"
+    },
+    {
+      "key": "primaryColumns.details.onSubmit"
+    },
+    {
+      "key": "primaryColumns.qualified.onOptionChange"
+    },
+    {
+      "key": "primaryColumns.confirm.onClick"
+    },
+    {
+      "key": "primaryColumns.other.onSubmit"
+    }
+  ],
+  "enableClientSideSearch": true,
+  "enableServerSideFiltering": false,
+  "hideCard": false,
+  "horizontalAlignment": "LEFT",
+  "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+  "inlineEditingSaveOption": "ROW_LEVEL",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": false,
+  "isVisibleFilters": false,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "key": "wb502ba0as",
+  "label": "Data",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 65,
+  "mobileLeftColumn": 6,
+  "mobileRightColumn": 40,
+  "mobileTopRow": 37,
+  "needsHeightForContent": true,
+  "onAddNewRowSave": "{{iTexamination.run().then(() => {\n  sTexamination.run();\n});}}",
+  "parentColumnSpace": 20.03125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "primaryColumns": {
+    "EditActions1": {
+      "alias": "EditActions1",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "editActions",
+      "computedValue": "",
+      "discardActionLabel": "Discard",
+      "discardBorderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+      "discardButtonColor": "#F22B2B",
+      "discardButtonVariant": "TERTIARY",
+      "discardIconAlign": "left",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "EditActions1",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "Save / Discard",
+      "originalId": "EditActions1",
+      "saveActionLabel": "Save",
+      "saveBorderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+      "saveButtonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+      "saveIconAlign": "left",
+      "sticky": "right",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "confirm": {
+      "alias": "confirm",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow.qualified == 1? 'rgb(3, 179, 101)':currentRow.confirm == 0? '#ef4444':'rgb(3, 179, 101)'))}}",
+      "buttonVariant": "SECONDARY",
+      "columnType": "iconButton",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"confirm\"])) :  currentRow[\"confirm\"] })()}}",
+      "customAlias": "",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "iconName": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow.confirm == 0? 'small-minus':currentRow.qualified == 1? 'small-minus':'small-tick'))}}",
+      "id": "confirm",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "是否确认",
+      "onClick": "{{uTexamination_confirm.run().then(() => {\n  sTexamination.run();\n});}}",
+      "originalId": "confirm",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "create_by": {
+      "alias": "create_by",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"create_by\"])) :  currentRow[\"create_by\"] })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "create_by",
+      "index": 6,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "抽查人",
+      "originalId": "create_by",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "details": {
+      "alias": "details",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"details\"])) :  currentRow[\"details\"] })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "details",
+      "index": 4,
+      "isCellEditable": true,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "问题描述",
+      "onSubmit": "{{uTexamination.run().then(() => {\n  sTexamination.run();\n});}}",
+      "originalId": "details",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "examination_id": {
+      "alias": "examination_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"examination_id\"])) :  currentRow[\"examination_id\"] })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "examination_id",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "examination_id",
+      "originalId": "examination_id",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "examination_people": {
+      "alias": "examination_people",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "select",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"examination_people\"])) :  currentRow[\"examination_people\"] })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "examination_people",
+      "index": 2,
+      "isCellEditable": true,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "被抽查人",
+      "onOptionChange": "{{uTexamination.run().then(() => {\n  sTexamination.run();\n});}}",
+      "originalId": "examination_people",
+      "selectOptions": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( sUser.data.map((s)=>{\n\treturn {\n\t\tlabel:s.name,\n\t\tvalue:s.name\n\t}\n})))}}",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "examination_project": {
+      "alias": "examination_project",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "select",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"examination_project\"])) :  currentRow[\"examination_project\"] })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "examination_project",
+      "index": 1,
+      "isCellEditable": true,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "抽查项目",
+      "onOptionChange": "{{uTexamination.run().then(() => {\n  sTexamination.run();\n});}}",
+      "originalId": "examination_project",
+      "selectOptions": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( sProject.data.map((s)=>{\n\treturn {\n\t\tlabel: s.project_name,\n\t\tvalue: s.project_name\n\t}\n})))}}",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "examination_term": {
+      "alias": "examination_term",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "select",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"examination_term\"])) :  currentRow[\"examination_term\"] })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "examination_term",
+      "index": 9,
+      "isCellEditable": true,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "抽查项",
+      "onOptionChange": "{{uTexamination.run().then(() => {\n  sTexamination.run();\n});}}",
+      "originalId": "examination_term",
+      "selectOptions": "[\n  {\n    \"label\": \"用例平台\",\n    \"value\": \"用例平台\"\n  },\n  {\n    \"label\": \"测试过程\",\n    \"value\": \"测试过程\"\n  },\n\t {\n    \"label\": \"工单系统\",\n    \"value\": \"工单系统\"\n  },\n  {\n    \"label\": \"测试平台\",\n    \"value\": \"测试平台\"\n  },\n\t\t{\n    \"label\": \"巡检问题处理\",\n    \"value\": \"巡检问题处理\"\n  },\n\t {\n    \"label\": \"值班\",\n    \"value\": \"值班\"\n  },\n\t\t{\n    \"label\": \"禅道\",\n    \"value\": \"禅道\"\n  }\n]",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "examination_time": {
+      "alias": "examination_time",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( moment(currentRow[\"examination_time\"]).utc().format(\"YYYY-MM-DD  HH:mm:ss\"))) :  moment(currentRow[\"examination_time\"]).utc().format(\"YYYY-MM-DD  HH:mm:ss\") })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "examination_time",
+      "index": 3,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "抽查时间",
+      "originalId": "examination_time",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "other": {
+      "alias": "other",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"other\"])) :  currentRow[\"other\"] })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "other",
+      "index": 8,
+      "isCellEditable": true,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "其它",
+      "onSubmit": "{{uTexamination.run().then(() => {\n  sTexamination.run();\n});}}",
+      "originalId": "other",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "qualified": {
+      "alias": "qualified",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "select",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"qualified\"] == 0? \"否\":\"是\")) :  currentRow[\"qualified\"] == 0? \"否\":\"是\" })()}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "qualified",
+      "index": 5,
+      "isCellEditable": true,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "是否合格",
+      "onOptionChange": "{{uTexamination.run().then(() => {\n  sTexamination.run();\n});}}",
+      "originalId": "qualified",
+      "selectOptions": "[\n  {\n    \"label\": \"是\",\n    \"value\": \"1\"\n  },\n  {\n    \"label\": \"否\",\n    \"value\": \"0\"\n  }\n]",
+      "sticky": "",
+      "textColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"qualified\"] == 0? \"#ef4444\":\"rgb(3, 179, 101)\"))}}",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchKey": "",
+  "showInlineEditingOptionDropdown": true,
+  "tableData": "{{sTexamination.data}}",
+  "textSize": "0.875rem",
+  "topRow": 4,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET_V2",
+  "version": 1,
+  "verticalAlignment": "CENTER",
+  "widgetId": "pbwmtg0yi3",
+  "widgetName": "Table1"
+}

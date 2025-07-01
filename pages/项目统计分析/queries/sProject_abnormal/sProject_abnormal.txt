@@ -1,0 +1,1 @@
+select *  from  t_project tp where (status = 3 and existence = 1 )  or (project_endtime < {{DatePicker1.formattedDate}} and status != 5  and existence = 1)

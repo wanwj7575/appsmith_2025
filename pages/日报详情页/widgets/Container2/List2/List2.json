@@ -1,0 +1,372 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "backgroundColor": "transparent",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 75,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "children": [
+    {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 740,
+      "boxShadow": "none",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dropDisabled": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "accentColor"
+        }
+      ],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "5i5i20z0y1",
+      "leftColumn": 0,
+      "minHeight": 400,
+      "noPad": true,
+      "openParentPropertyPane": true,
+      "parentColumnSpace": 1,
+      "parentId": "pq95qmp9bx",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "rightColumn": 338.578125,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "dy44ypjcf0",
+      "widgetName": "Canvas5"
+    }
+  ],
+  "displayName": "List",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "template.Text3.text"
+    },
+    {
+      "key": "listData"
+    },
+    {
+      "key": "template.Text4.text"
+    },
+    {
+      "key": "template.Text5.text"
+    },
+    {
+      "key": "template.Text5.fontSize"
+    },
+    {
+      "key": "template.Text4.fontSize"
+    },
+    {
+      "key": "template.Text3.fontSize"
+    },
+    {
+      "key": "template.Text5.textColor"
+    },
+    {
+      "key": "template.Text5.overflow"
+    },
+    {
+      "key": "template.Text5.fontFamily"
+    },
+    {
+      "key": "template.Text5.textAlign"
+    },
+    {
+      "key": "template.Text5.dynamicHeight"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enhancements": true,
+  "gridGap": 0,
+  "gridType": "vertical",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
+  "isCanvas": true,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "itemBackgroundColor": "#FFFFFF",
+  "key": "lnlfi645ig",
+  "leftColumn": 0,
+  "listData": "{{sDaily_record.data}}",
+  "parentColumnSpace": 14.107421875,
+  "parentId": "labo4m8kvf",
+  "parentRowSpace": 10,
+  "privateWidgets": {
+    "undefined": true
+  },
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "template": {
+    "Text3": {
+      "animateLoading": true,
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 4,
+      "displayName": "Text",
+      "dynamicBindingPathList": [
+        {
+          "key": "fontFamily"
+        },
+        {
+          "key": "borderRadius"
+        }
+      ],
+      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+      "fontSize": "{{List2.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  '0.875rem';\n              })();\n            })}}",
+      "fontStyle": "",
+      "hideCard": false,
+      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "12g4ne7o02",
+      "leftColumn": 0,
+      "logBlackList": {
+        "animateLoading": true,
+        "borderRadius": true,
+        "bottomRow": true,
+        "displayName": true,
+        "dynamicBindingPathList": true,
+        "fontFamily": true,
+        "fontSize": true,
+        "fontStyle": true,
+        "hideCard": true,
+        "iconSVG": true,
+        "isCanvas": true,
+        "isDeprecated": true,
+        "isLoading": true,
+        "isVisible": true,
+        "key": true,
+        "leftColumn": true,
+        "minHeight": true,
+        "overflow": true,
+        "parentColumnSpace": true,
+        "parentId": true,
+        "parentRowSpace": true,
+        "renderMode": true,
+        "replacement": true,
+        "rightColumn": true,
+        "searchTags": true,
+        "shouldTruncate": true,
+        "text": true,
+        "textAlign": true,
+        "textColor": true,
+        "topRow": true,
+        "truncateButtonColor": true,
+        "type": true,
+        "version": true,
+        "widgetId": true,
+        "widgetName": true
+      },
+      "overflow": "NONE",
+      "parentColumnSpace": 13.669921875,
+      "parentId": "ej30k4moej",
+      "parentRowSpace": 10,
+      "renderMode": "CANVAS",
+      "rightColumn": 16,
+      "searchTags": [
+        "typography",
+        "paragraph",
+        "label"
+      ],
+      "shouldTruncate": false,
+      "text": "{{List2.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  currentItem.record_name;\n              })();\n            })}}",
+      "textAlign": "LEFT",
+      "textColor": "#231F20",
+      "topRow": 0,
+      "truncateButtonColor": "#FFC13D",
+      "type": "TEXT_WIDGET",
+      "version": 1,
+      "widgetId": "ab3j3fyju0",
+      "widgetName": "Text3"
+    },
+    "Text4": {
+      "animateLoading": true,
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 4,
+      "displayName": "Text",
+      "dynamicBindingPathList": [
+        {
+          "key": "fontFamily"
+        },
+        {
+          "key": "borderRadius"
+        }
+      ],
+      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+      "fontSize": "{{List2.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  '0.875rem';\n              })();\n            })}}",
+      "fontStyle": "",
+      "hideCard": false,
+      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "12g4ne7o02",
+      "leftColumn": 16,
+      "logBlackList": {
+        "animateLoading": true,
+        "borderRadius": true,
+        "bottomRow": true,
+        "displayName": true,
+        "dynamicBindingPathList": true,
+        "fontFamily": true,
+        "fontSize": true,
+        "fontStyle": true,
+        "hideCard": true,
+        "iconSVG": true,
+        "isCanvas": true,
+        "isDeprecated": true,
+        "isLoading": true,
+        "isVisible": true,
+        "key": true,
+        "leftColumn": true,
+        "minHeight": true,
+        "overflow": true,
+        "parentColumnSpace": true,
+        "parentId": true,
+        "parentRowSpace": true,
+        "renderMode": true,
+        "replacement": true,
+        "rightColumn": true,
+        "searchTags": true,
+        "shouldTruncate": true,
+        "text": true,
+        "textAlign": true,
+        "textColor": true,
+        "topRow": true,
+        "truncateButtonColor": true,
+        "type": true,
+        "version": true,
+        "widgetId": true,
+        "widgetName": true
+      },
+      "overflow": "NONE",
+      "parentColumnSpace": 13.669921875,
+      "parentId": "ej30k4moej",
+      "parentRowSpace": 10,
+      "renderMode": "CANVAS",
+      "rightColumn": 32,
+      "searchTags": [
+        "typography",
+        "paragraph",
+        "label"
+      ],
+      "shouldTruncate": false,
+      "text": "{{List2.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  currentItem.record_number;\n              })();\n            })}}",
+      "textAlign": "LEFT",
+      "textColor": "#231F20",
+      "topRow": 0,
+      "truncateButtonColor": "#FFC13D",
+      "type": "TEXT_WIDGET",
+      "version": 1,
+      "widgetId": "xpy69hul60",
+      "widgetName": "Text4"
+    },
+    "Text5": {
+      "animateLoading": false,
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 4,
+      "disableLink": true,
+      "displayName": "Text",
+      "dynamicBindingPathList": [
+        {
+          "key": "fontFamily"
+        },
+        {
+          "key": "borderRadius"
+        }
+      ],
+      "dynamicHeight": "{{List2.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  'FIXED';\n              })();\n            })}}",
+      "fontFamily": "{{List2.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  'System Default';\n              })();\n            })}}",
+      "fontSize": "{{List2.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  '0.875rem';\n              })();\n            })}}",
+      "fontStyle": "",
+      "hideCard": false,
+      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "12g4ne7o02",
+      "leftColumn": 21,
+      "logBlackList": {
+        "animateLoading": true,
+        "borderRadius": true,
+        "bottomRow": true,
+        "displayName": true,
+        "dynamicBindingPathList": true,
+        "fontFamily": true,
+        "fontSize": true,
+        "fontStyle": true,
+        "hideCard": true,
+        "iconSVG": true,
+        "isCanvas": true,
+        "isDeprecated": true,
+        "isLoading": true,
+        "isVisible": true,
+        "key": true,
+        "leftColumn": true,
+        "minHeight": true,
+        "overflow": true,
+        "parentColumnSpace": true,
+        "parentId": true,
+        "parentRowSpace": true,
+        "renderMode": true,
+        "replacement": true,
+        "rightColumn": true,
+        "searchTags": true,
+        "shouldTruncate": true,
+        "text": true,
+        "textAlign": true,
+        "textColor": true,
+        "topRow": true,
+        "truncateButtonColor": true,
+        "type": true,
+        "version": true,
+        "widgetId": true,
+        "widgetName": true
+      },
+      "overflow": "{{List2.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  'NONE';\n              })();\n            })}}",
+      "parentColumnSpace": 13.669921875,
+      "parentId": "ej30k4moej",
+      "parentRowSpace": 10,
+      "renderMode": "CANVAS",
+      "rightColumn": 37,
+      "searchTags": [
+        "typography",
+        "paragraph",
+        "label"
+      ],
+      "shouldTruncate": false,
+      "text": "{{List2.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  currentItem.record_remarks;\n              })();\n            })}}",
+      "textAlign": "{{List2.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  'LEFT';\n              })();\n            })}}",
+      "textColor": "{{List2.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  '#ef4444';\n              })();\n            })}}",
+      "topRow": 0,
+      "truncateButtonColor": "#FFC13D",
+      "type": "TEXT_WIDGET",
+      "version": 1,
+      "widgetId": "zm1qrv8gky",
+      "widgetName": "Text5"
+    }
+  },
+  "topRow": 0,
+  "type": "LIST_WIDGET",
+  "widgetId": "pq95qmp9bx",
+  "widgetName": "List2"
+}

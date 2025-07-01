@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "64070962da9f8f0d8c8bebd6_640ee1fc62c3987d33300944",
+  "id": "问题台账 -待解决_JSObject1",
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "问题台账 -待解决",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+SELECT * FROM  inspection_case  WHERE   inspection_case.business = {{Select1.selectedOptionValue}} and status = 1 ORDER BY  inspection_case.create_time  DESC;

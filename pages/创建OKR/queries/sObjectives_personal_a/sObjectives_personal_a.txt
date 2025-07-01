@@ -1,0 +1,4 @@
+select  top.id,top.objectives_task , top.objectives_results ,top.objectives_quarter , to2.objectives_naem ,top.estimate_time,top.results_assessment  from   t_objectives_personal top  
+left join  t_objectives to2  on top.objectives_id = to2.id 
+where top.objectives_type = 1
+and top.objectives_quarter = {{Select1.selectedOptionValue}} and top.create_by = {{appsmith.user.name}}

@@ -1,0 +1,11 @@
+SELECT
+  c.realname,
+  count(*) as number
+FROM
+  zt_bug a LEFT JOIN zt_user c ON a.openedBy=c.account
+WHERE DATE_FORMAT(a.openedDate, '%Y-%m') = DATE_FORMAT(now(),'%Y-%m')
+GROUP BY
+  a.openedBy 
+HAVING
+  a.openedBy IN ( "zhangguojun", "hechengjian", "liuya", "wujilan", "dujinxun", "liuguilin", "shuchang", "zhouluhong", 'lanjiali' )
+ORDER BY number  DESC

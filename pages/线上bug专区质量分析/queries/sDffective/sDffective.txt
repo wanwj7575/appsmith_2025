@@ -1,0 +1,8 @@
+select project_name ,count(1) as number,zentao_project_id,effective_bug , ifnull(count(1)/effective_bug*100 , 0) as proportion , 
+case 
+	when ifnull(count(1)/effective_bug*100 , 0) <= 5 or count(1) <=2 then '轻微'
+	when ifnull(count(1)/effective_bug*100 , 0) <=10 then '一般'
+	else '严重'
+end as grade
+from t_project tp left join  problem_order po on tp.id = po.rproject_id 
+  where po.fixed_channel = '禅道线上bug' and po.problem_origin = '测试漏测' and (date_format(po.create_time ,'%Y-%m-%d') <= {{DatePicker1.formattedDate? DatePicker1.formattedDate:0}} or {{DatePicker1.formattedDate? 0:1}})  group by id 

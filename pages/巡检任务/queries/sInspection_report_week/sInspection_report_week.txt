@@ -1,0 +1,1 @@
+select  *  from  inspection_report ir where YEARWEEK(date_format(ir.generate_time ,'%Y-%m-%d'),1) = YEARWEEK(now(),7) and ir.status = 1

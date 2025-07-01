@@ -1,0 +1,4 @@
+UPDATE inspection_record SET
+    confirm = 2,
+    error_description = {{Input1.inputText}}
+  WHERE inspection_record_id= {{Table1.triggeredRow.inspection_record_id}}; -- Specify a valid condition here. Removing the condition may update every row in the table!

@@ -1,0 +1,4 @@
+UPDATE inspection_record SET
+    confirm = 0,
+		error_description = {{appsmith.user.name + '处理为 重新激活'}}
+  WHERE  inspection_record_id= {{Table4.selectedRow.inspection_record_id}}; 

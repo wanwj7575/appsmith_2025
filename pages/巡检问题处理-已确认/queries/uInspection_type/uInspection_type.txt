@@ -1,0 +1,5 @@
+UPDATE inspection_record SET
+   	business = {{Table1.triggeredRow.business}},
+    problem_type = {{Table1.triggeredRow.problem_type}}
+
+  WHERE inspection_record_id= {{Table1.triggeredRow.inspection_record_id}}; -- Specify a valid condition here. Removing the condition may update every row in the table!

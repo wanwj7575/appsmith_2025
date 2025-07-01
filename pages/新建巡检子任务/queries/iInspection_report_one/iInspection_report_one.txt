@@ -1,0 +1,5 @@
+ INSERT INTO inspection_report ( inspectionsubtask_name, inspection_business,  task_main_id,  create_by, status, create_time)
+  VALUES ({{Input1.text}}, {{MultiSelect1.selectedOptionValues}}, {{appsmith.store.inspection_task_id}}, {{appsmith.user.name}}, 0, {{moment().format("YYYY-MM-DD ")}})
+  ON DUPLICATE KEY UPDATE 
+	inspectionsubtask_name=VALUES(inspectionsubtask_name),
+ 	inspection_business=VALUES(inspection_business)

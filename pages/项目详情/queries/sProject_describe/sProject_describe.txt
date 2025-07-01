@@ -1,0 +1,1 @@
+select  sp.`describe`  from  sys_product sp  where sp.product_name in (select tp.project_product  from t_project tp where tp.id = {{appsmith.store.project_id}})

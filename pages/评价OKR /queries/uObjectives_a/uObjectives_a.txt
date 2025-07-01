@@ -1,0 +1,4 @@
+UPDATE t_objectives_personal SET
+			department_evaluate= {{Table1.triggeredRow.department_evaluate}}
+  WHERE id= {{Table1.triggeredRow.id}}; -- Specify a valid condition here. Removing the condition may update every row in the table!
+	

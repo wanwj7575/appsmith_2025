@@ -1,0 +1,67 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignment": "left",
+  "animateLoading": true,
+  "bottomRow": 23,
+  "boxShadow": "none",
+  "defaultOptionValue": "W",
+  "displayName": "Radio Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onSelectionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSelectionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.ba2b2ee006e51a5c681d7964d7777481.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isInline": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "e7c2r6xupv",
+  "label": "",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onSelectionChange": "{{RadioGroup2.selectedOptionValue == 'W'? sOnline_problems_momth.run(): sOnline_problems_year.run()}}",
+  "options": [
+    {
+      "label": "月",
+      "value": "W"
+    },
+    {
+      "label": "年",
+      "value": "Y"
+    }
+  ],
+  "parentColumnSpace": 13.75,
+  "parentId": "yf7wwhvu1n",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 3,
+  "searchTags": [
+    "choice"
+  ],
+  "topRow": 4,
+  "type": "RADIO_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "mj5m3lmxd4",
+  "widgetName": "RadioGroup2Copy"
+}

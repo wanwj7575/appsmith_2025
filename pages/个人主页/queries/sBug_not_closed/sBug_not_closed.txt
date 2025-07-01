@@ -1,0 +1,13 @@
+SELECT a.id,f.`name`,a.project, a.title, d.`value`,a.severity, a.steps,  a.openedBy, a.openedDate, a.deadline, a.`status`   FROM zt_bug a  
+LEFT JOIN zt_module b  on a.module = b.id
+LEFT JOIN zt_product c  on a.product = c.id
+LEFT JOIN zt_lang d  on a.type = d.`key`
+LEFT JOIN zt_product e ON a.product=e.id
+LEFT JOIN zt_project f ON a.project=f.id
+WHERE  a.resolution  != (SELECT  zt_lang.`key`  FROM zt_lang  WHERE  zt_lang.id  = 382)
+AND  (a.openedDate >= '2022-07-01 00:00:00' )
+AND  (a.`status` != 'closed' )
+AND  (a.resolution != 'postponed')
+AND   (a.openedBy  = (SELECT account FROM  `zt_user_bak-zx` WHERE realname = {{appsmith.user.name}}))
+GROUP BY a.title
+ORDER BY f.`name`  DESC

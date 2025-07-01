@@ -1,0 +1,11 @@
+SELECT a.id, a.title as name, b.`name`  as module , d.`value`,a.severity,  e.realname, openedDate, a.closedDate , a.`status`, a.keywords , openedby  FROM zt_bug a 
+LEFT JOIN zt_module b  on a.module = b.id
+LEFT JOIN zt_product c  on a.product = c.id
+LEFT JOIN zt_lang d  on a.type = d.`key`
+LEFT JOIN zt_user e ON a.openedBy=e.account
+WHERE (a.product = 86)
+AND (a.`status`= 'closed')
+AND  a.openedDate > DATE_SUB(CURDATE(), INTERVAL 3 MONTH)
+GROUP BY a.title
+ORDER BY a.openedDate  DESC
+

@@ -1,0 +1,1 @@
+SELECT * FROM inspection_case where inspectioncase_id = {{appsmith.store.inspectioncase_id}} ;

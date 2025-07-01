@@ -1,0 +1,7 @@
+UPDATE problem_order SET
+    done_time = {{moment().format("YYYY-MM-DD HH:mm:ss")}},
+    solution = {{Select1.selectedOptionValue}},
+    problem_origin = {{Select2.selectedOptionValue}},
+    problem_origin_content = {{Input1.text}},
+		 status = 1
+  WHERE  problem_id = {{Table1.triggeredRow.problem_id}}; -- Specify a valid condition here. Removing the condition may update every row in the table!

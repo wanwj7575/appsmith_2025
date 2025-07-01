@@ -1,0 +1,8 @@
+UPDATE t_examination
+  SET examination_project = {{Table1.updatedRow.examination_project}},
+	examination_term = {{Table1.updatedRow.examination_term}},
+	examination_people = {{Table1.updatedRow.examination_people}},
+	details = {{Table1.updatedRow.details}},
+	qualified ={{Table1.updatedRow.qualified == "否"? 0:1}},
+	other= {{Table1.updatedRow.other}}
+  WHERE examination_id = {{Table1.triggeredRow.examination_id}};

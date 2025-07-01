@@ -1,0 +1,1 @@
+select * from sys_product  limit {{ Table1.pageSize }} offset {{ (Table1.pageNo - 1) * Table1.pageSize }};

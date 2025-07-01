@@ -1,0 +1,6 @@
+UPDATE inspection_record SET
+    confirm = 3,
+    repeat_id = {{Select3.selectedOptionValue}} or null,
+		error_description = {{Input6.inputText}},
+		recipient = {{appsmith.user.name}}
+  WHERE inspection_record_id= {{Table1.triggeredRow.inspection_record_id}}; -- Specify a valid condition here. Removing the condition may update every row in the table!

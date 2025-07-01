@@ -1,0 +1,43 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 17,
+  "boxShadow": "none",
+  "capSide": 0,
+  "capType": "nc",
+  "displayName": "Divider",
+  "dividerColor": "#3b82f6",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.cbe8f608ca868e1eb44607e5fbd4a9e5.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "jrhy8zi6u4",
+  "leftColumn": 0,
+  "orientation": "horizontal",
+  "parentColumnSpace": 13.75,
+  "parentId": "ly9sm8pb6g",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "searchTags": [
+    "line"
+  ],
+  "strokeStyle": "solid",
+  "thickness": 2,
+  "topRow": 13,
+  "type": "DIVIDER_WIDGET",
+  "version": 1,
+  "widgetId": "hemxlhouay",
+  "widgetName": "Divider1"
+}

@@ -1,0 +1,9 @@
+SELECT
+    DATE_FORMAT( openedDate, '%Y-%m-%u周' ) AS WEEK,
+    DATE_FORMAT(date_sub( openedDate, INTERVAL dayofweek( openedDate )- 2 DAY ),'%Y-%m-%d') AS openedDate,
+    count(*) AS count 
+FROM
+    zt_bug 
+WHERE  DATE_FORMAT( openedDate, '%Y%m' ) = DATE_FORMAT( CURDATE( ) ,'%Y%m' ) 
+AND product = 86
+GROUP BY  WEEK;

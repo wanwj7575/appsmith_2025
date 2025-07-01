@@ -1,0 +1,3 @@
+insert   into   problem_record (problem_id,follow_record,create_by,create_time, type) 
+value({{Table1.triggeredRow.problem_id}},{{Input1.inputText}},{{Input4.inputText}},{{moment().format("YYYY-MM-DD HH:mm:ss")}},5
+)

@@ -1,0 +1,1 @@
+select   status, COUNT(*) as number   from  t_project tp WHERE YEAR( tp.project_starttime) = YEAR( NOW( ) ) and existence!=0  group by  status 

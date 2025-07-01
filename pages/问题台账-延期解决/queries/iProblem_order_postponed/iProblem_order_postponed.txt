@@ -1,0 +1,15 @@
+INSERT INTO problem_order (name, channel_id, channel,business,business_group, category,priority,receiver ,create_by, create_time, status,relation_project,fixed_channel)
+  VALUES ({{Input3Copy.text}}, 
+					(select  id from  channel_order co where channel_name ={{Select3Copy.selectedOptionValue}}),
+					{{Select7Copy.selectedOptionValue}}, 
+					{{Select4Copy.selectedOptionValue}}, 
+					{{Input5Copy.text}},
+					{{Select8.selectedOptionValue}},
+					{{Input7Copy.text}},
+					{{Input8Copy.text}},
+					{{appsmith.user.name}},
+					{{moment(Table3.triggeredRow.openedDate).format("YYYY-MM-DD HH:mm:ss")}},
+				 0,
+					{{Input11.inputText}},
+					'项目延期处理'
+				 );

@@ -1,0 +1,5 @@
+select po.create_by, sum(TIMESTAMPDIFF(hour ,pr.create_time  ,po.done_time))/ count(1) as hour  from  problem_order po  right join  (select *  from problem_record pr where  type = 2  group by problem_id) pr on  po.problem_id = pr.problem_id
+where  po.status != 2 and po.status = 1 
+ and (po.create_time > {{DatePicker1.formattedDate? DatePicker1.formattedDate:0}} or {{DatePicker1.formattedDate? 0:1}} )
+and (po.create_time < {{DatePicker2.formattedDate? DatePicker2.formattedDate:0}} or {{DatePicker2.formattedDate? 0:1}})
+group by  po.create_by 

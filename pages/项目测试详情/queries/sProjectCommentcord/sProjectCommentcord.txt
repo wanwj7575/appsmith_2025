@@ -1,0 +1,3 @@
+SELECT * FROM  project_changerecord WHERE  project_id = (SELECT id  FROM test_project WHERE test_project.project_name = {{appsmith.store.project_name}}) 
+AND record_type = 3
+ORDER BY create_time DESC

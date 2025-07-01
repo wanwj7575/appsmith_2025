@@ -1,0 +1,18 @@
+INSERT INTO problem_order (name,business,business_group, category,priority,receiver ,create_by, create_time, status,solution,problem_origin,problem_origin_content,done_time,fixed_channel, chandao_id, rproject_id)
+  VALUES ({{Input3.text}},
+					{{Select4.selectedOptionValue}}, 
+					{{Input5.inputText}},
+					"BUG",
+					{{Table2.selectedRow.severity}},
+					{{Table2.selectedRow.keywords}},
+					{{Table2.triggeredRow.realname}},
+					{{moment(Table2.triggeredRow.openedDate).utc().format('YYYY-MM-DD HH:mm:ss')}},
+					1,
+					{{Select5.selectedOptionValue}},
+					{{Select6.selectedOptionValue}},
+					{{Input9.text}},
+					{{moment(Table2.triggeredRow.closedDate).utc().format('YYYY-MM-DD HH:mm:ss')}},
+					'禅道线上bug',
+					{{Table2.triggeredRow.id}},
+					{{Select9.selectedOptionValue}}
+				 );

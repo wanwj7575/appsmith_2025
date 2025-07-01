@@ -1,0 +1,14 @@
+INSERT INTO test_project (project_name, project_product, project_group, project_task,  project_implement_starttime, project_implement_endtime, project_examine_starttime, project_examine_endtime, create_by,test_director, create_time, status)
+  VALUES (
+		{{Input1.text}}, 
+		{{Select1.selectedOptionValue}},
+		{{Input2.text}},
+		{{Select2.selectedOptionValue}},
+		{{moment(DatePicker2.selectedDate).format('YYYY-MM-DD')}}, 
+		{{moment(DatePicker2Copy.selectedDate).format('YYYY-MM-DD')}}, 
+		{{moment(DatePicker3.selectedDate).format('YYYY-MM-DD')}}, 
+		{{moment(DatePicker3Copy.formattedDate).format('YYYY-MM-DD')}}, 
+		{{appsmith.user.name}},
+		{{Select3.selectedOptionValue}},
+		{{moment().format("YYYY-MM-DD HH:mm:ss")}},
+		1);

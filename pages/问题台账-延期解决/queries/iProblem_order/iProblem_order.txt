@@ -1,0 +1,18 @@
+INSERT INTO problem_order (name, channel_id, channel,business,business_group, category,priority,receiver ,create_by, create_time, status,solution,problem_origin,problem_origin_content,done_time,fixed_channel)
+  VALUES ({{Input3.text}}, 
+					(select  id from  channel_order co where channel_name ={{Select3.selectedOptionValue}}),
+					{{Select7.selectedOptionValue}}, 
+					{{Select4.selectedOptionValue}}, 
+					{{Input5.text}},
+					{{Input6.text}},
+					{{Input7.text}},
+					{{Input8.text}},
+					{{appsmith.user.name}},
+					{{moment(Table2.triggeredRow.openedDate).utc().format('YYYY-MM-DD HH:mm:ss')}},
+				 1,
+					{{Select5.selectedOptionValue}},
+					{{Select6.selectedOptionValue}},
+					{{Input9.text}},
+					{{moment(Table2.triggeredRow.closedDate).utc().format('YYYY-MM-DD HH:mm:ss')}},
+					'禅道线上bug'
+				 );

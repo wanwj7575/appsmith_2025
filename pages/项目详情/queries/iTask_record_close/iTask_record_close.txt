@@ -1,0 +1,12 @@
+INSERT INTO t_task_record (type, remarks, create_by, create_time, task_id, edit_type)
+  VALUES (1, 
+					{{Input6.text}}, 
+					{{appsmith.user.name}}, 
+					{{moment().format("YYYY-MM-DD HH:mm:ss ")}}, 
+				 {{List1.selectedItem.id}},
+				 1);
+UPDATE t_project_task SET
+    task_closetime = {{moment().format("YYYY-MM-DD HH:mm:ss ")}},
+    status = 1,
+		  workday= {{Input10.inputText}}
+  WHERE id = {{List1.selectedItem.id}};

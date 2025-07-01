@@ -1,0 +1,4 @@
+delete from t_inspection_images where problem_id= {{appsmith.store.problem_id}};
+INSERT INTO t_inspection_images (problem_id, images)
+  VALUES (  {{appsmith.store.problem_id}}
+ , {{FilePicker1.files[0].data}});

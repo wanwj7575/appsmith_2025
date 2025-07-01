@@ -1,0 +1,177 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 13,
+  "boxShadow": "none",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "groupButtons.groupButton3.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton2.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonyrxf73n26t.buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButtonyrxf73n26t.onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonvup7g4nf8p.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonyrxf73n26t.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "待解决",
+      "menuItems": {},
+      "onClick": "{{navigateTo('问题台账-总台账', {}, 'SAME_WINDOW')}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "待确认",
+      "menuItems": {},
+      "onClick": "{{navigateTo('问题台账', {}, 'SAME_WINDOW')}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton3": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "id": "groupButton3",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "待关闭",
+      "menuItems": {
+        "menuItem1": {
+          "backgroundColor": "#FFFFFF",
+          "id": "menuItem1",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "First Option",
+          "onClick": "",
+          "widgetId": ""
+        },
+        "menuItem2": {
+          "backgroundColor": "#FFFFFF",
+          "id": "menuItem2",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Second Option",
+          "onClick": "",
+          "widgetId": ""
+        },
+        "menuItem3": {
+          "backgroundColor": "#DD4B34",
+          "iconAlign": "right",
+          "iconColor": "#FFFFFF",
+          "iconName": "trash",
+          "id": "menuItem3",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Delete",
+          "onClick": "",
+          "textColor": "#FFFFFF",
+          "widgetId": ""
+        }
+      },
+      "onClick": "{{navigateTo('问题台账 -待解决', {}, 'SAME_WINDOW')}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButtonvup7g4nf8p": {
+      "buttonColor": "rgb(3, 179, 101)",
+      "buttonType": "SIMPLE",
+      "id": "groupButtonvup7g4nf8p",
+      "index": 3,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "延期解决",
+      "menuItems": {},
+      "onClick": "{{navigateTo('问题台账-延期解决', {}, 'SAME_WINDOW')}}",
+      "placement": "CENTER",
+      "widgetId": "eu07qygmnl"
+    },
+    "groupButtonyrxf73n26t": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "id": "groupButtonyrxf73n26t",
+      "index": 4,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "总台账",
+      "menuItems": {},
+      "onClick": "{{navigateTo('问题台账-总台账（全）', {}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "widgetId": "ludm2xokox"
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.d6773218cfb61dcfa5f460d43371e30d.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "b6mer7d9jw",
+  "leftColumn": 0,
+  "orientation": "horizontal",
+  "parentColumnSpace": 20.0625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 13,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "topRow": 9,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "ng5kimd5nt",
+  "widgetName": "ButtonGroup2"
+}

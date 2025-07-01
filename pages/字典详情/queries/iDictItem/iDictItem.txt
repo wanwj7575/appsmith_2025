@@ -1,0 +1,2 @@
+INSERT INTO sys_dict_item (dict_id, item_text, item_value, description, sort_order, status, create_by, create_time )
+  VALUES ({{appsmith.store.dicttype_id}}, {{Input1.text}}, {{Input2.text}}, {{Input3.text}}, {{Input8.text}},  1, {{global.user.name}},{{moment().format("YYYY-MM-DD HH:mm:ss ")}});

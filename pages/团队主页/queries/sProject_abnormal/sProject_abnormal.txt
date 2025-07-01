@@ -1,0 +1,1 @@
+select  count(1) as number  from  t_project tp where (status = 3 and existence = 1 )  or (project_endtime < now()  and status != 5  and existence = 1)

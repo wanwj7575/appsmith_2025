@@ -1,0 +1,2 @@
+update t_inspection_images ti  SET ti.problem_id = (select po.problem_id  from  problem_order po where po.create_by={{appsmith.user.name}} order by  po.create_time desc  limit  1)
+where  ti.inspection_record_id = {{Table1.triggeredRow.inspection_record_id}}

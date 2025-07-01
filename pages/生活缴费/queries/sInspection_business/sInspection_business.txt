@@ -1,0 +1,1 @@
+SELECT a.id ,sp.product_name , a.module ,a.remarks ,a.status ,a.create_by ,a.create_time,a.end_time  FROM inspection_business_record a  left join sys_product sp on  a.product_id = sp.id 

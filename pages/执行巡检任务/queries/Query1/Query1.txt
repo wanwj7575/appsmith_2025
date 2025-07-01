@@ -1,0 +1,1 @@
+SELECT  * FROM  inspection_case  WHERE  inspection_case.inspection_cycle = {{Select1.selectedOptionValue}}  and (inspection_case.inspection_mode = {{Select2.selectedOptionValue}}  or  {{Select2.selectedOptionValue?0:1}}) 

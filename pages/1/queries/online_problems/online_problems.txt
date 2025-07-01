@@ -1,0 +1,10 @@
+SELECT a.id, a.title, b.`name`, d.`value`,a.severity, a.steps,  a.openedBy, openedDate, a.deadline, a.`status`   FROM zt_bug a  
+LEFT JOIN zt_module b  on a.module = b.id
+LEFT JOIN zt_product c  on a.product = c.id
+LEFT JOIN zt_lang d  on a.type = d.`key`
+WHERE (a.product = 86)
+AND  (a.openedDate >= '2022-07-01 00:00:00' )
+GROUP BY a.title
+ORDER BY a.openedDate  DESC
+
+

@@ -1,0 +1,4 @@
+SELECT t1.inspectioncase_id, t1.inspection_term, t1.inspection_conent, t1.business,t2.inspec_status, t2.problem_name, t2.remarks, t2.problem_picture, t2.inspection_record_id FROM inspection_case t1 
+  right join (select  * from  inspection_record ir where inspection_report_id =(select  ir2.inspectionsubtask_id  from  inspection_report ir2 where create_by = '{{appsmith.user.name}}' order by create_time desc limit 1) and  inspec_status = 1) t2 
+ ON t1.inspectioncase_id= t2.inspectioncase_id
+WHERE JSON_SEARCH( ( SELECT inspection_business FROM `inspection_report` WHERE create_by = '{{appsmith.user.name}}' ORDER BY create_time DESC LIMIT 1), 'one', t1.business ) IS NOT NULL

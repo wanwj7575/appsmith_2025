@@ -1,0 +1,6 @@
+SELECT a.id, a.title as name,b.name  as project , d.`value`,a.severity,  e.realname, a.openedDate, a.assignedDate , a.`status`   FROM zt_bug a 
+LEFT JOIN zt_project  b  on a.project  = b.id
+LEFT JOIN zt_product c  on a.product = c.id
+LEFT JOIN zt_lang d  on a.type = d.`key`
+LEFT JOIN zt_user e ON a.openedBy=e.account
+WHERE (a.resolution = 'postponed') and a.status != 'closed'

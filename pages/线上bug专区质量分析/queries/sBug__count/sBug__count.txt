@@ -1,0 +1,2 @@
+SELECT zm.name , COUNT(1) as count_number  FROM  zt_bug zb
+left join  zt_module zm on zb.module = zm.id  WHERE openedDate >= {{DatePicker1.formattedDate}}  and  zb.deleted = 1 and  resolution != 'external' and product = 86    GROUP by  zb.module HAVING COUNT(zm.name) > 0  ORDER by  count_number DESC  

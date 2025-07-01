@@ -1,0 +1,47 @@
+{
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "counterClosewise": false,
+  "displayName": "进度",
+  "dynamicBindingPathList": [
+    {
+      "key": "fillColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "steps"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fillColor": "{{appsmith.theme.colors.primaryColor}}",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.9b0d7b96a0223e8120bf6f14aca4154a.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isIndeterminate": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "fa6860r9nx",
+  "leftColumn": 15,
+  "parentColumnSpace": 14.0625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "progress": "33",
+  "progressType": "linear",
+  "renderMode": "CANVAS",
+  "rightColumn": 52,
+  "searchTags": [
+    "percent"
+  ],
+  "showResult": false,
+  "steps": "3",
+  "topRow": 0,
+  "type": "PROGRESS_WIDGET",
+  "version": 1,
+  "widgetId": "t5zem34dqp",
+  "widgetName": "Progress1"
+}

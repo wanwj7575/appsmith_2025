@@ -1,0 +1,2 @@
+INSERT INTO test (pirto, name)
+  VALUES ({{FilePicker1.files[0].data}}, 'king');

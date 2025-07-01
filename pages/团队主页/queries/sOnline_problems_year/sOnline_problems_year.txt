@@ -1,0 +1,10 @@
+SELECT
+    DATE_FORMAT( openedDate, '%Y-%m' ) AS Month,
+    DATE_FORMAT( openedDate, '%Y-%m-01' ) AS openedDate,
+    count(*) AS count 
+FROM
+    zt_bug 
+WHERE  YEAR( openedDate) = YEAR( NOW( ) )
+AND product = 86
+GROUP BY
+    Month;

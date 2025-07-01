@@ -1,0 +1,3 @@
+SELECT po.*  ,tii.images   FROM problem_order po  
+left join  t_inspection_images  tii on po.problem_id = tii.problem_id 
+WHERE  (po.status = 4 or po.status = 5)  group by problem_id  ;

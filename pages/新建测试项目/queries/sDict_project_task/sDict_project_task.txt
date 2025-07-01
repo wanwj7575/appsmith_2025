@@ -1,0 +1,1 @@
+SELECT *  from  sys_dict_item  WHERE  sys_dict_item.dict_id= 21

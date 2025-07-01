@@ -1,0 +1,4 @@
+UPDATE inspection_report SET
+    generate_time = {{moment().format("YYYY-MM-DD HH:mm:ss ")}},
+    status = 1
+  WHERE  inspectionsubtask_id = {{sTaskbusiness.data[0].inspectionsubtask_id}}; 

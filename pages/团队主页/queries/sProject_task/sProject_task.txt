@@ -1,0 +1,2 @@
+select  COALESCE(tpt .status  ,'all')  as status ,count(1) as number  from  t_project_task tpt left join t_project tp on tpt .project_id = tp.id  where tp.status != 4  and tp.existence = 1 and tpt.existence =1  and  YEAR( tpt.task_starttime) = YEAR( NOW( ) ) group by tpt.status  WITH rollup
+

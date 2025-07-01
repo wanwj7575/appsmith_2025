@@ -1,0 +1,2 @@
+select  if (tp.project_endtime < curdate(), "1", "2") as time_st ,tp.id ,tp.project_name ,tp.project_type ,tp.create_by, dr.record_remarks, tp.project_endtime ,tp.test_director from  t_project tp  left join  (select *  from (select *  from  daily_record  where  `type` = 1 order by create_date  desc  limit 1000) as b group by b.record_name) as dr    on  tp.project_name = dr.record_name  where  tp .project_endtime <= curdate()  and tp.existence = 1 and tp.status = 2  and tp.existence = 1
+

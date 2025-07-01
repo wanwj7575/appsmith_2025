@@ -1,0 +1,5 @@
+UPDATE inspection_case SET
+    done_time ={{moment().format("YYYY-MM-DD HH:mm:ss ")}},
+    status = 0,
+    tovoid_remarks = {{Input1.text}}
+  WHERE inspectioncase_id = {{Table1.triggeredRow.inspectioncase_id}}; 

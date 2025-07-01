@@ -1,0 +1,11 @@
+SELECT
+  id, parent,name,consumed,deadline
+FROM
+  zt_task
+WHERE project= {{appsmith.store.project_id}} and type = 'task'
+ORDER BY
+  {{Table3.sortOrder.column || 'id'}} {{Table3.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{Table3.pageSize}}
+OFFSET
+  {{Table3.pageOffset}}

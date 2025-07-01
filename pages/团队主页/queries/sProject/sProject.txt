@@ -1,0 +1,1 @@
+select COALESCE(status  ,'all') as status ,count(1) as number from  t_project tp   where existence  !=0  and YEAR( tp.project_starttime) = YEAR( NOW( ) ) group by status  WITH ROLLUP

@@ -1,0 +1,2 @@
+select count(ir.confirm) as number  from  inspection_record ir where ir.confirm = 0 and ir.inspec_status = 0 
+

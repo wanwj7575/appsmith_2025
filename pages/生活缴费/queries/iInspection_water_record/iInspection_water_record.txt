@@ -1,0 +1,2 @@
+INSERT INTO inspection_water_record (water_name_id, create_by, create_time, statues, error_remarks)
+  VALUES ({{Table1.triggeredRow.id}}, {{appsmith.user.name}}, {{moment().format("YYYY-MM-DD HH:mm:ss")}}, 2, {{Input1.text}});

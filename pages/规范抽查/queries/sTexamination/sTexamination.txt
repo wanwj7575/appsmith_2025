@@ -1,0 +1,1 @@
+select  *  from  t_examination where DATE_SUB({{DatePicker1.formattedDate}}, INTERVAL 30 DAY) <= date(examination_time)

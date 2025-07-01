@@ -1,0 +1,11 @@
+INSERT INTO inspection_business_record
+  (product_id, module, remarks,status,create_by,create_time)
+VALUES
+  (
+    {{ Select1.selectedOptionValue }},
+    {{ Input2.text}},
+    {{ Input3.text }},
+		0,
+		 {{ appsmith.user.name}},
+		{{moment().format("YYYY-MM-DD HH:mm:ss ")}}
+  );

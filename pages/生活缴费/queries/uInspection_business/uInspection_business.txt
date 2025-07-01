@@ -1,0 +1,6 @@
+UPDATE inspection_business_record SET
+    status = 1,
+    end_by = {{appsmith.user.name}},
+    relieve_remarks = {{Input4.text}},
+		end_time={{moment().format("YYYY-MM-DD HH:mm:ss ")}}
+  WHERE id = {{Table2.triggeredRow.id}}; -- Specify a valid condition here. Removing the condition may update every row in the table!

@@ -1,0 +1,10 @@
+INSERT INTO t_project_reord (project_id, remarks, status_type,create_by,create_time, edit_type)
+  VALUES ({{Table1.triggeredRow.id}}, 
+					{{Input12.text}}, 
+				 '已暂停',
+				 {{appsmith.user.name}},
+				 {{moment().format("YYYY-MM-DD HH:mm:ss ")}},
+				 1);
+UPDATE t_project SET
+			status = 4
+  WHERE id = {{Table1.triggeredRow.id}};

@@ -1,0 +1,108 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "",
+  "borderColor": "#a1a1aa",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "displayName": "Text",
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    },
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "textColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "textColor"
+    },
+    {
+      "key": "backgroundColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "rvhd8vokvs",
+  "leftColumn": 52,
+  "logBlackList": {
+    "animateLoading": true,
+    "borderRadius": true,
+    "bottomRow": true,
+    "boxShadow": true,
+    "displayName": true,
+    "dynamicBindingPathList": true,
+    "dynamicTriggerPathList": true,
+    "fontFamily": true,
+    "fontSize": true,
+    "fontStyle": true,
+    "hideCard": true,
+    "iconSVG": true,
+    "isCanvas": true,
+    "isDeprecated": true,
+    "isLoading": true,
+    "isVisible": true,
+    "key": true,
+    "leftColumn": true,
+    "minHeight": true,
+    "overflow": true,
+    "parentColumnSpace": true,
+    "parentId": true,
+    "parentRowSpace": true,
+    "renderMode": true,
+    "replacement": true,
+    "rightColumn": true,
+    "searchTags": true,
+    "shouldTruncate": true,
+    "text": true,
+    "textAlign": true,
+    "textColor": true,
+    "textStyle": true,
+    "topRow": true,
+    "truncateButtonColor": true,
+    "type": true,
+    "version": true,
+    "widgetId": true,
+    "widgetName": true
+  },
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "overflow": "NONE",
+  "parentId": "e5tu9icp1p",
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchTags": [
+    "typography",
+    "paragraph",
+    "label"
+  ],
+  "shouldTruncate": false,
+  "text": "{{currentItem.status == 1? '预排期':currentItem.status == 2 & currentItem.time_st == 1? '进行中':currentItem.status == 2 & currentItem.time_st == 2?  '已延期':currentItem.status== 4? '已暂停':'已完成'}}",
+  "textAlign": "RIGHT",
+  "textColor": "{{currentItem.status == 1? '#6366f1':currentItem.status == 2 & currentItem.time_st == 1? '#22c55e':currentItem.status == 2 & currentItem.time_st == 2?  '#ef4444':currentItem.status== 4? '#eab308':'#a1a1aa'}}",
+  "textStyle": "HEADING",
+  "topRow": 0,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "m3fl201q9d",
+  "widgetName": "Text1Copy1"
+}

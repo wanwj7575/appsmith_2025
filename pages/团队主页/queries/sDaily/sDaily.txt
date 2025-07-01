@@ -1,0 +1,1 @@
+SELECT  * FROM daily WHERE status= 1 and   create_time > DATE_SUB(CURDATE(), INTERVAL 1 DAY)

@@ -1,0 +1,84 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 12,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( sRProject.data[0].status == 1? '预排期':sRProject.data[0].status == 2? '进行中':sRProject.data[0].status== 3? '延期中':sRProject.data[0].status== 4? '已暂停':'已完成'))(Select10.options, Select10.serverSideFiltering) }}",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "onDropdownClose"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "onDropdownOpen"
+    },
+    {
+      "key": "onDropdownClose"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "1q5dimu7dh",
+  "labelAlignment": "left",
+  "labelPosition": "Auto",
+  "labelText": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 5,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 15,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 8,
+  "onDropdownClose": "",
+  "onDropdownOpen": "",
+  "onOptionChange": "{{JSObject2.myFun1()}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 8.13818359375,
+  "parentId": "2hirn9ksuj",
+  "parentRowSpace": 10,
+  "placeholderText": "",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 15,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"label\": \"预排期\",\n    \"value\": \"预排期\"\n  },\n  {\n    \"label\": \"进行中\",\n    \"value\": \"进行中\"\n  },\n  {\n    \"label\": \"已暂停\",\n    \"value\": \"已暂停\"\n  },\n\t{\n    \"label\": \"已完成\",\n    \"value\": \"已完成\"\n  }\n]",
+  "topRow": 8,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "uwj0lkyygk",
+  "widgetName": "Select10"
+}

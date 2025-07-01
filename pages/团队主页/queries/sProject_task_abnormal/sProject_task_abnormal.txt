@@ -1,0 +1,1 @@
+select  count(1) as number  from  t_project_task tpt left join t_project tp on tpt .project_id = tp.id  where tp.status != 4  and tp.existence = 1 and tpt.existence =1  and  YEAR( tpt.task_starttime) = YEAR( NOW( ) )  and tpt.status = 0 and  tpt.task_endtime < curdate() 

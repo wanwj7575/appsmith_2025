@@ -1,0 +1,1 @@
+select  ic.business ,  count(1) as number  from  inspection_case ic where date_format(ic.create_time,'%Y-%m')={{DatePicker1.formattedDate}} and ic.status = 1   group by ic.business  order by number desc 

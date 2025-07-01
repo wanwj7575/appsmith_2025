@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "63a8f753c9afa60b823cc900_63f332753a95ef1d1bf432b8",
+  "id": "禅道问题_JSObject1",
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "禅道问题",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

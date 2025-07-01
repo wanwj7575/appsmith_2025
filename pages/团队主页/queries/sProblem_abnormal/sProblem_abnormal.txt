@@ -1,0 +1,1 @@
+select  count(1) as number  from problem_order po   where po .status =4  and  YEAR( PO.create_time) = YEAR( NOW( ) ) 

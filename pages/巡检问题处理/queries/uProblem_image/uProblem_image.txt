@@ -1,0 +1,4 @@
+update t_inspection_images ti  SET ti.problem_id = (select po.problem_id  from  problem_order po where po.inspection_record_id = {{Table1.triggeredRow.inspection_record_id}})
+where ti.inspection_record_id = {{Table1.triggeredRow.inspection_record_id}}
+
+

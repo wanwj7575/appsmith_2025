@@ -1,0 +1,3 @@
+select zp.name ,COUNT(1) as bug_number FROM  zt_bug zb 
+left join zt_project zp on zb.project  = zp.id
+WHERE zp.name in ({{appsmith.store.project_name_all}})  GROUP  by  zp.name 

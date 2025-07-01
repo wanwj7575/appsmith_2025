@@ -1,0 +1,2 @@
+INSERT INTO sys_product (product_name, product_type, product_group, remarks, created_by, created_time, status)
+  VALUES ({{Input1.text}},  {{Select1.selectedOptionValue}},  {{Select2.selectedOptionValue}},  {{Input2.text}},  {{appsmith.user.name}}, {{moment().format("YYYY-MM-DD HH:mm:ss ")}}, 1);

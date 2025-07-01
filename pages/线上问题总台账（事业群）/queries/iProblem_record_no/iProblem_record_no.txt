@@ -1,0 +1,5 @@
+insert   into   problem_record (problem_id,follow_record,create_by,create_time,type) 
+value({{Table1.triggeredRow.problem_id}},{{Input3Copy.text}},{{Input2Copy.inputText}},{{moment().format("YYYY-MM-DD HH:mm:ss")}},2);
+UPDATE problem_order
+  SET status = 5
+  WHERE problem_id = {{ Table1.triggeredRow.problem_id }};

@@ -1,0 +1,2 @@
+INSERT INTO channel_order (remarks, create_time, creator_by, channel_name)
+  VALUES ({{Input2.text}},{{moment().format("YYYY-MM-DD HH:mm:ss")}} , {{appsmith.user.name}}, {{Input1.text}});

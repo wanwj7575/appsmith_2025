@@ -1,0 +1,2 @@
+insert  into  t_examination  (examination_project,examination_term,examination_people,details,qualified,other,create_by,examination_time,confirm) values 
+	({{Table1.newRow.examination_project}},{{Table1.newRow.examination_term}},{{Table1.newRow.examination_people}},{{Table1.newRow.details}},{{Table1.newRow.qualified}},{{Table1.newRow.other}},{{appsmith.user.name}},{{moment().format("YYYY-MM-DD HH:mm:ss")}},0)

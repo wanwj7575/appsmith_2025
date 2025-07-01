@@ -1,0 +1,7 @@
+INSERT INTO t_task_record (type,remarks, create_by, create_time, task_id, edit_type)
+  VALUES ({{List1.selectedItem.status}},
+					{{Input9.inputText}}, 
+					{{appsmith.user.name}}, 
+					{{moment().format("YYYY-MM-DD HH:mm:ss ")}}, 
+				 {{List1.selectedItem.id}},
+				 2);

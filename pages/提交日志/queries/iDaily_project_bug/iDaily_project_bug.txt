@@ -1,0 +1,5 @@
+INSERT INTO daily_record ( type, daily_id, create_date, record_name, record_number,event_id, record_remarks )
+VALUES
+	( 2, (SELECT id FROM daily WHERE create_by= {{appsmith.user.name}} ORDER BY create_time DESC LIMIT 1), SYSDATE(), {{Table2.triggeredRow.name}}, {{Table2.triggeredRow.number}}, {{Table2.triggeredRow.project}},{{Table2.triggeredRow.daily}} ) 
+	ON DUPLICATE KEY UPDATE 
+	record_remarks=VALUES(record_remarks)

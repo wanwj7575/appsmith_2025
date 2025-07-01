@@ -1,0 +1,1 @@
+select tp.project_name,tp.id  from  t_project tp  left join t_project_reord tpr  on tp.id = tpr.project_id  where DATE_SUB(CURDATE(), INTERVAL 30 DAY) <= date(tpr.create_time) and  tp.existence =1 and tpr.status_type  = '已完成' group by tp.project_name 

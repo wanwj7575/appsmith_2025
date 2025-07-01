@@ -1,0 +1,2 @@
+INSERT INTO sys_user (email, username, name, create_time)
+  VALUES ({{Input1.text}}, {{Input2.text}}, {{Input3.text}},{{moment().format("YYYY-MM-DD HH:mm:ss ")}});

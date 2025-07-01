@@ -1,0 +1,9 @@
+INSERT INTO t_project_task (project_id, task_name, task_starttime,task_endtime, status, acceptor, create_time, remarks,create_by,existence)
+  VALUES ({{appsmith.store.project_id}},
+					{{Select7.selectedOptionValue}},
+					{{DatePicker2.formattedDate}},{{DatePicker2Copy1.formattedDate}},  0, 
+					{{Select8.selectedOptionValue}}, 
+					{{moment().format("YYYY-MM-DD HH:mm:ss ")}},
+				 {{Input5.text}},
+				 {{appsmith.user.name}},
+				 1);

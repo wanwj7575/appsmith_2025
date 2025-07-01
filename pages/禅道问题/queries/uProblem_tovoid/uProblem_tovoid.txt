@@ -1,0 +1,5 @@
+UPDATE problem_order SET
+    done_time = {{moment().format("YYYY-MM-DD HH:mm:ss")}},
+    tovoid_reason = {{Input2.text}},
+		 status = 2
+  WHERE problem_id = {{Table1.triggeredRow.problem_id}}; -- Specify a valid condition here. Removing the condition may update every row in the table!

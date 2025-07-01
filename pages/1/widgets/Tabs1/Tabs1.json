@@ -1,0 +1,235 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 77,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "children": [
+    {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 630,
+      "boxShadow": "none",
+      "canExtend": true,
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "accentColor"
+        }
+      ],
+      "dynamicTriggerPathList": [],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isDisabled": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "wb1ye9jgtn",
+      "leftColumn": 0,
+      "minHeight": 400,
+      "parentColumnSpace": 1,
+      "parentId": "ctndebt19b",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "rightColumn": 481.5,
+      "shouldScrollContents": false,
+      "tabId": "tab1",
+      "tabName": "全部",
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "wqcmpph3gw",
+      "widgetName": "Canvas1"
+    },
+    {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 510,
+      "boxShadow": "none",
+      "canExtend": true,
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "accentColor"
+        }
+      ],
+      "dynamicTriggerPathList": [],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isDisabled": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "wb1ye9jgtn",
+      "leftColumn": 0,
+      "minHeight": 400,
+      "parentColumnSpace": 1,
+      "parentId": "ctndebt19b",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "rightColumn": 481.5,
+      "shouldScrollContents": false,
+      "tabId": "tab2",
+      "tabName": "待关闭",
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "f8vumlk1ya",
+      "widgetName": "Canvas2"
+    },
+    {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 660,
+      "boxShadow": "none",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "accentColor"
+        }
+      ],
+      "dynamicTriggerPathList": [],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "wb1ye9jgtn",
+      "leftColumn": 0,
+      "minHeight": 670,
+      "parentColumnSpace": 1,
+      "parentId": "ctndebt19b",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "rightColumn": 1284,
+      "tabId": "tabram9gs5dsu",
+      "tabName": "待解决",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "2o19l144w8",
+      "widgetName": "Canvas3"
+    },
+    {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 660,
+      "boxShadow": "none",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "accentColor"
+        }
+      ],
+      "dynamicTriggerPathList": [],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "3zlczt0ket",
+      "leftColumn": 0,
+      "minHeight": 670,
+      "parentColumnSpace": 1,
+      "parentId": "ctndebt19b",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "rightColumn": 1284,
+      "tabId": "tabip4htufbm2",
+      "tabName": "分析",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "lfzx4tn1qv",
+      "widgetName": "Canvas4"
+    }
+  ],
+  "defaultTab": "全部",
+  "displayName": "Tabs",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTabSelected"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
+  "isCanvas": true,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "no8d9vd8hh",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onTabSelected": "{{JSObject1.myFun1()}}",
+  "parentColumnSpace": 20.0625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "shouldScrollContents": false,
+  "shouldShowTabs": true,
+  "tabsObj": {
+    "tab1": {
+      "id": "tab1",
+      "index": 0,
+      "isVisible": true,
+      "label": "全部",
+      "widgetId": "wqcmpph3gw"
+    },
+    "tab2": {
+      "id": "tab2",
+      "index": 1,
+      "isVisible": true,
+      "label": "待关闭",
+      "widgetId": "f8vumlk1ya"
+    },
+    "tabip4htufbm2": {
+      "id": "tabip4htufbm2",
+      "index": 3,
+      "isVisible": true,
+      "label": "分析",
+      "widgetId": "lfzx4tn1qv"
+    },
+    "tabram9gs5dsu": {
+      "id": "tabram9gs5dsu",
+      "index": 2,
+      "isVisible": true,
+      "label": "待解决",
+      "widgetId": "2o19l144w8"
+    }
+  },
+  "topRow": 10,
+  "type": "TABS_WIDGET",
+  "version": 3,
+  "widgetId": "ctndebt19b",
+  "widgetName": "Tabs1"
+}

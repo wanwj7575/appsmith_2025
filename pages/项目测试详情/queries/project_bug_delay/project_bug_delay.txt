@@ -1,0 +1,2 @@
+SELECT  * FROM  zt_bug  WHERE  project = (SELECT  id  FROM   zt_project  WHERE  zt_project.name  = {{appsmith.store.project_name}})  
+AND  resolution = 'postponed'

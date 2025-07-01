@@ -1,0 +1,1 @@
+select  ic.business  from   inspection_case ic  where ic.status = 1 group by  business 
