@@ -3,7 +3,7 @@
   "allowAddNewRow": false,
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 51,
+  "bottomRow": 48,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": false,
   "childStylesheet": {
@@ -374,7 +374,7 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{sInspection_task.data}}",
   "textSize": "0.875rem",
-  "topRow": 8,
+  "topRow": 4,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 1,

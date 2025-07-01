@@ -51,9 +51,10 @@
     "reocrd_remarks",
     "time_st",
     "customColumn1",
+    "zentao_task_id",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1715658373127,
+  "columnUpdatedAt": 1751357832811,
   "columnWidthMap": {
     "project_endtime": 114,
     "project_name": 344,
@@ -193,6 +194,9 @@
     },
     {
       "key": "primaryColumns.customColumn1.boxShadow"
+    },
+    {
+      "key": "primaryColumns.zentao_task_id.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -987,6 +991,40 @@
       "notation": "standard",
       "originalId": "zentao_project_id",
       "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "zentao_task_id": {
+      "alias": "zentao_task_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"zentao_task_id\"])) : zentao_task_id })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "zentao_task_id",
+      "index": 16,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "zentao_task_id",
+      "notation": "standard",
+      "originalId": "zentao_task_id",
+      "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 8,
+  "bottomRow": 4,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -42,7 +42,7 @@
   "text": "----------品质驱动，多彩未来-------------",
   "textAlign": "CENTER",
   "textColor": "#3b82f6",
-  "topRow": 4,
+  "topRow": 0,
   "truncateButtonColor": "#FFC13D",
   "type": "TEXT_WIDGET",
   "version": 1,
