@@ -12,6 +12,11 @@
   },
   "applicationVersion": 2,
   "color": "#F3F1C7",
+  "embedSetting": {
+    "height": "720px",
+    "showNavigationBar": false,
+    "width": "1024px"
+  },
   "evaluationVersion": 2,
   "icon": "cat",
   "pages": [
