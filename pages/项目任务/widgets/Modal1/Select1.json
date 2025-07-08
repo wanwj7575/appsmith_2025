@@ -2,10 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 14,
+  "bottomRow": 11,
   "boxShadow": "none",
-  "defaultOptionValue": "",
-  "displayName": "Select",
+  "defaultOptionValue": "GREEN",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -20,58 +19,46 @@
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "onDropdownOpen"
-    },
-    {
       "key": "sourceData"
-    },
-    {
-      "key": "onOptionChange"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onOptionChange"
-    },
-    {
-      "key": "onDropdownOpen"
-    }
-  ],
-  "hideCard": false,
-  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-  "isDeprecated": false,
+  "dynamicTriggerPathList": [],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": false,
   "isVisible": true,
-  "key": "l46ge2m3nf",
+  "key": "k2d49k1jeg",
   "labelAlignment": "left",
-  "labelPosition": "Left",
-  "labelText": "产品线：",
+  "labelPosition": "Top",
+  "labelText": "Label",
   "labelTextSize": "0.875rem",
-  "labelWidth": "6",
-  "leftColumn": 30,
+  "labelWidth": 5,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onDropdownOpen": "",
-  "onOptionChange": "",
+  "minWidth": 450,
+  "mobileBottomRow": 11,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 19,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
   "optionLabel": "label",
   "optionValue": "value",
-  "parentColumnSpace": 13.90625,
-  "parentId": "m7enf1wdhr",
+  "originalBottomRow": 11,
+  "originalTopRow": 4,
+  "parentColumnSpace": 11.15625,
+  "parentId": "aqu3acn8op",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
-  "rightColumn": 59,
-  "searchTags": [
-    "dropdown"
-  ],
+  "responsiveBehavior": "fill",
+  "rightColumn": 60,
   "serverSideFiltering": false,
-  "sourceData": "{{sProduct.data.map((s)=>{\n\treturn {label:s.product_name, value: s.product_name}\n})}}",
-  "topRow": 10,
+  "sourceData": "{{sProduct.data.map((s)=>{\n\treturn {\n\t\tlabel:s.product_name,\n\t\tvalue:s.product_name\n\t}\n})}}",
+  "topRow": 4,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "759du8awnf",
+  "widgetId": "egi1x7ueor",
   "widgetName": "Select1"
 }

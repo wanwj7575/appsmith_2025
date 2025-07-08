@@ -5,7 +5,6 @@
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "TERTIARY",
-  "displayName": "Icon Button",
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
@@ -14,27 +13,32 @@
       "key": "borderRadius"
     }
   ],
-  "hideCard": false,
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "iconName": "cross",
-  "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
   "iconSize": 24,
-  "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "9q45yg9jgz",
-  "leftColumn": 61,
-  "onClick": "{{closeModal('Modal1')}}",
-  "parentId": "m7enf1wdhr",
+  "key": "zcc2wzm9kc",
+  "leftColumn": 58,
+  "minWidth": 50,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 58,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onClick": "{{closeModal(Modal1.name);}}",
+  "parentId": "aqu3acn8op",
   "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
   "rightColumn": 64,
-  "searchTags": [
-    "click",
-    "submit"
-  ],
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "jf7lccmzjr",
+  "widgetId": "t1yycxui1q",
   "widgetName": "IconButton1"
 }

@@ -25,7 +25,7 @@
     "dynamicBindingPathList": [],
     "name": "sProduct",
     "pageId": "项目看板",
-    "runBehaviour": "ON_PAGE_LOAD",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

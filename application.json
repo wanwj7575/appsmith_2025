@@ -269,6 +269,10 @@
     {
       "id": "巡检使用手册",
       "isDefault": false
+    },
+    {
+      "id": "项目任务",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

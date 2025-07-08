@@ -1,11 +1,10 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": false,
+  "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 18,
   "boxShadow": "none",
-  "defaultOptionValue": "",
-  "displayName": "Select",
+  "defaultOptionValue": "GREEN",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -23,45 +22,43 @@
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onDropdownOpen"
-    }
-  ],
-  "hideCard": false,
-  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-  "isDeprecated": false,
+  "dynamicTriggerPathList": [],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": false,
   "isVisible": true,
-  "key": "l46ge2m3nf",
+  "key": "k2d49k1jeg",
   "labelAlignment": "left",
-  "labelPosition": "Left",
-  "labelText": "项目类型：",
+  "labelPosition": "Top",
+  "labelText": "项目任务类型：",
   "labelTextSize": "0.875rem",
-  "labelWidth": "6",
-  "leftColumn": 30,
+  "labelWidth": 5,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onDropdownOpen": "{{sDict_projecttype.run()}}",
+  "minWidth": 450,
+  "mobileBottomRow": 11,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 19,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
   "optionLabel": "label",
   "optionValue": "value",
-  "parentColumnSpace": 13.90625,
-  "parentId": "m7enf1wdhr",
+  "originalBottomRow": 18,
+  "originalTopRow": 11,
+  "parentColumnSpace": 11.15625,
+  "parentId": "aqu3acn8op",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
-  "rightColumn": 59,
-  "searchTags": [
-    "dropdown"
-  ],
+  "responsiveBehavior": "fill",
+  "rightColumn": 28,
   "serverSideFiltering": false,
-  "sourceData": "{{sDict_projecttype.data.map((s)=>{\n\treturn {\n\t\tlabel:s.item_text,\n\t\tvalue:s.item_text\n\t}\n})}}",
-  "topRow": 14,
+  "sourceData": "{{sDict_projecttype.data.map((s)=>{\n\treturn {\n\t\tlabel:s.item_text,\n\t\tvalue:s.item_value\n\t}\n})}}",
+  "topRow": 11,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "lrpzg3v1pj",
-  "widgetName": "Select3"
+  "widgetId": "qc7q3g6tpa",
+  "widgetName": "Select2"
 }

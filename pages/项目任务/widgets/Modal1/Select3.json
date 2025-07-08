@@ -4,8 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 18,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.user.name))(Select2.options, Select2.serverSideFiltering) }}",
-  "displayName": "Select",
+  "defaultOptionValue": "GREEN",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,9 +14,6 @@
     },
     {
       "key": "sourceData"
-    },
-    {
-      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -26,45 +22,43 @@
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onDropdownOpen"
-    }
-  ],
-  "hideCard": false,
-  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-  "isDeprecated": false,
+  "dynamicTriggerPathList": [],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "l46ge2m3nf",
+  "key": "k2d49k1jeg",
   "labelAlignment": "left",
-  "labelPosition": "Left",
-  "labelText": "负责人：",
+  "labelPosition": "Top",
+  "labelText": "测试负责人：",
   "labelTextSize": "0.875rem",
-  "labelWidth": "6",
-  "leftColumn": 1,
+  "labelWidth": 5,
+  "leftColumn": 30,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onDropdownOpen": "{{sUser.run()}}",
+  "minWidth": 450,
+  "mobileBottomRow": 11,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 19,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
   "optionLabel": "label",
   "optionValue": "value",
-  "parentColumnSpace": 13.90625,
-  "parentId": "m7enf1wdhr",
+  "originalBottomRow": 18,
+  "originalTopRow": 11,
+  "parentColumnSpace": 11.15625,
+  "parentId": "aqu3acn8op",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
-  "rightColumn": 29,
-  "searchTags": [
-    "dropdown"
-  ],
+  "responsiveBehavior": "fill",
+  "rightColumn": 60,
   "serverSideFiltering": false,
   "sourceData": "{{sUser.data.map((s)=>{\n\treturn {\n\t\tlabel:s.name,\n\t\tvalue:s.name\n\t}\n})}}",
-  "topRow": 14,
+  "topRow": 11,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "c861x7vw9y",
-  "widgetName": "Select2"
+  "widgetId": "kzx38psy4l",
+  "widgetName": "Select3"
 }

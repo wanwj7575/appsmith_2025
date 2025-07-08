@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6628ba498028a41bf3743a19_663c8df325dfd304c6bbbbf9",
-  "id": "项目看板_sDict_projecttype",
+  "gitSyncId": "686244b3b31560462d30d7a1_56196982-1441-479b-b296-9308313c58df",
+  "id": "项目任务_sProduct",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM sys_dict_item WHERE  dict_id= 28;",
+      "body": "SELECT * FROM  sys_product ",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,9 +23,9 @@
       "pluginId": "mysql-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "sDict_projecttype",
-    "pageId": "项目看板",
-    "runBehaviour": "MANUAL",
+    "name": "sProduct",
+    "pageId": "项目任务",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

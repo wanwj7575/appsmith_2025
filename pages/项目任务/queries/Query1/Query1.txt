@@ -1,0 +1,4 @@
+SELECT zp.id,zp.name as project_name ,zt.name ,zt.status ,zt.estStarted  ,zt.deadline ,zu.realname,zt.`work`  FROM  zt_task zt 
+left join zt_project zp on zt .project  = zp .id  
+left join zt_user zu on zt.openedBy = zu.account 
+WHERE zt.type = 'test_task' and zt.status != 'closed' and zt.openedDate >=CURDATE()-INTERVAL 6 MONTH   order by  zt.openedBy DESC 
