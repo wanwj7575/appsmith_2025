@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT  zt.id ,zt.name ,zt.status ,zt.estStarted , zt.deadline  ,zt.estimate ,zp.name as project_name, zu.realname  FROM  zt_task zt \nleft join  zt_project zp on zt.project = zp.id  \nleft join  zt_user zu on zt.openedBy = zu.account \nWHERE  zt.type = 'test_task'   and  zt.project  in ({{appsmith.store.select_project}})\n",
+      "body": "SELECT  zt.id ,zt.name ,zt.status ,zt.estStarted , zt.deadline  ,zt.estimate ,zp.name as project_name, zu.realname  FROM  zt_task zt \nleft join  zt_project zp on zt.project = zp.id  \nleft join  zt_user zu on zt.openedBy = zu.account \nWHERE  zt.type = 'test_task'   and  zt.id  in ({{appsmith.store.select_project}})\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
