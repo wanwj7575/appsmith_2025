@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE inspection_record SET\n    confirm = 0,\n\t\terror_description = {{appsmith.user.name + '处理为 重新激活'}}\n  WHERE  inspection_record_id= {{Table5.selectedRow.inspection_record_id}}; ",
+      "body": "UPDATE inspection_record SET\n    confirm = 0,\n\t\terror_description = {{appsmith.user.name + '处理为 重新激活'}}\n  WHERE  inspection_record_id= {{Table5.triggeredRow.inspection_record_id}}; ",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
