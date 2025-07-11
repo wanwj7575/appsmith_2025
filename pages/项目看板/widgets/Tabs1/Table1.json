@@ -187,16 +187,10 @@
       "key": "primaryColumns.status.boxShadow"
     },
     {
-      "key": "primaryColumns.customColumn1.buttonColor"
-    },
-    {
-      "key": "primaryColumns.customColumn1.borderRadius"
-    },
-    {
-      "key": "primaryColumns.customColumn1.boxShadow"
-    },
-    {
       "key": "primaryColumns.zentao_task_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -220,6 +214,12 @@
     },
     {
       "key": "primaryColumns.status.menuColor"
+    },
+    {
+      "key": "primaryColumns.status.menuItems.menuItemv7c06lbdzv.onClick"
+    },
+    {
+      "key": "primaryColumns.status.menuItems.menuItemiz0e9jmo8u.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -258,6 +258,12 @@
     },
     {
       "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItem523xlzjw9q.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItemsedozsx675.onClick"
     }
   ],
   "enableClientSideSearch": false,
@@ -403,13 +409,20 @@
       "alias": "操作",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "buttonLabel": "查看",
       "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "button",
+      "columnType": "menuButton",
       "computedValue": "",
+      "configureMenuItems": {
+        "config": {
+          "id": "config",
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Menu Item"
+        },
+        "id": "config",
+        "label": "Configure menu items"
+      },
       "currencyCode": "USD",
       "customAlias": "",
       "decimals": 0,
@@ -428,9 +441,41 @@
       "isVisible": true,
       "label": "操作",
       "labelColor": "#FFFFFF",
+      "menuButtonLabel": "操作",
+      "menuColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "menuItems": {
+        "menuItem523xlzjw9q": {
+          "id": "menuItem523xlzjw9q",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "作废",
+          "onClick": "{{Update_t_project_no.run().then(() => {\n  Select_t_project1.run();\n});}}",
+          "widgetId": "up1vvqlmzj"
+        },
+        "menuItemsedozsx675": {
+          "id": "menuItemsedozsx675",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "查看",
+          "onClick": "{{navigateTo('https://chandao.duocai.online/zentao/task-view-' + Table1.triggeredRow.zentao_task_id + '.html', {}, 'NEW_WINDOW');}}",
+          "widgetId": "kwuqlmh1vs"
+        },
+        "menuItemvctb23colu": {
+          "id": "menuItemvctb23colu",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "新增日志",
+          "widgetId": "74k3pdnn15"
+        }
+      },
+      "menuItemsSource": "STATIC",
       "notation": "standard",
-      "onClick": "{{navigateTo('https://chandao.duocai.online/zentao/project-bug-' + currentRow.zentao_project_id + '.html', {}, 'NEW_WINDOW');}}",
+      "onClick": "{{navigateTo('https://chandao.duocai.online/zentao/project-task-' + currentRow.zentao_project_id + '.html', {}, 'NEW_WINDOW');}}",
       "originalId": "customColumn1",
+      "sourceData": [],
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,

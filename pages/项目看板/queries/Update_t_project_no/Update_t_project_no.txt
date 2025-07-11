@@ -1,0 +1,1 @@
+UPDATE t_project SET existence = 0  WHERE id= {{Table1.triggeredRow.id}};

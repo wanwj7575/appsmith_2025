@@ -43,8 +43,15 @@
     "customColumn2",
     "id"
   ],
-  "columnUpdatedAt": 1751963460740,
-  "columnWidthMap": {},
+  "columnUpdatedAt": 1752201855084,
+  "columnWidthMap": {
+    "deadline": 116,
+    "estStarted": 107,
+    "name": 359,
+    "project_name": 239,
+    "realname": 107,
+    "status": 96
+  },
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,
@@ -92,6 +99,12 @@
     },
     {
       "key": "primaryColumns.id.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn2.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn2.boxShadow"
     }
   ],
   "dynamicPropertyPathList": [
@@ -175,10 +188,15 @@
       "alias": "同步",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "#eab308",
+      "buttonLabel": "同步",
       "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "text",
+      "columnType": "button",
       "computedValue": "",
       "currencyCode": "USD",
+      "customAlias": "",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
@@ -298,7 +316,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "id",
       "notation": "standard",
       "originalId": "id",

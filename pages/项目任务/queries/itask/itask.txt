@@ -1,4 +1,4 @@
-INSERT INTO t_project (project_name, project_product,  project_starttime, project_endtime, status, existence, test_director, create_by, create_time, remarks, project_type,zentao_project_id)
+INSERT INTO t_project (project_name, project_product,  project_starttime, project_endtime, status, existence, test_director, create_by, create_time, remarks, project_type,zentao_task_id)
   VALUES ({{Table1.triggeredRow.name}}, 
 					{{Select1.selectedOptionValue}}, 
 					{{Table1.triggeredRow.estStarted}}, 
