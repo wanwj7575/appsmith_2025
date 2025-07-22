@@ -1,0 +1,3 @@
+INSERT INTO appsmith.u_datafile
+(file_name, catagory, designer, catalogue_id, file_images_id,download)
+VALUES( {{Input1.text}}, {{MultiSelect1.selectedOptionLabels.join(',')}}, {{Select1Copy.selectedOptionValue}}, {{Select1.selectedOptionValue}}, {{FilePicker1.files[0].data}},{{Input1Copy.text}});

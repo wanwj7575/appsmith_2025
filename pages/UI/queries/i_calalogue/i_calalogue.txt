@@ -1,0 +1,3 @@
+INSERT INTO appsmith.u_catalogue
+(one_catalogue, two_calalogue)
+VALUES({{Input1.text}}, {{Input1Copy.text}});

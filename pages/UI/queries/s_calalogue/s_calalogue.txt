@@ -1,0 +1,2 @@
+SELECT uc.*, GROUP_CONCAT(ud.file_name SEPARATOR ', ') as file_all FROM u_catalogue uc
+left join u_datafile ud on uc.id= ud.catalogue_id group by uc.id

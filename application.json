@@ -273,6 +273,14 @@
     {
       "id": "项目任务",
       "isDefault": false
+    },
+    {
+      "id": "UI",
+      "isDefault": false
+    },
+    {
+      "id": "UI datafile",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

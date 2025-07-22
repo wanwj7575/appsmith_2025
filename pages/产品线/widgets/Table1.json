@@ -36,9 +36,11 @@
     "status",
     "remarks",
     "created_by",
-    "created_time"
+    "created_time",
+    "describe",
+    "test_head"
   ],
-  "columnUpdatedAt": 1713945400926,
+  "columnUpdatedAt": 1752549355739,
   "columnWidthMap": {
     "created_by": 138,
     "created_time": 203,
@@ -90,6 +92,12 @@
     },
     {
       "key": "primaryColumns.created_time.computedValue"
+    },
+    {
+      "key": "primaryColumns.describe.computedValue"
+    },
+    {
+      "key": "primaryColumns.test_head.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -177,6 +185,40 @@
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "describe": {
+      "alias": "describe",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"describe\"])) : describe })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "describe",
+      "index": 8,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "describe",
+      "notation": "standard",
+      "originalId": "describe",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
       "width": 150
@@ -339,6 +381,40 @@
       "originalId": "status",
       "sticky": "",
       "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "test_head": {
+      "alias": "test_head",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"test_head\"])) : test_head })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "test_head",
+      "index": 9,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "test_head",
+      "notation": "standard",
+      "originalId": "test_head",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
       "width": 150
