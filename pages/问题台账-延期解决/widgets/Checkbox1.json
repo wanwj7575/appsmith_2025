@@ -3,7 +3,7 @@
   "alignWidget": "LEFT",
   "animateLoading": false,
   "borderRadius": "0.375rem",
-  "bottomRow": 13,
+  "bottomRow": 4,
   "defaultCheckedState": false,
   "displayName": "Checkbox",
   "dynamicBindingPathList": [
@@ -32,7 +32,7 @@
   "labelPosition": "Left",
   "labelStyle": "",
   "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
-  "leftColumn": 15,
+  "leftColumn": 30,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onCheckChange": "{{sProblem_order_delay.run()}}",
@@ -40,11 +40,11 @@
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 20,
+  "rightColumn": 39,
   "searchTags": [
     "boolean"
   ],
-  "topRow": 9,
+  "topRow": 0,
   "type": "CHECKBOX_WIDGET",
   "version": 1,
   "widgetId": "9taem56q7a",

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 13,
+  "bottomRow": 4,
   "boxShadow": "none",
   "buttonVariant": "PRIMARY",
   "childStylesheet": {
@@ -164,12 +164,12 @@
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 13,
+  "rightColumn": 25,
   "searchTags": [
     "click",
     "submit"
   ],
-  "topRow": 9,
+  "topRow": 0,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
   "widgetId": "36zacfb9ym",

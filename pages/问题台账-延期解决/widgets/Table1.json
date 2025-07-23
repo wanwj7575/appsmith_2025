@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 89,
+  "bottomRow": 80,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": false,
   "childStylesheet": {
@@ -37,7 +37,6 @@
     "channel",
     "business_group",
     "priority",
-    "images",
     "content",
     "receiver",
     "create_by",
@@ -57,9 +56,10 @@
     "deadline_time",
     "solve_project",
     "accepted_by",
-    "inspection_record_id"
+    "inspection_record_id",
+    "rproject_id"
   ],
-  "columnUpdatedAt": 1686816212921,
+  "columnUpdatedAt": 1753255707559,
   "columnWidthMap": {
     "business": 127,
     "business_group": 111,
@@ -163,9 +163,6 @@
       "key": "primaryColumns.relation_project.computedValue"
     },
     {
-      "key": "primaryColumns.images.computedValue"
-    },
-    {
       "key": "primaryColumns.deadline_time.computedValue"
     },
     {
@@ -185,6 +182,9 @@
     },
     {
       "key": "primaryColumns.inspection_record_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.rproject_id.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -644,36 +644,6 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "images": {
-      "alias": "images",
-      "allowCellWrapping": false,
-      "cellBackground": "",
-      "columnType": "image",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"images\"])) :  currentRow[\"images\"] })()}}",
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "images",
-      "imageSize": "LARGE",
-      "index": 23,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "图片",
-      "originalId": "images",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "inspection_record_id": {
       "alias": "inspection_record_id",
       "allowCellWrapping": false,
@@ -907,6 +877,40 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "rproject_id": {
+      "alias": "rproject_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"rproject_id\"])) : rproject_id })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "rproject_id",
+      "index": 25,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "rproject_id",
+      "notation": "standard",
+      "originalId": "rproject_id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "solution": {
       "alias": "solution",
       "allowCellWrapping": false,
@@ -1031,7 +1035,7 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{sProblem_order_delay.data}}",
   "textSize": "0.875rem",
-  "topRow": 13,
+  "topRow": 4,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 1,
