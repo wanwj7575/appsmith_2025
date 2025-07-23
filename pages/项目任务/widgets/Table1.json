@@ -38,18 +38,20 @@
     "estStarted",
     "deadline",
     "realname",
-    "work",
     "customColumn1",
     "customColumn2",
+    "work",
     "id"
   ],
-  "columnUpdatedAt": 1752201855084,
+  "columnUpdatedAt": 1753256089418,
   "columnWidthMap": {
+    "customColumn1": 82,
+    "customColumn2": 75,
     "deadline": 116,
     "estStarted": 107,
     "name": 359,
     "project_name": 239,
-    "realname": 107,
+    "realname": 89,
     "status": 96
   },
   "customIsLoading": false,
