@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT zp.id,zp.name as project_name ,zt.name ,zt.status ,zt.estStarted  ,zt.deadline ,zu.realname,zt.`work`  FROM  zt_task zt \nleft join zt_project zp on zt .project  = zp .id  \nleft join zt_user zu on zt.openedBy = zu.account \nWHERE zt.type = 'test_task' and zt.status != 'closed' and zt.openedDate >=CURDATE()-INTERVAL 6 MONTH   order by  zt.openedBy DESC ",
+      "body": "SELECT zt.id,zp.name as project_name ,zt.name ,zt.status ,zt.estStarted  ,zt.deadline ,zu.realname,zt.`work`  FROM  zt_task zt \nleft join zt_project zp on zt .project  = zp .id  \nleft join zt_user zu on zt.openedBy = zu.account \nWHERE zt.type = 'test_task' and zp.id !=1130  and zt.openedDate >= DATE_SUB(CURDATE(), INTERVAL 6 MONTH)   order by  zt.openedDate DESC ",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

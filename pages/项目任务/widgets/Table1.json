@@ -32,6 +32,7 @@
     }
   },
   "columnOrder": [
+    "id",
     "project_name",
     "name",
     "status",
@@ -40,10 +41,9 @@
     "realname",
     "customColumn1",
     "customColumn2",
-    "work",
-    "id"
+    "work"
   ],
-  "columnUpdatedAt": 1753256089418,
+  "columnUpdatedAt": 1754290718086,
   "columnWidthMap": {
     "customColumn1": 82,
     "customColumn2": 75,
@@ -114,10 +114,10 @@
       "key": "tableData"
     },
     {
-      "key": "primaryColumns.status.cellBackground"
+      "key": "primaryColumns.status.textColor"
     },
     {
-      "key": "primaryColumns.status.textColor"
+      "key": "primaryColumns.status.cellBackground"
     }
   ],
   "dynamicTriggerPathList": [
@@ -318,7 +318,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "id",
       "notation": "standard",
       "originalId": "id",
@@ -438,7 +438,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"status\"]== 'doing'?'进行中':currentRow[\"status\"]== 'done'?'已完成':currentRow[\"status\"]== 'wait'?'未开始':'已暂停')) : currentRow[\"status\"]== 'doing'?'进行中':currentRow[\"status\"]== 'done'?'已完成':currentRow[\"status\"]== 'wait'?'未开始':'已暂停' })()}}",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"status\"]== 'doing'?'进行中':currentRow[\"status\"]== 'done'?'已完成':currentRow[\"status\"]== 'wait'?'未开始':currentRow[\"status\"]== 'closed'?'已关闭':'已暂停')) : currentRow[\"status\"]== 'doing'?'进行中':currentRow[\"status\"]== 'done'?'已完成':currentRow[\"status\"]== 'wait'?'未开始':currentRow[\"status\"]== 'closed'?'已关闭':'已暂停' })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -459,7 +459,7 @@
       "notation": "standard",
       "originalId": "status",
       "sticky": "",
-      "textColor": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"status\"]== 'doing'?'#3b82f6':currentRow[\"status\"]== 'done'?'#71717a':currentRow[\"status\"]== 'wait'?'#22c55e':'#ef4444')) : currentRow[\"status\"]== 'doing'?'#3b82f6':currentRow[\"status\"]== 'done'?'#71717a':currentRow[\"status\"]== 'wait'?'#22c55e':'#ef4444' })()}}",
+      "textColor": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"status\"]== 'doing'?'#3b82f6':currentRow[\"status\"]== 'done'?'#71717a':currentRow[\"status\"]== 'wait'?'#22c55e':currentRow[\"status\"]== 'closed'?'#71717a':'#ef4444')) : currentRow[\"status\"]== 'doing'?'#3b82f6':currentRow[\"status\"]== 'done'?'#71717a':currentRow[\"status\"]== 'wait'?'#22c55e':currentRow[\"status\"]== 'closed'?'#71717a':'#ef4444' })()}}",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
