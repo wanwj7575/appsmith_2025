@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT *  FROM problem_order po  \nleft join (select * from (select *  from problem_record pr order by create_time  desc limit 1000 )  pr group by pr.problem_id ) pr on po.problem_id = pr.problem_id \nWHERE\n(accepted_by in (select  tcu .name  from t_company_user tcu left join t_dept td on tcu .dingTalkDepartmentId = td.id where td.`path`  like  CONCAT('%', ({{Select1.selectedOptionLabel? Select1.selectedOptionValue: '%'}}), '%')))  and \n(po.status = {{Select1Copy.selectedOptionValue? Select1Copy.selectedOptionValue:0}} or \n{{Select1Copy.selectedOptionValue? 0:1}}) and \n(po.deadline_time < {{Checkbox1.isChecked? moment().format(\"YYYY-MM-DD HH:mm:ss\"):0}} or {{Checkbox1.isChecked? 0:1}}) and \npo.status != 1 and po.status !=2  order by po.create_time desc ;",
+      "body": "SELECT *  FROM problem_order po  \nleft join (SELECT pr .*\nFROM problem_record pr \nINNER JOIN (\n    SELECT problem_id, MAX(create_time ) AS max_time\n    FROM problem_record \n    GROUP BY problem_id\n) pr2 ON pr.problem_id  = pr2.problem_id  AND pr.create_time = pr2.max_time) pr on po.problem_id = pr.problem_id\nWHERE\n(po.status = {{Select1Copy.selectedOptionValue? Select1Copy.selectedOptionValue:0}} or \n{{Select1Copy.selectedOptionValue? 0:1}}) and \n(po.deadline_time < {{Checkbox1.isChecked? moment().format(\"YYYY-MM-DD HH:mm:ss\"):0}} or {{Checkbox1.isChecked? 0:1}}) and \npo.status != 1 and po.status !=2  order by po.create_time desc ;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

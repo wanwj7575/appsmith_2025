@@ -32,10 +32,10 @@
     }
   },
   "columnOrder": [
+    "problem_id",
     "name",
     "business",
     "category",
-    "problem_id",
     "channel",
     "business_group",
     "receiver",
@@ -63,20 +63,21 @@
     "type",
     "rproject_id"
   ],
-  "columnUpdatedAt": 1714295374066,
+  "columnUpdatedAt": 1754374647083,
   "columnWidthMap": {
-    "accepted_by": 128,
-    "business": 135,
-    "category": 99,
-    "content": 361,
+    "accepted_by": 101,
+    "business": 115,
+    "category": 87,
+    "content": 321,
     "create_by": 78,
-    "create_time": 177,
+    "create_time": 168,
     "deadline_time": 151,
     "done_time": 193,
     "handl_feedback": 206,
-    "name": 436,
+    "name": 357,
     "priority": 98,
-    "status": 91,
+    "problem_id": 94,
+    "status": 140,
     "step": 70,
     "task": 245
   },
@@ -216,9 +217,6 @@
       "key": "primaryColumns.deadline_time.cellBackground"
     },
     {
-      "key": "primaryColumns.status.menuButtonLabel"
-    },
-    {
       "key": "primaryColumns.status.menuColor"
     },
     {
@@ -232,6 +230,15 @@
     },
     {
       "key": "primaryColumns.rproject_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.name.buttonLabel"
+    },
+    {
+      "key": "primaryColumns.name.textColor"
+    },
+    {
+      "key": "primaryColumns.status.menuButtonLabel"
     }
   ],
   "dynamicPropertyPathList": [
@@ -248,9 +255,6 @@
       "key": "primaryColumns.EditActions1.isDiscardDisabled"
     },
     {
-      "key": "primaryColumns.status.cellBackground"
-    },
-    {
       "key": "primaryColumns.deadline_time.cellBackground"
     },
     {
@@ -261,6 +265,9 @@
     },
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.status.menuItems.menuItemgmtp3tqbbc.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -306,6 +313,8 @@
   "minWidth": 450,
   "needsHeightForContent": true,
   "onRowSelected": "{{storeValue('problem_id',Table1.selectedRow.problem_id) | navigateTo('台账问题详情页', {},'NEW_WINDOW')}}",
+  "originalBottomRow": 76,
+  "originalTopRow": 4,
   "parentColumnSpace": 20.0625,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -557,7 +566,7 @@
     },
     "content": {
       "alias": "content",
-      "allowCellWrapping": false,
+      "allowCellWrapping": true,
       "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"content\"])) :  currentRow[\"content\"] })()}}",
@@ -829,6 +838,8 @@
     "name": {
       "alias": "name",
       "allowCellWrapping": true,
+      "buttonLabel": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow.name)) : currentRow.name })()}}",
+      "buttonVariant": "TERTIARY",
       "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"name\"])) :  currentRow[\"name\"] })()}}",
@@ -850,7 +861,7 @@
       "label": "名称",
       "originalId": "name",
       "sticky": "",
-      "textColor": "",
+      "textColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "textSize": "0.875rem",
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -1144,13 +1155,14 @@
       "index": 2,
       "isCellEditable": true,
       "isCellVisible": true,
+      "isCompact": false,
       "isDerived": false,
       "isEditable": true,
       "isVisible": true,
       "label": "状态",
       "labelColor": "#FFFFFF",
-      "menuButtonLabel": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"] == 0? '待处理':currentRow[\"status\"] == 3? '已确认':currentRow[\"status\"] == 4? '已解决':currentRow[\"status\"] == 5? '不予解决':currentRow[\"status\"] == 6? '延期处理':'重新激活'))}}",
-      "menuColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"] == 0? 'rgb(3, 179, 101)':currentRow[\"status\"] == 3? '#3b82f6':currentRow[\"status\"] == 4? '#71717a':currentRow[\"status\"] == 5? '#ef4444':currentRow[\"status\"] == 6? '#eab308':'#ef4444'))}}",
+      "menuButtonLabel": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow.status == 0 ?'待解决':currentRow.status == 3?'已确认':currentRow.status == 4 ?'已解决':'不予解决')) : currentRow.status == 0 ?'待解决':currentRow.status == 3?'已确认':currentRow.status == 4 ?'已解决':'不予解决' })()}}",
+      "menuColor": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow.status == 0 ?'#22c55e':currentRow.status == 3?'#3b82f6':currentRow.status == 4 ?'#71717a':'#ef4444')) : currentRow.status == 0 ?'#22c55e':currentRow.status == 3?'#3b82f6':currentRow.status == 4 ?'#71717a':'#ef4444' })()}}",
       "menuItems": {
         "menuItemgmtp3tqbbc": {
           "id": "menuItemgmtp3tqbbc",

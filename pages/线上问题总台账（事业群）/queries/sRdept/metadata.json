@@ -25,7 +25,7 @@
     "dynamicBindingPathList": [],
     "name": "sRdept",
     "pageId": "线上问题总台账（事业群）",
-    "runBehaviour": "ON_PAGE_LOAD",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
