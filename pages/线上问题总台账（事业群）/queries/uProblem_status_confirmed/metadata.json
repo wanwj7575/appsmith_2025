@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE problem_order\n  SET status = 3\n  WHERE problem_id = {{ Table1.triggeredRow.problem_id }};",
+      "body": "UPDATE problem_order\n  SET status = 3\n  WHERE problem_id = {{ Table1.triggeredRow.problem_id }};\n\t\ninsert   into   problem_record (problem_id,create_by,create_time, type) \nvalue({{Table1.triggeredRow.problem_id}},{{Table1.triggeredRow.accepted_by}},{{moment().format(\"YYYY-MM-DD HH:mm:ss\")}},1)",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

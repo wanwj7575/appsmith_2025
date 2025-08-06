@@ -1,3 +1,6 @@
 UPDATE problem_order
   SET status = 3
   WHERE problem_id = {{ Table1.triggeredRow.problem_id }};
+	
+insert   into   problem_record (problem_id,create_by,create_time, type) 
+value({{Table1.triggeredRow.problem_id}},{{Table1.triggeredRow.accepted_by}},{{moment().format("YYYY-MM-DD HH:mm:ss")}},1)
