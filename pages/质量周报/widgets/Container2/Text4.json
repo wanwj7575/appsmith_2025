@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 8,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -12,6 +12,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -25,28 +28,28 @@
   "isLoading": false,
   "isVisible": true,
   "key": "z39o85cefq",
-  "leftColumn": 0,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "overflow": "NONE",
-  "parentColumnSpace": 17.34375,
-  "parentId": "0",
+  "parentColumnSpace": 16.4892578125,
+  "parentId": "011ta6knay",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 5,
+  "rightColumn": 63,
   "searchTags": [
     "typography",
     "paragraph",
     "label"
   ],
   "shouldTruncate": false,
-  "text": "质量周报：",
+  "text": "1. 代码BUG类问题：新增{{SRbug.data.length}}个，待处理6个",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 0,
+  "topRow": 4,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "os0qigy36z",
-  "widgetName": "Text1"
+  "widgetId": "3hvs1kjfbl",
+  "widgetName": "Text4"
 }

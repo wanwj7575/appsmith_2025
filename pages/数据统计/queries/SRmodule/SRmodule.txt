@@ -1,0 +1,3 @@
+SELECT  COUNT(1) as count_m,  zm .name  FROM  zt_bug zb 
+left join zt_module zm on zb.module = zm .id  
+WHERE zb .deleted =1 and resolution != 'notrepro' and  resolution != 'bydesign' and  resolution != 'willnotfix'  and product =86 and zb.openedDate >= {{DatePicker1.formattedDate}} and  zb.openedDate <= {{DatePicker2.formattedDate}}  group by zm .id order by  count_m desc

@@ -1,0 +1,1 @@
+SELECT  COUNT(*) as count_n, 'BUG' as category  FROM  zt_bug zb WHERE zb .deleted =1 and resolution != 'notrepro' and  resolution != 'bydesign' and  resolution != 'willnotfix'  and product =86 and zb.openedDate >= {{DatePicker1.formattedDate}} and  zb.openedDate <= {{DatePicker2.formattedDate}}

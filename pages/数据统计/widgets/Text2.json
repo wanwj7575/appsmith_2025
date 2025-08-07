@@ -1,8 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
-  "displayName": "Text",
+  "bottomRow": 12,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -14,39 +13,38 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "0.875rem",
-  "fontStyle": "",
-  "hideCard": false,
-  "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-  "isDeprecated": false,
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "z39o85cefq",
+  "key": "82oxvwa0k5",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 12,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 16,
+  "mobileTopRow": 8,
+  "needsErrorInfo": false,
   "overflow": "NONE",
-  "parentColumnSpace": 17.34375,
+  "parentColumnSpace": 17.53125,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 5,
-  "searchTags": [
-    "typography",
-    "paragraph",
-    "label"
-  ],
+  "responsiveBehavior": "fill",
+  "rightColumn": 16,
   "shouldTruncate": false,
-  "text": "质量周报：",
+  "text": "问题分布类型",
   "textAlign": "LEFT",
-  "textColor": "#231F20",
-  "topRow": 0,
+  "textColor": "#3b82f6",
+  "topRow": 8,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "os0qigy36z",
-  "widgetName": "Text1"
+  "widgetId": "g6b1k8pkuu",
+  "widgetName": "Text2"
 }

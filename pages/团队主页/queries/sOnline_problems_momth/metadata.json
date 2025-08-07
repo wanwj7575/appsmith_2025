@@ -25,7 +25,7 @@
     "dynamicBindingPathList": [],
     "name": "sOnline_problems_momth",
     "pageId": "团队主页",
-    "runBehaviour": "ON_PAGE_LOAD",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

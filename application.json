@@ -275,11 +275,11 @@
       "isDefault": false
     },
     {
-      "id": "UI",
+      "id": "数据统计",
       "isDefault": false
     },
     {
-      "id": "UI datafile",
+      "id": "周报数据统计",
       "isDefault": false
     }
   ],

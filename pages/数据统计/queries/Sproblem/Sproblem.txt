@@ -1,0 +1,1 @@
+select count(1) as count_n,po.category  from  problem_order po where po.status !=5 and po.status !=2  and po.create_time >= {{DatePicker1.formattedDate}} and po.create_time <={{DatePicker2.formattedDate}}  group  by po.category 

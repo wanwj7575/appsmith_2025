@@ -25,7 +25,7 @@
     "dynamicBindingPathList": [],
     "name": "sProject",
     "pageId": "质量周报",
-    "runBehaviour": "ON_PAGE_LOAD",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

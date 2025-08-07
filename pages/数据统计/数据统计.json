@@ -1,23 +1,23 @@
 {
-  "gitSyncId": "6455badecb1fd52f5e788d77_64e42b295e6d6f7f2be98c36",
+  "gitSyncId": "686244b3b31560462d30d7a1_19f46490-39f9-465c-8f1d-a057aa9fc8c8",
   "unpublishedPage": {
-    "isHidden": false,
+    "isHidden": true,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 700,
+          "bottomRow": 810,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "minHeight": 630,
+          "minHeight": 680,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
           "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 62,
+          "snapRows": 66,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 94,
@@ -26,7 +26,7 @@
         }
       }
     ],
-    "name": "团队主页",
+    "name": "数据统计",
     "slug": ""
   }
 }

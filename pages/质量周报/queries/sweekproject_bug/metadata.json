@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "select zp.name ,COUNT(1) as bug_number FROM  zt_bug zb \nleft join zt_project zp on zb.project  = zp.id\nWHERE zp.name in ({{appsmith.store.project_name_all}})  GROUP  by  zp.name ",
+      "body": "SELECT  zp.name ,zt.name as task_name, COUNT(1) as count_bug  FROM  zt_project zp \nleft join  zt_task zt on zp.id = zt.project \nleft join  (select * from zt_bug  zb where  zb .deleted =1 and resolution != 'notrepro' and  resolution != 'bydesign' and  resolution != 'willnotfix')zb on zp.id = zb.project \nWHERE  zt.closedDate >= '2025-07-26' and zt.closedDate <= '2025-08-03' and zt.`type` = 'test_task' and zp.id != 1130 group by  zp.id ",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,11 +22,7 @@
       "name": "zentao",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "name": "sweekproject_bug",
     "pageId": "质量周报",
     "runBehaviour": "ON_PAGE_LOAD",

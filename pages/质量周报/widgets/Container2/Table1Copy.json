@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 37,
+  "bottomRow": 29,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": false,
   "childStylesheet": {
@@ -98,7 +98,7 @@
   "leftColumn": 1,
   "multiRowSelection": false,
   "parentColumnSpace": 19.123046875,
-  "parentId": "znbmy1poan",
+  "parentId": "011ta6knay",
   "parentRowSpace": 10,
   "primaryColumns": {
     "count_bug": {
@@ -107,7 +107,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"count_bug\"] == 1? 0:currentRow[\"count_bug\"])) : currentRow[\"count_bug\"] == 1? 0:currentRow[\"count_bug\"] })()}}",
+      "computedValue": "{{(() => { const tableData = Table1Copy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"count_bug\"] == 1? 0:currentRow[\"count_bug\"])) : currentRow[\"count_bug\"] == 1? 0:currentRow[\"count_bug\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -140,7 +140,7 @@
       "allowCellWrapping": false,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"name\"])) :  currentRow[\"name\"] })()}}",
+      "computedValue": "{{(() => { const tableData = Table1Copy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"name\"])) :  currentRow[\"name\"] })()}}",
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
@@ -170,7 +170,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"task_name\"])) : task_name })()}}",
+      "computedValue": "{{(() => { const tableData = Table1Copy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"task_name\"])) : task_name })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -209,6 +209,6 @@
   "type": "TABLE_WIDGET_V2",
   "version": 1,
   "verticalAlignment": "CENTER",
-  "widgetId": "i028ue3awq",
-  "widgetName": "Table1"
+  "widgetId": "p66klbd68j",
+  "widgetName": "Table1Copy"
 }
