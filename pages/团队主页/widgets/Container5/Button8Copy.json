@@ -34,7 +34,7 @@
   "mobileLeftColumn": 26,
   "mobileRightColumn": 42,
   "mobileTopRow": 0,
-  "onClick": "{{navigateTo('项目监控通知', {}, 'NEW_WINDOW');}}",
+  "onClick": "{{navigateTo('数据统计', {}, 'NEW_WINDOW');}}",
   "parentColumnSpace": 19.71875,
   "parentId": "1aswmw167m",
   "parentRowSpace": 10,

@@ -277,10 +277,6 @@
     {
       "id": "数据统计",
       "isDefault": false
-    },
-    {
-      "id": "周报数据统计",
-      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

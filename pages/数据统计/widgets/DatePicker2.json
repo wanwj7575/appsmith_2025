@@ -20,9 +20,16 @@
   "dynamicPropertyPathList": [
     {
       "key": "dateFormat"
+    },
+    {
+      "key": "onDateSelected"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDateSelected"
+    }
+  ],
   "firstDayOfWeek": 0,
   "isDisabled": false,
   "isLoading": false,
@@ -45,6 +52,7 @@
   "mobileRightColumn": 26,
   "mobileTopRow": 12,
   "needsErrorInfo": false,
+  "onDateSelected": "{{Sproblem.run() | Sbug.run() | SRmodule.run() | SRproblem.run()}}",
   "parentColumnSpace": 17.53125,
   "parentId": "0",
   "parentRowSpace": 10,
