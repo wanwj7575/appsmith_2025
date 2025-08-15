@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT tp.zentao_project_id FROM t_project tp\nleft join (select * from  (select  *  from  t_project_reord tpr  order by  create_time desc limit 1000)as b group by  project_id ) tpr  on  tp.id = tpr.project_id \nWHERE status= 2 \nAND (existence!=0)",
+      "body": "SELECT tp.*, tpr.remarks reocrd_remarks , if (tp.project_endtime >= curdate(), \"1\", \"2\") as time_st FROM t_project tp\nleft join (select * from  (select  *  from  t_project_reord tpr  order by  create_time desc limit 1000)as b group by  project_id ) tpr  on  tp.id = tpr.project_id \nWHERE (tp.status = 1)\nAND (tp.existence!=0)",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

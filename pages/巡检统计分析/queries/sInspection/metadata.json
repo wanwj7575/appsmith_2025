@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "select  ir.problem_type, count(1)as number  from  inspection_record ir \nwhere  ir.inspec_status = 0 and confirm !=2 and confirm !=3\nand (date_format(ir .create_time ,'%Y-%m-%d') >= {{DatePicker1.formattedDate? DatePicker1.formattedDate:0}} or {{DatePicker1.formattedDate? 0:1}} )\nand (date_format(ir .create_time ,'%Y-%m-%d') <= {{DatePicker2.formattedDate? DatePicker2.formattedDate:0}} or {{DatePicker2.formattedDate? 0:1}})\nand (ir.create_by in (select name from  sys_user su where dep = {{Select1.selectedOptionValue ? Select1.selectedOptionValue:0}}))\ngroup by  ir.problem_type WITH ROLLUP ",
+      "body": "select  ir.problem_type, count(1)as number  from  inspection_record ir \nwhere  ir.inspec_status = 0 and (confirm =1 or  confirm =4)\nand (date_format(ir .create_time ,'%Y-%m-%d') >= {{DatePicker1.formattedDate? DatePicker1.formattedDate:0}} or {{DatePicker1.formattedDate? 0:1}} )\nand (date_format(ir .create_time ,'%Y-%m-%d') <= {{DatePicker2.formattedDate? DatePicker2.formattedDate:0}} or {{DatePicker2.formattedDate? 0:1}})\nand (ir.create_by in (select name from  sys_user su where dep = {{Select1.selectedOptionValue ? Select1.selectedOptionValue:0}}))\ngroup by  ir.problem_type WITH ROLLUP ",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

@@ -23,9 +23,16 @@
     },
     {
       "key": "dateFormat"
+    },
+    {
+      "key": "onDateSelected"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDateSelected"
+    }
+  ],
   "firstDayOfWeek": 0,
   "isDisabled": false,
   "isLoading": false,
@@ -48,6 +55,7 @@
   "mobileRightColumn": 28,
   "mobileTopRow": 42,
   "needsErrorInfo": false,
+  "onDateSelected": "{{sweekproject_bug.run()| Sbug.run() | sProject.run() |SRbug.run()}}",
   "parentColumnSpace": 16.6708984375,
   "parentId": "0",
   "parentRowSpace": 10,
