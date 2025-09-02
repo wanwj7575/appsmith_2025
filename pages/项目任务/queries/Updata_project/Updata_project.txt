@@ -1,4 +1,4 @@
-UPDATE appsmith.t_project
-SET  project_starttime={{Table1.triggeredRow.estStarted}}, project_endtime={{Table1.triggeredRow.deadline}},  test_director={{Table1.triggeredRow.realname}}, 
-WHERE zentao_task_id ={{Table1.updatedRow.id}};
+UPDATE t_project
+SET  project_starttime={{Table1.triggeredRow.estStarted}}, project_endtime={{Table1.triggeredRow.deadline}},  test_director={{Table1.triggeredRow.realname}}
+WHERE zentao_task_id ={{Table1.triggeredRow.id}};
 
