@@ -1,0 +1,4 @@
+UPDATE appsmith.sys_product
+SET product_name={{Input1Copy.text}}, product_type= {{Select1Copy.selectedOptionValue}}, product_group={{Select2Copy.selectedOptionValue}}, remarks={{Input2Copy.text}},  status={{RadioGroup1.selectedOptionValue}}, test_head_a={{Select3Copy.selectedOptionValue}}, test_head_b={{Select3CopyCopy.selectedOptionValue}}
+WHERE id={{Table1.triggeredRow.id}};
+

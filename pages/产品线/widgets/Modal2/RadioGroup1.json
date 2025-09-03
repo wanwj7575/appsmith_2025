@@ -1,0 +1,57 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignment": "left",
+  "animateLoading": true,
+  "bottomRow": 26,
+  "boxShadow": "none",
+  "defaultOptionValue": "1",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isDisabled": false,
+  "isInline": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "78apsi0sjf",
+  "label": "运营状态：",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "9",
+  "leftColumn": 3,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 28,
+  "mobileLeftColumn": 3,
+  "mobileRightColumn": 23,
+  "mobileTopRow": 22,
+  "needsErrorInfo": false,
+  "options": [
+    {
+      "label": "运营中",
+      "value": "1"
+    },
+    {
+      "label": "已暂停",
+      "value": "0"
+    }
+  ],
+  "originalBottomRow": 26,
+  "originalTopRow": 22,
+  "parentColumnSpace": 10.21875,
+  "parentId": "ypwsz997z5",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 41,
+  "topRow": 22,
+  "type": "RADIO_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "o0cdwrt9ng",
+  "widgetName": "RadioGroup1"
+}

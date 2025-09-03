@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "636b1198aaab6224b941b41b_636b11aaaaab6224b941b4a5",
-  "id": "产品线_sDict_group",
+  "gitSyncId": "686244b3b31560462d30d7a1_8d2bccb1-ab48-4743-a306-56136a08c13b",
+  "id": "产品线_sUser",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM sys_dict_item  where  dict_id = 17;",
+      "body": "SELECT * FROM sys_user WHERE dep = '产品测试部'  and status = 1;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,9 +23,9 @@
       "pluginId": "mysql-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "sDict_group",
+    "name": "sUser",
     "pageId": "产品线",
-    "runBehaviour": "MANUAL",
+    "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }
 }

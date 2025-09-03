@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 14,
   "boxShadow": "none",
-  "defaultOptionValue": "",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Table1.triggeredRow.product_type))(Select1Copy.options, Select1Copy.serverSideFiltering) }}",
   "displayName": "下拉单选",
   "dynamicBindingPathList": [
     {
@@ -15,6 +15,9 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -44,7 +47,7 @@
   "optionLabel": "label",
   "optionValue": "value",
   "parentColumnSpace": 10.125,
-  "parentId": "d8ylb784l2",
+  "parentId": "ypwsz997z5",
   "parentRowSpace": 10,
   "placeholderText": "请选择",
   "renderMode": "CANVAS",
@@ -57,6 +60,6 @@
   "topRow": 10,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "aqyxrnyi1c",
-  "widgetName": "Select1"
+  "widgetId": "vsmm9k0i01",
+  "widgetName": "Select1Copy"
 }

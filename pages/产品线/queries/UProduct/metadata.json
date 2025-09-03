@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "636b1198aaab6224b941b41b_636b11aaaaab6224b941b4a7",
-  "id": "产品线_iProduct",
+  "gitSyncId": "686244b3b31560462d30d7a1_fea5f406-757a-40b9-b419-d495c91b80e0",
+  "id": "产品线_UProduct",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO appsmith.sys_product\n(product_name, product_type, product_group, remarks, created_by, created_time, status,  test_head_a, test_head_b)\nVALUES({{Input1.text}}, {{Select1.selectedOptionValue}}, {{Select2.selectedOptionValue}}, {{Input2.text}}, {{appsmith.user.name}}, {{moment().format(\"YYYY-MM-DD HH:mm:ss \")}}, 1, {{Select3.selectedOptionValue}}, {{Select3Copy.selectedOptionValue}});\n",
+      "body": "UPDATE appsmith.sys_product\nSET product_name={{Input1Copy.text}}, product_type= {{Select1Copy.selectedOptionValue}}, product_group={{Select2Copy.selectedOptionValue}}, remarks={{Input2Copy.text}},  status={{RadioGroup1.selectedOptionValue}}, test_head_a={{Select3Copy.selectedOptionValue}}, test_head_b={{Select3CopyCopy.selectedOptionValue}}\nWHERE id={{Table1.triggeredRow.id}};\n\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "name": "iProduct",
+    "name": "UProduct",
     "pageId": "产品线",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

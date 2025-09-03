@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 38,
+  "bottomRow": 10,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{Table1.triggeredRow.product_name}}",
   "displayName": "输入框",
   "dynamicBindingPathList": [
     {
@@ -13,44 +13,48 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
   "hideCard": false,
   "iconAlign": "left",
   "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-  "inputType": "MULTI_LINE_TEXT",
+  "inputType": "TEXT",
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "x05h79cl0j",
-  "label": "备注：",
+  "label": "产品线名称：",
   "labelAlignment": "left",
-  "labelPosition": "Auto",
+  "labelPosition": "Left",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
-  "labelWidth": 5,
+  "labelWidth": "9",
   "leftColumn": 3,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "parentColumnSpace": 10.125,
-  "parentId": "d8ylb784l2",
+  "parentId": "ypwsz997z5",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
-  "rightColumn": 64,
+  "rightColumn": 51,
   "searchTags": [
     "form",
     "text input",
     "number",
     "textarea"
   ],
-  "topRow": 22,
+  "topRow": 6,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "lh37dd87hi",
-  "widgetName": "Input2"
+  "widgetId": "tbqwg64eh5",
+  "widgetName": "Input1Copy"
 }

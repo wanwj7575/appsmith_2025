@@ -1,0 +1,1 @@
+SELECT * FROM sys_user WHERE dep = '产品测试部'  and status = 1;
