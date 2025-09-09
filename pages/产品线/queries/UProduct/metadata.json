@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE appsmith.sys_product\nSET product_name={{Input1Copy.text}}, product_type= {{Select1Copy.selectedOptionValue}}, product_group={{Select2Copy.selectedOptionValue}}, remarks={{Input2Copy.text}},  status={{RadioGroup1.selectedOptionValue}}, test_head_a={{Select3Copy.selectedOptionValue}}, test_head_b={{Select3CopyCopy.selectedOptionValue}}\nWHERE id={{Table1.triggeredRow.id}};\n\n",
+      "body": "UPDATE appsmith.sys_product\nSET product_name={{Input1Copy.text}}, product_type= {{Select1Copy.selectedOptionValue}}, product_group={{Select2Copy.selectedOptionValue}}, remarks={{Input2Copy.text}},  status={{RadioGroup1.selectedOptionValue}}, test_head_a={{Select3Copy1.selectedOptionValue}}, test_head_b={{Select3CopyCopy.selectedOptionValue}}\nWHERE id={{Table1.triggeredRow.id}};\n\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

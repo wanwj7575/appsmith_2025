@@ -169,7 +169,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onTabSelected"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onTabSelected"

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT  zt.id ,zt.name ,zt.status ,zt.estStarted , zt.deadline  ,zt.estimate ,zp.name as project_name, zu.realname  FROM  zt_task zt \nleft join  zt_project zp on zt.project = zp.id  \nleft join  zt_user zu on zt.openedBy = zu.account \nWHERE  zt.type = 'test_task'   and  zt.id  in ({{appsmith.store.select_project}})\n",
+      "body": "SELECT  zt.*, za2 .comment FROM (select MAX(za.id) id  ,za.objectID,MAX(za.date) date  from zt_action za WHERE  za.objectType = 'task ' and za.comment!= '' group by za.objectID) as zal\nINNER  join  zt_action za2 on zal.objectID = za2.objectID and zal.date=za2 .date\nINNER join (select * from  zt_task zt WHERE id in ({{appsmith.store.select_project}})) zt on zal.objectID = zt.id\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -29,7 +29,7 @@
     ],
     "name": "sTask",
     "pageId": "项目看板",
-    "runBehaviour": "ON_PAGE_LOAD",
+    "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }
 }

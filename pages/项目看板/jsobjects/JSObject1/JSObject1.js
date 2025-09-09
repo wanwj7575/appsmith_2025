@@ -6,9 +6,9 @@ export default {
 		//	this.myVar1 = [1,2,3]
 		let tabstitle = Tabs1.selectedTab
 		if(tabstitle = "任务看板"){
-			Select_t_project2.run()
-			let nestedList = Select_t_project2.data
-			let projectNames = nestedList.map(item => item.zentao_project_id);
+			Select_t_project1.run()
+			let nestedList = Select_t_project1
+			let projectNames = nestedList.data.map(item => item.zentao_task_id);
 			let t = projectNames.join(',')
 			storeValue('select_project', t)
 			sTask.run()

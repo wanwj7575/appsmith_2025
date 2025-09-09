@@ -1,4 +1,3 @@
-SELECT  zt.id ,zt.name ,zt.status ,zt.estStarted , zt.deadline  ,zt.estimate ,zp.name as project_name, zu.realname  FROM  zt_task zt 
-left join  zt_project zp on zt.project = zp.id  
-left join  zt_user zu on zt.openedBy = zu.account 
-WHERE  zt.type = 'test_task'   and  zt.id  in ({{appsmith.store.select_project}})
+SELECT  zt.*, za2 .comment FROM (select MAX(za.id) id  ,za.objectID,MAX(za.date) date  from zt_action za WHERE  za.objectType = 'task ' and za.comment!= '' group by za.objectID) as zal
+INNER  join  zt_action za2 on zal.objectID = za2.objectID and zal.date=za2 .date
+INNER join (select * from  zt_task zt WHERE id in ({{appsmith.store.select_project}})) zt on zal.objectID = zt.id
