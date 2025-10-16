@@ -1,4 +1,4 @@
-SELECT tp.*, tpr.remarks reocrd_remarks , if (tp.project_endtime >= curdate(), "1", "2") as time_st FROM t_project tp
+SELECT tp.id,tp.project_name,tp.project_product,tp.project_starttime,tp.project_endtime,tp.status,tp.test_director,tp.zentao_task_id, tpr.remarks reocrd_remarks , if (tp.project_endtime >= curdate(), "1", "2") as time_st FROM t_project tp
 left join (select * from  (select  *  from  t_project_reord tpr  order by  create_time desc limit 1000)as b group by  project_id ) tpr  on  tp.id = tpr.project_id 
 WHERE (project_name  LIKE  '{{'%'+Input1.text+'%'}}' OR '{{Input1.text?0:1}}')
 AND (test_director = '{{Select4.selectedOptionValue}}' OR '{{Select4.selectedOptionValue? 0:1}}')

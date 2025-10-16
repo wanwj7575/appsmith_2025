@@ -35,33 +35,25 @@
     "id",
     "project_name",
     "project_product",
-    "project_group",
     "test_director",
     "project_starttime",
     "project_endtime",
-    "existence",
-    "project_type",
     "status",
-    "create_by",
-    "create_time",
-    "remarks",
-    "quality_report",
-    "zentao_project_id",
-    "effective_bug",
     "reocrd_remarks",
     "time_st",
     "customColumn1",
     "zentao_task_id",
+    "comparison_result",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1751357832811,
+  "columnUpdatedAt": 1760603769800,
   "columnWidthMap": {
     "project_endtime": 114,
     "project_name": 344,
     "project_starttime": 116,
     "project_type": 90,
     "remarks": 294,
-    "status": 111,
+    "status": 115,
     "test_director": 99
   },
   "defaultPageSize": 0,
@@ -97,9 +89,6 @@
       "key": "primaryColumns.project_product.computedValue"
     },
     {
-      "key": "primaryColumns.project_group.computedValue"
-    },
-    {
       "key": "primaryColumns.project_starttime.computedValue"
     },
     {
@@ -109,31 +98,7 @@
       "key": "primaryColumns.status.computedValue"
     },
     {
-      "key": "primaryColumns.existence.computedValue"
-    },
-    {
       "key": "primaryColumns.test_director.computedValue"
-    },
-    {
-      "key": "primaryColumns.create_by.computedValue"
-    },
-    {
-      "key": "primaryColumns.create_time.computedValue"
-    },
-    {
-      "key": "primaryColumns.remarks.computedValue"
-    },
-    {
-      "key": "primaryColumns.project_type.computedValue"
-    },
-    {
-      "key": "primaryColumns.quality_report.computedValue"
-    },
-    {
-      "key": "primaryColumns.zentao_project_id.computedValue"
-    },
-    {
-      "key": "primaryColumns.effective_bug.computedValue"
     },
     {
       "key": "primaryColumns.EditActions1.saveButtonColor"
@@ -191,6 +156,9 @@
     },
     {
       "key": "primaryColumns.customColumn1.menuColor"
+    },
+    {
+      "key": "primaryColumns.comparison_result.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -220,6 +188,9 @@
     },
     {
       "key": "primaryColumns.status.menuItems.menuItemiz0e9jmo8u.onClick"
+    },
+    {
+      "key": "primaryColumns.comparison_result.cellBackground"
     }
   ],
   "dynamicTriggerPathList": [
@@ -237,9 +208,6 @@
     },
     {
       "key": "primaryColumns.EditActions1.onSave"
-    },
-    {
-      "key": "primaryColumns.project_type.onSubmit"
     },
     {
       "key": "primaryColumns.project_product.onSubmit"
@@ -343,49 +311,20 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "create_by": {
-      "alias": "create_by",
+    "comparison_result": {
+      "alias": "comparison_result",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"create_by\"])) :  currentRow[\"create_by\"] })()}}",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow.comparison_result.time_comparison.start_date.is_match?(currentRow.comparison_result.time_comparison.end_date.is_match?(currentRow.comparison_result.personnel_comparison.is_match?'':'人员异常'):'结束时间异常'):'开始时间异常')) : currentRow.comparison_result.time_comparison.start_date.is_match?(currentRow.comparison_result.time_comparison.end_date.is_match?(currentRow.comparison_result.personnel_comparison.is_match?'':'人员异常'):'结束时间异常'):'开始时间异常' })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "id": "create_by",
-      "index": 9,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "create_by",
-      "notation": "standard",
-      "originalId": "create_by",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "create_time": {
-      "alias": "create_time",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"create_time\"])) :  currentRow[\"create_time\"] })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "create_time",
+      "id": "comparison_result",
       "index": 10,
       "isCellEditable": false,
       "isCellVisible": true,
@@ -394,11 +333,12 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
-      "label": "create_time",
+      "isVisible": true,
+      "label": "数据同步",
       "notation": "standard",
-      "originalId": "create_time",
+      "originalId": "comparison_result",
       "sticky": "",
+      "textColor": "#f20707",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -483,68 +423,6 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "effective_bug": {
-      "alias": "effective_bug",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"effective_bug\"])) :  currentRow[\"effective_bug\"] })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "effective_bug",
-      "index": 15,
-      "isCellEditable": true,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": true,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "effective_bug",
-      "notation": "standard",
-      "originalId": "effective_bug",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "existence": {
-      "alias": "existence",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "columnType": "number",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"existence\"])) :  currentRow[\"existence\"] })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "existence",
-      "index": 7,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "existence",
-      "notation": "standard",
-      "originalId": "existence",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "id": {
       "alias": "id",
       "allowCellWrapping": false,
@@ -602,37 +480,6 @@
       "notation": "standard",
       "originalId": "project_endtime",
       "outputFormat": "YYYY-MM-DD",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "project_group": {
-      "alias": "project_group",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"project_group\"])) :  currentRow[\"project_group\"] })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "project_group",
-      "index": 3,
-      "isCellEditable": true,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": true,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "project_group",
-      "notation": "standard",
-      "originalId": "project_group",
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
@@ -743,100 +590,6 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "project_type": {
-      "alias": "project_type",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"project_type\"] == 1? \"小型\": currentRow[\"project_type\"] == 2? '中型': currentRow[\"project_type\"] == 3? '大型':\n'级')) :  currentRow[\"project_type\"] == 1? \"小型\": currentRow[\"project_type\"] == 2? '中型': currentRow[\"project_type\"] == 3? '大型':\n'级' })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "project_type",
-      "index": 12,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "项目类型",
-      "notation": "standard",
-      "onSubmit": "{{Update_t_project_in.run().then(() => {\n  Select_t_project1.run();\n});}}",
-      "originalId": "project_type",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "quality_report": {
-      "alias": "quality_report",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"quality_report\"])) :  currentRow[\"quality_report\"] })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "quality_report",
-      "index": 13,
-      "isCellEditable": true,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": true,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "quality_report",
-      "notation": "standard",
-      "originalId": "quality_report",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "remarks": {
-      "alias": "remarks",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"remarks\"])) :  currentRow[\"remarks\"] })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "remarks",
-      "index": 11,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "remarks",
-      "notation": "standard",
-      "originalId": "remarks",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "reocrd_remarks": {
       "alias": "reocrd_remarks",
       "allowCellWrapping": false,
@@ -902,7 +655,7 @@
       "index": 6,
       "isCellEditable": true,
       "isCellVisible": true,
-      "isCompact": false,
+      "isCompact": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -933,7 +686,7 @@
         }
       },
       "menuItemsSource": "STATIC",
-      "menuVariant": "PRIMARY",
+      "menuVariant": "TERTIARY",
       "notation": "standard",
       "originalId": "status",
       "sourceData": [],
@@ -1011,37 +764,6 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "zentao_project_id": {
-      "alias": "zentao_project_id",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"zentao_project_id\"])) :  currentRow[\"zentao_project_id\"] })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "zentao_project_id",
-      "index": 14,
-      "isCellEditable": true,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": true,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "zentao_project_id",
-      "notation": "standard",
-      "originalId": "zentao_project_id",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "zentao_task_id": {
       "alias": "zentao_task_id",
       "allowCellWrapping": false,
@@ -1064,7 +786,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "zentao_task_id",
       "notation": "standard",
       "originalId": "zentao_task_id",
@@ -1083,7 +805,7 @@
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,
-  "tableData": "{{Select_t_project1.data}}",
+  "tableData": "{{JSObject1.myFun11()}}",
   "tags": [
     "Suggested",
     "Display"

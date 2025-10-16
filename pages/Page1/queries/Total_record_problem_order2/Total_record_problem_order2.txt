@@ -1,1 +1,0 @@
-SELECT COUNT(*) from problem_order WHERE name LIKE '%{{Table1.searchText}}%';

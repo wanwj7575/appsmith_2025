@@ -1,16 +1,16 @@
 {
   "gitSyncId": "6628ba498028a41bf3743a19_662a1ee925dfd304c6bbb9d2",
-  "id": "项目看板_Query1",
+  "id": "项目看板_Sproject_task",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM zt_task LIMIT 10;",
+      "body": "SELECT zt.id,zp.name as project_name ,zt.name ,zt.status ,zt.estStarted  ,zt.deadline ,zu.realname,zt.`work`  FROM  zt_task zt \nleft join zt_project zp on zt .project  = zp .id  \nleft join zt_user zu on zt.openedBy = zu.account \nWHERE zt.type = 'test_task' and zp.id !=1130  and zt.openedDate >= DATE_SUB(CURDATE(), INTERVAL 6 MONTH)   order by  zt.openedDate DESC ",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -23,9 +23,9 @@
       "pluginId": "mysql-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "Query1",
+    "name": "Sproject_task",
     "pageId": "项目看板",
-    "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "runBehaviour": "AUTOMATIC",
+    "userSetOnLoad": true
   }
 }

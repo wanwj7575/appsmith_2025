@@ -4,7 +4,7 @@
   "borderColor": "transparent",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 49,
+  "bottomRow": 41,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -67,7 +67,7 @@
     "parent",
     "group"
   ],
-  "topRow": 8,
+  "topRow": 0,
   "type": "CONTAINER_WIDGET",
   "version": 1,
   "widgetId": "chlglr17ml",
