@@ -1,2 +1,0 @@
-INSERT INTO t_objectives (objectives_naem, objectives_priority, objectives_describe,create_by, create_time, status)
-  VALUES ({{Input1.inputText}}, {{Select1.selectedOptionValue}}, {{Input2.inputText}}, {{appsmith.user.name}},{{moment().format("YYYY-MM-DD HH:mm:ss")}},0);

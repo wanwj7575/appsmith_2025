@@ -1,7 +1,0 @@
-UPDATE channel_order SET
-		channel = '{{update_form.fieldState.channel.isVisible ? update_form.formData.channel : update_form.sourceData.channel}}',
-		remarks = '{{update_form.fieldState.remarks.isVisible ? update_form.formData.remarks : update_form.sourceData.remarks}}',
-    create_time = '{{update_form.fieldState.create_time.isVisible ? update_form.formData.create_time : update_form.sourceData.create_time}}',
-		creator_by = '{{update_form.fieldState.creator_by.isVisible ? update_form.formData.creator_by : update_form.sourceData.creator_by}}',
-		channel_name = '{{update_form.fieldState.channel_name.isVisible ? update_form.formData.channel_name : update_form.sourceData.channel_name}}'
-WHERE id = {{data_table.selectedRow.id}};

@@ -335,7 +335,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "业务分类",
+      "label": "业务归属",
       "originalId": "product_group",
       "sticky": "",
       "textColor": "",

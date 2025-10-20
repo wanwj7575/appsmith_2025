@@ -31,15 +31,19 @@
   "icon": "cat",
   "pages": [
     {
+      "id": "团队主页",
+      "isDefault": false
+    },
+    {
       "id": "项目看板",
       "isDefault": false
     },
     {
-      "id": "值班",
+      "id": "巡检任务",
       "isDefault": false
     },
     {
-      "id": "Page4-4",
+      "id": "值班",
       "isDefault": false
     },
     {
@@ -51,19 +55,7 @@
       "isDefault": false
     },
     {
-      "id": "创建OKR",
-      "isDefault": false
-    },
-    {
       "id": "渠道任务详情",
-      "isDefault": false
-    },
-    {
-      "id": "部门建设",
-      "isDefault": false
-    },
-    {
-      "id": "项目看板 （旧）",
       "isDefault": false
     },
     {
@@ -80,10 +72,6 @@
     },
     {
       "id": "添加巡检用例",
-      "isDefault": false
-    },
-    {
-      "id": "任务大厅",
       "isDefault": false
     },
     {
@@ -111,19 +99,7 @@
       "isDefault": false
     },
     {
-      "id": "渠道任务",
-      "isDefault": false
-    },
-    {
       "id": "字典管理",
-      "isDefault": false
-    },
-    {
-      "id": "巡检任务",
-      "isDefault": false
-    },
-    {
-      "id": "1",
       "isDefault": false
     },
     {
@@ -168,14 +144,6 @@
     },
     {
       "id": "台账问题修改",
-      "isDefault": false
-    },
-    {
-      "id": "评价OKR ",
-      "isDefault": false
-    },
-    {
-      "id": "个人OKR详情 ",
       "isDefault": false
     },
     {
@@ -255,10 +223,6 @@
       "isDefault": false
     },
     {
-      "id": "团队主页",
-      "isDefault": false
-    },
-    {
       "id": "线上bug专区质量分析",
       "isDefault": false
     },
@@ -272,6 +236,10 @@
     },
     {
       "id": "数据统计",
+      "isDefault": false
+    },
+    {
+      "id": "产品线详情",
       "isDefault": false
     }
   ],

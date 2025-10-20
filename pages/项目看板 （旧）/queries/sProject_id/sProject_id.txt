@@ -1,1 +1,0 @@
-SELECT zp2 .id ,zp2.name, zp2.begin, zp2.end  FROM  zt_projectproduct zp left join zt_project zp2 on zp.project = zp2 .id  left join zt_product zp3 on zp.product = zp3 .id   order by zp2.openedDate  desc limit 50

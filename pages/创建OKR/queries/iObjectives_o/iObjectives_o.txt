@@ -1,2 +1,0 @@
-INSERT INTO t_objectives_personal (objectives_id, objectives_type, objectives_task, objectives_results, objectives_quarter, estimate_time,create_by,objectives_status)
-  VALUES ({{Select2.selectedOptionValue}},2, {{Input1.inputText}}, {{Input2.inputText}}, {{Select1.selectedOptionValue}}, {{DatePicker1.formattedDate}},{{appsmith.user.name}}, 0);

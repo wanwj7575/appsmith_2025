@@ -53,7 +53,7 @@
     "project_starttime": 116,
     "project_type": 90,
     "remarks": 294,
-    "status": 115,
+    "status": 113,
     "test_director": 99
   },
   "defaultPageSize": 0,
@@ -159,6 +159,15 @@
     },
     {
       "key": "primaryColumns.comparison_result.computedValue"
+    },
+    {
+      "key": "primaryColumns.comparison_result.borderRadius"
+    },
+    {
+      "key": "primaryColumns.comparison_result.boxShadow"
+    },
+    {
+      "key": "primaryColumns.comparison_result.buttonLabel"
     }
   ],
   "dynamicPropertyPathList": [
@@ -232,6 +241,9 @@
     },
     {
       "key": "primaryColumns.customColumn1.menuItems.menuItemsedozsx675.onClick"
+    },
+    {
+      "key": "primaryColumns.comparison_result.onClick"
     }
   ],
   "enableClientSideSearch": false,
@@ -315,10 +327,16 @@
       "alias": "comparison_result",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "#f20707",
+      "buttonLabel": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow.comparison_result.time_comparison.start_date.is_match?(currentRow.comparison_result.time_comparison.end_date.is_match?(currentRow.comparison_result.personnel_comparison.is_match?'/':'人员异常'):'结束时间异常'):'开始时间异常')) : currentRow.comparison_result.time_comparison.start_date.is_match?(currentRow.comparison_result.time_comparison.end_date.is_match?(currentRow.comparison_result.personnel_comparison.is_match?'/':'人员异常'):'结束时间异常'):'开始时间异常' })()}}",
+      "buttonVariant": "TERTIARY",
       "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow.comparison_result.time_comparison.start_date.is_match?(currentRow.comparison_result.time_comparison.end_date.is_match?(currentRow.comparison_result.personnel_comparison.is_match?'':'人员异常'):'结束时间异常'):'开始时间异常')) : currentRow.comparison_result.time_comparison.start_date.is_match?(currentRow.comparison_result.time_comparison.end_date.is_match?(currentRow.comparison_result.personnel_comparison.is_match?'':'人员异常'):'结束时间异常'):'开始时间异常' })()}}",
+      "columnType": "button",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ('')) : '' })()}}",
       "currencyCode": "USD",
+      "customAlias": "",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
@@ -336,6 +354,7 @@
       "isVisible": true,
       "label": "数据同步",
       "notation": "standard",
+      "onClick": "{{storeValue('project_taskid', Table1.triggeredRow.zentao_task_id).then(() => {\n  navigateTo('项目任务', {}, 'NEW_WINDOW');\n});}}",
       "originalId": "comparison_result",
       "sticky": "",
       "textColor": "#f20707",

@@ -1,1 +1,0 @@
-select  *  from   t_objectives to2  order by  objectives_priority  asc 

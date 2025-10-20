@@ -1,8 +1,0 @@
-UPDATE t_objectives_personal SET
-			objectives_id = (select  id  from  t_objectives to2 where  objectives_naem ={{Table2.triggeredRow.objectives_naem}}),
-    objectives_task = {{Table2.triggeredRow.objectives_task}},
-    objectives_results = {{Table2.triggeredRow.objectives_results}},
-		estimate_time= {{Table2.triggeredRow.estimate_time}},
-		results_assessment = {{Table2.triggeredRow.results_assessment}}
-  WHERE id= {{Table2.triggeredRow.id}}; -- Specify a valid condition here. Removing the condition may update every row in the table!
-	

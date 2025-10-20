@@ -1,1 +1,0 @@
-SELECT  *  FROM  sys_product WHERE  sys_product.product_name = {{Select1.selectedOptionValue}};
