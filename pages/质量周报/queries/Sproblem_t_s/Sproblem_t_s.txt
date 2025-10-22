@@ -1,0 +1,2 @@
+select po.business,COUNT(1) as count_n from  problem_order po where po.status !=2 and po.status !=1 and po.category = '体验优化' 
+group by po.business  order by  count_n desc

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "686244b3b31560462d30d7a1_6a7f46c5-d7cc-4445-925c-6bff2ddcad1e",
-  "id": "质量周报_SRbug",
+  "gitSyncId": "686244b3b31560462d30d7a1_80651f14-310d-4288-b9a8-dfda79b8c503",
+  "id": "质量周报_SRbug_s",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT  zm.name,zm.path,COUNT(1)as count_n  FROM  zt_bug zb \nleft join  zt_module  zm on zb.module = zm.id \nWHERE zb.resolution != 'notrepro' and  zb.resolution != 'bydesign' and  zb.resolution != 'willnotfix'  and zb.product =86  and zb.deleted = 1 and zb.openedDate >= '2025-09-15' and\n(FIND_IN_SET('1302',zm.path)>0 or FIND_IN_SET('1303',zm.path)>0 ) GROUP by zm.name ",
+      "body": "SELECT  zm.name,zm.path,COUNT(1)as count_n  FROM  zt_bug zb \nleft join  zt_module  zm on zb.module = zm.id \nWHERE zb.resolution != 'notrepro' and  zb.resolution != 'bydesign' and  zb.resolution != 'willnotfix'  and zb.product =86 and zb .status = 'active ' and zb.deleted = 1  and\n(FIND_IN_SET('1302',zm.path)>0 or FIND_IN_SET('1303',zm.path)>0 ) GROUP by zm.name ",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,9 +23,9 @@
       "pluginId": "mysql-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "SRbug",
+    "name": "SRbug_s",
     "pageId": "质量周报",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

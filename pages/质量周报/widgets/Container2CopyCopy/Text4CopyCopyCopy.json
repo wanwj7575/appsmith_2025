@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 12,
+  "bottomRow": 4,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -31,11 +31,9 @@
   "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 12,
-  "originalTopRow": 8,
   "overflow": "NONE",
   "parentColumnSpace": 16.4892578125,
-  "parentId": "011ta6knay",
+  "parentId": "3w2hy1h9u1",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 63,
@@ -45,13 +43,13 @@
     "label"
   ],
   "shouldTruncate": false,
-  "text": "1. 代码BUG类问题：新增{{SRbug.data.reduce(\n  (sum, item) => sum + (item.count_n || 0),\n  0\n)}}个，待处理{{SRbug_s.data.\nreduce(\n  (sum, item) => sum + (item.count_n || 0),\n  0\n)}}个",
+  "text": "3. 代码体验优化类问题：新增{{Sproblem_t.data.reduce(\n  (sum, item) => sum + (item.count_n || 0),\n  0\n)}}个，待处理{{Sproblem_t_s.data\n.reduce(\n  (sum, item) => sum + (item.count_n || 0),\n  0\n)}}个",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 8,
+  "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "3hvs1kjfbl",
-  "widgetName": "Text4"
+  "widgetId": "dkrowuuw9d",
+  "widgetName": "Text4CopyCopyCopy"
 }

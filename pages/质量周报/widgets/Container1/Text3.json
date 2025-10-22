@@ -43,7 +43,7 @@
     "label"
   ],
   "shouldTruncate": false,
-  "text": "上新项目:    {{sweekproject_bug.data.length}}     新增BUG数：{{Sbug.data[0].count_bug}}",
+  "text": "上新项目 {{sweekproject_bug.data.length}} 个，BUG数共{{Sbug.data[0].count_bug}}个，",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 4,

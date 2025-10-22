@@ -58,7 +58,7 @@
   "mobileRightColumn": 28,
   "mobileTopRow": 42,
   "needsErrorInfo": false,
-  "onDateSelected": "{{sweekproject_bug.run()| Sbug.run() | sProject.run() |SRbug.run()}}",
+  "onDateSelected": "{{sweekproject_bug.run()| Sbug.run() | sProject.run() |SRbug_s.run() |Sproblem_t.run() | Sproblem_y.run() | Sproblem_x.run()}}",
   "parentColumnSpace": 16.6708984375,
   "parentId": "0",
   "parentRowSpace": 10,

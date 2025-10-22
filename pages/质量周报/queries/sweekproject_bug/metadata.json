@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT  zp.name ,zt.name as task_name, COUNT(1) as count_bug  FROM  zt_project zp \nleft join  zt_task zt on zp.id = zt.project \nleft join  (select * from zt_bug  zb where  zb .deleted =1 and resolution != 'notrepro' and  resolution != 'bydesign' and  resolution != 'willnotfix')zb on zp.id = zb.project \nWHERE  zt.closedDate >= {{DatePicker1.formattedDate}} and zt.closedDate <= {{DatePicker2.formattedDate}} and zt.`type` = 'test_task' and zp.id != 1130 group by  zp.id ",
+      "body": "SELECT  zt.id,zp.name ,zt.name as task_name, COUNT(1) as count_bug  FROM  zt_project zp \nleft join  zt_task zt on zp.id = zt.project \nleft join  (select * from zt_bug  zb where  zb .deleted =1 and resolution != 'notrepro' and  resolution != 'bydesign' and  resolution != 'willnotfix')zb on zp.id = zb.project \nWHERE  zt.closedDate >= '{{DatePicker1.formattedDate}}' and zt.closedDate <= '{{DatePicker2.formattedDate}}' and zt.`type` = 'test_task' and zp.id != 1130 group by  zp.id ",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

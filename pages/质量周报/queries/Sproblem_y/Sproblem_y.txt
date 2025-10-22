@@ -1,0 +1,2 @@
+select po.business,COUNT(1) as count_n from  problem_order po where po.status !=2  and po.category = '业务配置' and po.create_time >='{{DatePicker1.formattedDate}}' and po.create_time <='{{DatePicker2.formattedDate}}' 
+group by po.business  order by  count_n desc

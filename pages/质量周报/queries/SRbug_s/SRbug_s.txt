@@ -1,4 +1,4 @@
 SELECT  zm.name,zm.path,COUNT(1)as count_n  FROM  zt_bug zb 
 left join  zt_module  zm on zb.module = zm.id 
-WHERE zb.resolution != 'notrepro' and  zb.resolution != 'bydesign' and  zb.resolution != 'willnotfix'  and zb.product =86  and zb.deleted = 1 and zb.openedDate >= '2025-09-15' and
+WHERE zb.resolution != 'notrepro' and  zb.resolution != 'bydesign' and  zb.resolution != 'willnotfix'  and zb.product =86 and zb .status = 'active ' and zb.deleted = 1  and
 (FIND_IN_SET('1302',zm.path)>0 or FIND_IN_SET('1303',zm.path)>0 ) GROUP by zm.name 
