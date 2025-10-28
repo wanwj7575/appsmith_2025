@@ -14,6 +14,9 @@
     },
     {
       "key": "textColor"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -33,6 +36,8 @@
   "mobileRightColumn": 40,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
+  "originalBottomRow": 4,
+  "originalTopRow": 0,
   "overflow": "NONE",
   "parentColumnSpace": 20.25,
   "parentId": "0",
@@ -41,7 +46,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 40,
   "shouldTruncate": false,
-  "text": "产品线",
+  "text": "{{appsmith.store.project_product}}",
   "textAlign": "CENTER",
   "textColor": "{{appsmith.theme.colors.primaryColor}}",
   "topRow": 0,

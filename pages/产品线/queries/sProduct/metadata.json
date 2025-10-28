@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "select  *   from  sys_product sp \nleft join  (select tp.project_product ,count(*) as count_n   from t_project tp where  tp.create_time >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR) and tp.existence = 1  \ngroup by tp.project_product ) tp on sp.product_name = tp.project_product \nwhere sp.status =1",
+      "body": "select  *   from  sys_product sp \nleft join  (select tp.project_product ,count(*) as count_n   from t_project tp where  tp.create_time >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR) and tp.existence = 1  \ngroup by tp.project_product ) tp on sp.product_name = tp.project_product \nwhere sp.status =1 order by  count_n DESC",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

@@ -1,0 +1,1 @@
+select  problem_id ,name ,category ,priority ,create_by,deadline_time,'1' as banlan from  problem_order po where po.status !=2 and  po.status !=1

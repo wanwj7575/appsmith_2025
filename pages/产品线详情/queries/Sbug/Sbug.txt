@@ -1,0 +1,3 @@
+select zb.id as problem_id,zb.title as name,'bug' as category ,zb.pri as priority,zb.openedBy as create_by ,zb.deadline as deadline_time, '2' as banlan  FROM  zt_bug zb
+left join zt_module zm  on zm.id = zb.module 
+WHERE zb.deleted = 1 and zb .status = 'active' and zb.product = 86 and   zm.name ='{{appsmith.store.project_product}}'

@@ -535,7 +535,7 @@
       "isVisible": true,
       "label": "项目名称",
       "notation": "standard",
-      "onClick": "{{navigateTo('项目详情', {},'NEW_WINDOW') | storeValue('project_id',Table1.triggeredRow.id)}}",
+      "onClick": "{{navigateTo('产品线详情', {},'NEW_WINDOW') | storeValue('project_id',Table1.triggeredRow.id) |storeValue('project_product',Table1.triggeredRow.project_product)}}",
       "originalId": "project_name",
       "sticky": "",
       "textSize": "0.875rem",
