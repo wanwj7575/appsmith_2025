@@ -1,3 +1,0 @@
-select zb.title,zb.severity ,zb.pri ,zb.openedBy ,zb.deadline  FROM  zt_bug zb
-left join zt_module zm  on zm.id = zb.module 
-WHERE zb.deleted = 1 and zb .status = 'active' and zb.product = 86 and   zm.name ='{{Text4.text}}'

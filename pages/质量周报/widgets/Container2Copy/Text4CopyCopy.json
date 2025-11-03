@@ -43,7 +43,7 @@
     "label"
   ],
   "shouldTruncate": false,
-  "text": "2. 代码业务配置类问题：新增{{Sproblem_y.data.reduce(\n  (sum, item) => sum + (item.count_n || 0),\n  0\n)}}个，待处理{{Sproblem_y_s.data\n.reduce(\n  (sum, item) => sum + (item.count_n || 0),\n  0\n)}}个",
+  "text": "2. 业务配置类问题：新增{{Sproblem_y.data.reduce(\n  (sum, item) => sum + (item.count_n || 0),\n  0\n)}}个，待处理{{Sproblem_y_s.data\n.reduce(\n  (sum, item) => sum + (item.count_n || 0),\n  0\n)}}个",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 0,

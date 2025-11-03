@@ -1,1 +1,0 @@
-select *  from  t_project tp where project_product = (select  project_product  from  t_project tp2 where  id = {{appsmith.store.project_id}})  and existence = 1  order by  project_endtime desc 

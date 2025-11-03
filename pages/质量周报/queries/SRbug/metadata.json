@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT  zm.name,zm.path,COUNT(1)as count_n  FROM  zt_bug zb \nleft join  zt_module  zm on zb.module = zm.id \nWHERE zb.resolution != 'notrepro' and  zb.resolution != 'bydesign' and  zb.resolution != 'willnotfix'  and zb.product =86  and zb.deleted = 1 and zb.openedDate >= '2025-09-15' and\n(FIND_IN_SET('1302',zm.path)>0 or FIND_IN_SET('1303',zm.path)>0 ) GROUP by zm.name ",
+      "body": "SELECT  zm.name,zm.path,COUNT(1)as count_n  FROM  zt_bug zb \nleft join  zt_module  zm on zb.module = zm.id \nWHERE zb.resolution != 'notrepro' and  zb.resolution != 'bydesign' and  zb.resolution != 'willnotfix'  and zb.product =86  and zb.deleted = 1 and zb.openedDate >= '{{DatePicker1.formattedDate}}' and zb.openedDate <= '{{DatePicker2.formattedDate}}' and\n(FIND_IN_SET('1302',zm.path)>0 or FIND_IN_SET('1303',zm.path)>0 ) GROUP by zm.name ",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,7 +22,11 @@
       "name": "zentao",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "name": "SRbug",
     "pageId": "质量周报",
     "runBehaviour": "AUTOMATIC",

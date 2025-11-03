@@ -166,7 +166,7 @@
   "renderMode": "CANVAS",
   "rightColumn": 63,
   "searchKey": "",
-  "tableData": "{{Sproblem_y.data}}",
+  "tableData": "{{Sproblem_t_s.data}}",
   "textSize": "0.875rem",
   "topRow": 4,
   "totalRecordsCount": 0,

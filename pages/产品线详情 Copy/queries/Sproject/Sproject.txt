@@ -1,1 +1,0 @@
-SELECT * FROM t_project WHERE id = {{appsmith.store.project_id}};
