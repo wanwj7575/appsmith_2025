@@ -11,4 +11,5 @@ INSERT INTO t_project (project_name, project_product,  project_starttime, projec
 				 {{Input1.text}},
 				 {{Select2.selectedOptionValue}},
 				 {{Table1.triggeredRow.id}},
+					{{Table1.triggeredRow.project_id}}
 				 );

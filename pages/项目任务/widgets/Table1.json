@@ -41,9 +41,10 @@
     "realname",
     "customColumn1",
     "customColumn2",
-    "work"
+    "work",
+    "project_id"
   ],
-  "columnUpdatedAt": 1754290718086,
+  "columnUpdatedAt": 1762226097595,
   "columnWidthMap": {
     "customColumn1": 82,
     "customColumn2": 75,
@@ -111,6 +112,9 @@
     },
     {
       "key": "defaultSearchText"
+    },
+    {
+      "key": "primaryColumns.project_id.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -364,6 +368,40 @@
       "label": "任务名称",
       "notation": "standard",
       "originalId": "name",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "project_id": {
+      "alias": "project_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"project_id\"])) : project_id })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "project_id",
+      "index": 8,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "project_id",
+      "notation": "standard",
+      "originalId": "project_id",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
