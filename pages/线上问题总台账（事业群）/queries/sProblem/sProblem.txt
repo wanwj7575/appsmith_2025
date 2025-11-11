@@ -1,4 +1,4 @@
-SELECT *  FROM problem_order po  
+SELECT po.problem_id,po.name,po.status,po.category,po.business,po.create_by,po.create_time,po.done_time,po.deadline_time,po.accepted_by,pr.follow_record  FROM problem_order po  
 left join (SELECT pr .*
 FROM problem_record pr 
 INNER JOIN (
